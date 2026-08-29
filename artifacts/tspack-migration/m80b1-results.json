@@ -1,0 +1,112 @@
+{
+  "milestone": "M80b1",
+  "outcome": "A",
+  "authorityDecision": "KeepRemoved",
+  "m80cGate": "open",
+  "qualificationCommit": "c2ddbd23c8667c23663a823705acb9d5a4b87722",
+  "baseline": {
+    "vitestCommit": "d644c5ae4",
+    "tspackCommit": "7a51530",
+    "localNode": "v26.2.0"
+  },
+  "tspack": {
+    "version": "v0.1.9-m80b1.3",
+    "sourceCommit": "428a8f057ad3a1a241796a693b49740a6457bf1b",
+    "releaseRunId": 33270485654,
+    "releaseUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33270485654",
+    "releaseUrlTag": "https://github.com/yuechen-li-dev/tspack/releases/tag/v0.1.9-m80b1.3",
+    "linuxAmd64Sha256": "8af1dbc33a28efe38214a8badf2e81829b1a9e8164cddca5e654eb0fc8eb3167",
+    "setupAction": "yuechen-li-dev/tspack/.github/actions/setup-tspack@v0.1.9-m80b1.3",
+    "integrity": "same-release checksums.txt SHA-256 verification before extraction"
+  },
+  "runner": {
+    "os": "Ubuntu 24.04.4 LTS",
+    "image": "ubuntu-24.04",
+    "imageVersion": "20260823.283.1",
+    "nodeRequested": "24",
+    "nodeResolved": "v24.19.0",
+    "cache": false,
+    "pnpmInstall": false
+  },
+  "realization": {
+    "policy": "committed lock then sync --clean",
+    "cleanStateProof": ["node_modules absent", ".tspack absent"],
+    "entries": 1116,
+    "localUpdateDiff": { "added": 0, "removed": 0 },
+    "check": {
+      "outcome": "success",
+      "versionConflictPackages": 23,
+      "unacknowledgedLifecycleScripts": 53,
+      "consumerLifecycleScripts": 1,
+      "maintainerLifecycleScripts": 52
+    }
+  },
+  "workflow": {
+    "identity": "VitestCoreCI",
+    "command": "tspack workflow run VitestCoreCI --ci-provider github",
+    "terminalState": "succeeded",
+    "localArtifactHashes": {
+      "expect": [
+        { "path": "packages/expect/dist/index.js", "sha256": "0ea093fde666e47ee71056ce39f9b6c4acd8c6e6c81e8befa1c3b9415029633a" },
+        { "path": "packages/expect/dist/index.d.ts", "sha256": "5019ec6f96dd6b601f8b3d0dbe0c393fbf94c438a05b99ffbc54e018c430ad64" }
+      ],
+      "snapshot": [
+        { "path": "packages/snapshot/dist/index.d-CuPTsptM.d.ts", "sha256": "cbd78a3459c52c3378200601766459de2d764c173754d8906b8f50b4cfafdf49" },
+        { "path": "packages/snapshot/dist/environment.d.ts", "sha256": "12823692023b517278e232bb98afae8939a5e0675df646e0d80f90c3b3d528b9" },
+        { "path": "packages/snapshot/dist/environment.js", "sha256": "a617db831b3e202a8d5542025a9d7f84530bb7ac4a2108211c53f523b9748954" },
+        { "path": "packages/snapshot/dist/index.d.ts", "sha256": "f3875e1799339c704993d481c23c6a24f0e459c98386b5be44fb2637ae3bd6e6" },
+        { "path": "packages/snapshot/dist/index.js", "sha256": "c497349d44090171fa20c2d66950a1c339a80c802996031d498c10f5cf7e0261" },
+        { "path": "packages/snapshot/dist/manager.d.ts", "sha256": "ba5a5807a057ce6c48698a92883c3b50168418d6422604e52e05cb1a4b7c4d31" },
+        { "path": "packages/snapshot/dist/manager.js", "sha256": "08e0c47c9aebba5146edab60f203cfb35465b2e81b00b20d602827f5f5f824e5" },
+        { "path": "packages/snapshot/dist/chunk-utils.js", "sha256": "5dd1b4ddae0870d5efdf4e39a13a09c3107868b8bd8431308882469a71729e8f" }
+      ]
+    },
+    "effects": [
+      { "branch": "build-expect", "operation": "build", "target": "@vitest/expect:package", "artifacts": 2, "outcome": "succeeded" },
+      { "branch": "build-snapshot", "operation": "build", "target": "@vitest/snapshot:package", "artifacts": 8, "outcome": "succeeded" },
+      { "branch": "test-basic-threads", "operation": "test", "target": "@vitest/test-unit:basic-threads", "passed": 8, "failed": 0, "skipped": 1, "outcome": "succeeded" },
+      { "branch": "test-snapshot-threads", "operation": "test", "target": "@vitest/test-unit:snapshot-threads", "passed": 16, "failed": 0, "skipped": 0, "outcome": "succeeded" }
+    ],
+    "parallelism": {
+      "builds": "parallel",
+      "testsAfterBuilds": "parallel"
+    }
+  },
+  "githubRuns": [
+    {
+      "id": 33270604470,
+      "jobId": 99148284950,
+      "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33270604470",
+      "commit": "c2ddbd23c8667c23663a823705acb9d5a4b87722",
+      "conclusion": "success",
+      "durationSeconds": 45,
+      "semanticResult": "2/8 artifacts; basic 8/0/1; snapshot 16/0/0; workflow succeeded"
+    },
+    {
+      "id": 33270649801,
+      "jobId": 99148405220,
+      "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33270649801",
+      "commit": "c2ddbd23c8667c23663a823705acb9d5a4b87722",
+      "conclusion": "success",
+      "durationSeconds": 77,
+      "semanticResult": "2/8 artifacts; basic 8/0/1; snapshot 16/0/0; workflow succeeded"
+    }
+  ],
+  "failedQualificationRuns": [
+    { "id": 33269030681, "classification": ["DependencyRealization", "FilesystemBehavior"], "resolved": true },
+    { "id": 33270177934, "classification": ["InstalledTSPack", "BuildTarget"], "resolved": true }
+  ],
+  "ciCleanup": {
+    "removedJobs": [],
+    "reason": "No whole legacy job was limited to the bounded slice; broad ci.yml:test retains unowned Node, platform, coverage, and full-unit responsibilities.",
+    "providerSemanticHacks": 0
+  },
+  "deferred": [
+    "remote manual cancellation",
+    "remote workflow-level JSON artifact retention"
+  ],
+  "openP3": [
+    "per-entry sync progress is verbose",
+    "GitHub annotates actions whose metadata still declares node20"
+  ]
+}
