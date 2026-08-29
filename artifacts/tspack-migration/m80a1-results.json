@@ -1,0 +1,127 @@
+{
+  "milestone": "M80a1",
+  "outcome": "B",
+  "outcomeLabel": "Meaningful progression",
+  "baseline": {
+    "vitestRevision": "4c563b64a",
+    "vitestBranch": "main",
+    "tspackRevision": "e06cd58",
+    "node": "v26.2.0",
+    "pathPnpm": "7.27.1",
+    "declaredPnpm": "11.24.0"
+  },
+  "migration": {
+    "workspaceConfig": "pnpm-workspace.yaml",
+    "workspaceIncludes": [
+      "docs",
+      "packages/*",
+      "examples/*",
+      "test/*",
+      "test/e2e/dts/*",
+      "test/e2e/fixtures/conditions-pkg"
+    ],
+    "matchedDirectoriesWithoutPackageJSON": [
+      "test/e2e/dts/_shared"
+    ],
+    "packagesDiscovered": 41,
+    "packagesTotal": 41,
+    "duplicatePackageRoots": 0,
+    "duplicateDependencyRows": 0,
+    "workspaceReferencesResolved": 85,
+    "workspaceReferencesTotal": 85,
+    "catalogReferencesResolved": 116,
+    "catalogReferencesTotal": 116,
+    "npmAliasesResolved": 2,
+    "localPathReferencesResolved": 31,
+    "generatedDependencyRows": 418,
+    "generatedRuntimeDependencyRows": 75,
+    "generatedPeerDependencyRows": 23,
+    "generatedToolDependencyRows": 320,
+    "draftOnlyIdentityAdjustments": 3,
+    "workspaceOrCatalogUnresolved": 0,
+    "generatedFiles": 43,
+    "secondRunChangedFiles": 0,
+    "frontendValidation": "passed",
+    "irValidation": "passed",
+    "validationTodoEstimate": 561,
+    "sourceTodoMarkers": 338,
+    "dependencyClassificationTodoMarkers": 235,
+    "targetTodoMarkers": 41,
+    "goodEnoughPoint": "First real Vitest run reached 41/41 projects, 85/85 workspace references, 116/116 catalog references, deterministic output, and frontend/IR validation. Importer work stopped at that point."
+  },
+  "manualCompletion": {
+    "authoritativeRootManifestCreated": true,
+    "generatedPackageContractsRetained": 41,
+    "manualPackageDeclarationsAdded": 0,
+    "manualPackageRowsReviewed": 41,
+    "manualDependencyCorrections": 0,
+    "expectedSemanticAuthoringEdits": 1,
+    "missingMigrationInferenceEdits": 0,
+    "missingTspackPrimitiveBridges": 3,
+    "temporaryCompatibilityBridgeEdits": 2,
+    "vitestSpecificEdits": 1,
+    "remainingIncompletePackages": 41,
+    "remainingWork": "Build, test, compiler, publish, and package-specific lifecycle intent remains semantic authoring."
+  },
+  "lifecycle": {
+    "migrate": {
+      "status": "Working",
+      "result": "41-package draft; all workspace/catalog references recovered"
+    },
+    "checkBeforeUpdate": {
+      "status": "PartiallyWorking",
+      "result": "real manifest loaded; only lockfile missing"
+    },
+    "update": {
+      "status": "Working",
+      "result": "153 lock packages, 46 direct and 107 transitive; eight local workspace packages and one path fixture captured"
+    },
+    "checkAfterUpdate": {
+      "status": "PartiallyWorking",
+      "result": "manifest/graph coherent; reports eight multi-version conflicts and 23 blocked lifecycle scripts"
+    },
+    "sync": {
+      "status": "Working",
+      "result": "362 materialization entries with pnpm node_modules quarantined"
+    },
+    "pnpmMaterializationIndependent": true,
+    "build": {
+      "status": "NotYetConfigured",
+      "result": "exit 0 with no output or targets; not claimed as a working build"
+    },
+    "test": {
+      "status": "NotYetConfigured",
+      "result": "safe TSPACK_TEST_AMBIGUOUS_WORKSPACE_VITEST refusal; no mutations"
+    },
+    "basicDeveloperLoop": "PartiallyWorking"
+  },
+  "oracle": {
+    "pnpmBuild": "passed",
+    "pnpmTypecheckInitial": "failed because new TSX manifests entered Vitest's broad TypeScript project",
+    "pnpmTypecheckAfterCompatibilityExclude": "passed",
+    "oracleNodeModulesRestored": true
+  },
+  "tspackFixes": [
+    "bounded pnpm workspace glob/catalog importer with split package contracts",
+    "split workspace root package manifest path validation",
+    "sibling local path dependencies constrained to the workspace root",
+    "native workspace, catalog, npm alias, and file/link lowering",
+    "workspace-scale deterministic migration report and next-step guidance"
+  ],
+  "validation": {
+    "focusedMigrateTests": "passed",
+    "manifestFrontendTests": "253 passed, 2 skipped",
+    "manifestFrontendBuild": "passed",
+    "goBroad": "passed: go test ./cmd/... ./internal/... ./tools/...",
+    "vscodeTests": "35 passed",
+    "compatDiff": "passed; five surfaces up to date",
+    "gitDiffCheck": "passed",
+    "sourceDivesRequired": 4
+  },
+  "quarantine": {
+    "pnpmOracle": "restored to repository node_modules",
+    "tspackMaterialization": "C:/Users/yuech/AppData/Local/Temp/vitest-tspack-m80a1-tspack-node_modules",
+    "tspackStore": "C:/Users/yuech/AppData/Local/Temp/vitest-tspack-m80a1-tspack-store"
+  },
+  "nextMilestone": "M80a2: author one bounded package build target and one package-scoped test topology, add a clear no-target build diagnostic, decide project identity versus package identity for duplicate fixtures, and address installed frontend discovery. Do not begin M80b CI migration yet."
+}

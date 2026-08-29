@@ -7,6 +7,9 @@
     ]
   },
   "exclude": [
+    "./manifest.tsx",
+    "./manifest.migrated.tsx",
+    "**/.tspack-migration/**",
     "**/dist/**",
     "./packages/vitest/dist/**",
     "./packages/ui/**/*.spec.ts",

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-08-28",
+  "outcome": "HonestStop",
+  "vitestRevision": "4c563b64a",
+  "upstreamEquivalentRevision": "e08c45c39",
+  "tspackRevision": "a6896f0",
+  "environment": {
+    "node": "26.2.0",
+    "corepack": null,
+    "pathPnpm": "7.27.1",
+    "declaredPnpm": "11.24.0",
+    "typescript": "5.9.3",
+    "vite": "8.0.11",
+    "vitest": "5.0.0-rc.3",
+    "tspack": "0.1.8"
+  },
+  "topology": {
+    "workspaceProjects": 41,
+    "packageJsonFiles": 96,
+    "namedPackageJsonFiles": 86,
+    "workspaceReferences": 85,
+    "catalogReferences": 116,
+    "peerDeclarations": 55,
+    "npmAliases": 2,
+    "tsconfigFiles": 51,
+    "buildScriptProjects": 17,
+    "testScriptProjects": 25
+  },
+  "oracle": {
+    "install": "passed-with-pinned-pnpm",
+    "build": "passed",
+    "typecheckAfterBuild": "passed",
+    "coreTests": "passed",
+    "uiTests": "one-failure-one-flaky"
+  },
+  "migration": {
+    "previewExitCode": 0,
+    "generatedFiles": [
+      "manifest.migrated.tsx",
+      "tspack-migration.md"
+    ],
+    "discoveredPackages": 1,
+    "generatedTargets": 1,
+    "todos": 58,
+    "structuralValidation": "passed",
+    "idempotence": "existing-files-preserved",
+    "workspaceSupport": "root-only-diagnostic"
+  },
+  "lifecycle": {
+    "sync": "blocked-no-tspack-lock",
+    "check": "blocked-no-authoritative-workspace-manifest",
+    "build": "blocked-no-authoritative-workspace-manifest",
+    "test": "safe-ambiguous-workspace-diagnostic-after-fix",
+    "syncOwnershipProved": false
+  },
+  "frictions": {
+    "P0": 1,
+    "P1": 2,
+    "P2": 2,
+    "P3": 1
+  },
+  "metrics": {
+    "sourceDives": 2,
+    "manualProjectIntentEdits": 0,
+    "manifestShellEscapeHatches": 0
+  },
+  "nextMilestone": "Implement pnpm workspace/catalog migration and prove controlled update/sync before M80b CI work."
+}
