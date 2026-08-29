@@ -69,13 +69,13 @@
     "missingPrimitive": "TestTarget-scoped npm dependencies and local fixture package mappings"
   },
   "distribution": {
-    "version": "v0.1.9-m80c.2",
-    "tspackCommit": "6512786de9ce2e5a55f4e5facc1690298347c33f",
-    "releaseRunId": 33274099278,
-    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33274099278",
+    "version": "v0.1.9-m80c.3",
+    "tspackCommit": "5399e874550596e8c259a7fc1101469466902a24",
+    "releaseRunId": 33274688052,
+    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33274688052",
     "releaseConclusion": "success",
-    "linuxAmd64Sha256": "0f87f6df3487d960712ae9c4dcd33e8bec2b450585c40d2a5c8990878dc983de",
-    "windowsAmd64Sha256": "9cbfc5aaf977f6f05956736bf6b4c2866627f84ec9ca504f5cc642dc94f22cd3"
+    "linuxAmd64Sha256": "c697f12d3ff01bc74c9edae1326d9f326e1d5b71fc4eca6fd16182cd8dd6a6e1",
+    "windowsAmd64Sha256": "3e115dac93a8352981ade3a57119450834922eb5f21074bd711ac9e97814f440"
   },
   "remote": {
     "runId": null,
@@ -83,11 +83,19 @@
     "commit": null,
     "runner": "ubuntu-latest",
     "nodeVersion": "24",
-    "tspackVersion": "v0.1.9-m80c.2",
+    "tspackVersion": "v0.1.9-m80c.3",
     "cacheUsed": false,
     "conclusion": "pending",
     "terminal": null
   },
+  "failedRemoteAttempts": [
+    {
+      "runId": 33274372976,
+      "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33274372976",
+      "commit": "fdb49b9e8728572764106b6927625a2cd2a345f5",
+      "failure": "mocker could not read projected @vitest/utils build output from the materialized workspace package"
+    }
+  ],
   "validation": {
     "tspackBroadGoTests": "passed",
     "vitestDiffCheck": "passed",

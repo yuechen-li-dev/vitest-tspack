@@ -616,6 +616,34 @@ Classification: InteropRequirement
 
 M80c status: Accepted and isolated; not the authority-expansion stop reason.
 
+### F-035 — clean Linux builds could not consume prerequisite workspace output
+
+Severity: P1
+
+Context:
+Workspace store snapshots deliberately exclude generated `dist` trees. A
+dependent build resolves its workspace package through the materialized
+`node_modules` copy, while its prerequisite writes new artifacts to the live
+workspace package. Developer pnpm links masked that split locally.
+
+Evidence:
+Vitest run `33274372976` proved clean setup, release installation, 1,190-entry
+realization, and project check, then built utils successfully and failed mocker
+because `node_modules/@vitest/utils/dist/helpers.js` was absent. The typed
+failure retained both target identities and the missing path.
+
+Resolution:
+After every successful workspace target, TSPack now projects only the declared
+build artifacts into an existing materialized root package copy and removes
+stale declared matches there first. Source/store inputs remain immutable, path
+escapes and directories are rejected, and a regression proves fresh output
+replaces a stale hashed chunk. This keeps downstream resolution consistent
+across copy and hardlink materialization without provider setup.
+
+Classification: TSPackBug and DependencyRealization
+
+M80c status: Resolved in `v0.1.9-m80c.3`.
+
 ### F-027 — pre-build project checks required generated type outputs
 
 Severity: P1

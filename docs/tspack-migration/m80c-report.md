@@ -6,7 +6,7 @@ M80c is **Outcome B: meaningful progression**. TSPack now owns the complete
 Rollup-only package-build family that fits the current BuildTarget model: 12 of
 14 Vitest packages, including ten newly authoritative build responsibilities.
 The checkpoint is green locally, has a generated thin GitHub runner, and uses
-the released `v0.1.9-m80c.2` distribution. The next adjacent unit-test family
+the released `v0.1.9-m80c.3` distribution. The next adjacent unit-test family
 stops at a precise missing primitive: TestTarget-scoped npm dependencies and
 local fixture package mappings.
 
@@ -155,13 +155,20 @@ grew from 1,116 to 1,190 entries because the complete build tool/dependency
 closure is now explicit.
 
 Remote evidence for the final Vitest checkpoint is recorded in
-`artifacts/tspack-migration/m80c-results.json`. TSPack release run `33274099278`
+`artifacts/tspack-migration/m80c-results.json`. TSPack release run `33274688052`
 passed all five platform builds, Linux browser qualification, the embedded
 no-dist smoke, and publication. The Linux amd64 archive SHA-256 is
-`0f87f6df3487d960712ae9c4dcd33e8bec2b450585c40d2a5c8990878dc983de`;
-the locally downloaded Windows archive verified as
-`9cbfc5aaf977f6f05956736bf6b4c2866627f84ec9ca504f5cc642dc94f22cd3`.
+`c697f12d3ff01bc74c9edae1326d9f326e1d5b71fc4eca6fd16182cd8dd6a6e1`;
+the Windows archive was published as
+`3e115dac93a8352981ade3a57119450834922eb5f21074bd711ac9e97814f440`.
 The final Vitest run is `PENDING_REMOTE` until checkpoint dispatch completes.
+
+The first remote attempt, run `33274372976` at commit `fdb49b9e8`, is retained
+as failure evidence. It passed clean setup, 1,190-entry sync, and check, then
+failed mocker after successfully building utils: Linux resolved the materialized
+workspace package copy, which did not yet contain the live prerequisite output.
+TSPack now projects declared successful workspace artifacts into that copy;
+the general regression and full Go suite pass in `v0.1.9-m80c.3`.
 
 ## Product pressure-test results
 
@@ -171,6 +178,8 @@ TSPack bugs fixed generally:
 2. Direct alias references were lost and alias root paths were pruned.
 3. The import scanner matched import-shaped comments.
 4. Declared Rollup artifact sets were not cleaned before rebuild.
+5. Materialized workspace copies did not observe prerequisite build output on
+   a clean Linux runner.
 
 No new TSPack abstraction was added. Each repair strengthens an existing
 BuildTarget, resolver, materializer, scanner, or artifact contract and is
@@ -184,7 +193,7 @@ manifest repetition is still reviewable and makes target identity explicit;
 two client-package exceptions are evidence against prematurely adding a broad
 generator/helper.
 
-The friction ledger adds F-028 through F-034. Summary: zero P0, four resolved
+The friction ledger adds F-028 through F-035. Summary: zero P0, five resolved
 P1 TSPack/build issues, one open P1 missing primitive, two P2 migration/interop
 issues, and zero new P3 issues.
 
@@ -231,7 +240,7 @@ not speed, is the checkpoint claim.
   twice locally.
 - Upstream: frozen pnpm install and broad build passed.
 - Export: generated from manifest authority and pinned to
-  `v0.1.9-m80c.2`; drift check passed.
+  `v0.1.9-m80c.3`; drift check passed.
 - Repository whitespace: `git diff --check` passed.
 - Failure evidence: target/package identities survive build failure; test
   probe evidence retained suite counts and the exact missing dependency/fixture
