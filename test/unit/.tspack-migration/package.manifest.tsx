@@ -76,7 +76,9 @@ const deps = defineDeps({
   tinyspy: tool(npm("tinyspy", "^4.0.4")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   url: tool(npm("url", "^0.11.4")),
-  vitest: tool(workspace("vitest")),
+  // The bounded CI targets need an executable harness from a clean checkout.
+  // The workspace package has source only until the broader Vitest build runs.
+  vitest: tool(npm("vitest", "5.0.0-rc.3")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   vitestEnvironmentCustom: tool(path("vitest-environment-custom"), { key: "vitest-environment-custom" }),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.

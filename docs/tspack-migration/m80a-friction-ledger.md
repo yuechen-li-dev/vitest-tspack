@@ -434,7 +434,7 @@ The installed `v0.1.8` reported unknown `Workflows`, `Workflow`, `Build`,
 
 Resolution:
 TSPack's GitHub export now pins Node 24, the first-party setup action, and the
-binary to `v0.1.9-m80b1.1`; prints binary provenance; proves `node_modules` and
+binary to `v0.1.9-m80b1.2`; prints binary provenance; proves `node_modules` and
 `.tspack` are absent; runs lock-only `sync --clean`; checks the project; then
 runs the one semantic Workflow command. The prerelease is built by the normal
 release matrix, publishes `checksums.txt`, and the setup action verifies the
@@ -442,7 +442,7 @@ Linux archive before extraction.
 
 Classification: ProviderBootstrap and InstalledTSPack
 
-M80b1 status: Resolved pending final Vitest runner evidence.
+M80b1 status: Resolved.
 
 ### F-023 — release qualification browser tests used workstation-sized timeouts
 
@@ -463,6 +463,81 @@ Only the two browser-bearing integration cases received an explicit 15-second
 bound. The focused local test passed 4/4, and release run `33268914548` then
 passed all five build lanes, the Linux no-dist smoke, checksum generation, and
 release publication.
+
+Classification: ProviderBootstrap and CIUX
+
+M80b1 status: Resolved.
+
+### F-024 — local workspace artifacts encoded ignored build output
+
+Severity: P1
+
+Context:
+The first clean Vitest runner had no ignored workspace `dist` trees. The M80b
+lock had been authored after local builds, so seven workspace hashes included
+files that do not exist in a clean checkout. The same run also exposed an npm
+tarball whose directory headers used mode `0666`, which is not traversable on
+Linux.
+
+Evidence:
+Vitest run `33269030681` installed `v0.1.9-m80b1.1`, proved the checkout had no
+`node_modules` or `.tspack`, fetched 332 artifacts, then reported seven exact
+workspace integrity mismatches and a `pngjs@7.0.0` hydration failure.
+
+Resolution:
+Workspace artifacts now exclude generated `dist` trees, local text hashing is
+line-ending canonical, and tar extraction derives directory execute bits from
+read bits. Update and sync use the same workspace artifact kind, and hydration
+now retains the underlying store diagnostic. The Vitest lock changed only the
+seven affected workspace identities. Focused regressions and the full Go suite
+cover these rules.
+
+Classification: DependencyRealization and FilesystemBehavior
+
+M80b1 status: Resolved in `v0.1.9-m80b1.2`.
+
+### F-025 — the test harness depended on ignored workspace build output
+
+Severity: P1
+
+Context:
+After portable workspace realization, the bounded TestTargets selected the
+workspace `vitest` package. Its executable imports `dist/cli.js`, which is
+created by the broader upstream build and absent from a clean checkout.
+
+Evidence:
+A clean local replay reached both TestTargets after the two native package
+builds, then failed with `ERR_MODULE_NOT_FOUND` for
+`node_modules/vitest/dist/cli.js`.
+
+Resolution:
+The test-unit and TypeScript-test package manifests now pin the published
+`vitest@5.0.0-rc.3` package as their authoritative harness/dependency. This
+keeps the Flow at the same two Build and two Test effects, avoids a hidden
+prebuild, and succeeds after lock-only clean sync without pnpm.
+
+Classification: TargetInterop and DependencyRealization
+
+M80b1 status: Resolved.
+
+### F-026 — release browser qualification had two hosted-runner races
+
+Severity: P2
+
+Context:
+The release gate's real-browser suite was load-sensitive on Linux. One watch
+case could overlap its initial cycle with a queued filesystem cycle, and a Vite
+production build occasionally exceeded the prior 15-second hosted bound.
+
+Evidence:
+Release run `33269708014` observed three watch callbacks where two were
+expected. After serializing the initial cycle, run `33269798902` proved that
+fix and independently timed out the production-artifact case at 15 seconds.
+
+Resolution:
+The initial watch cycle now participates in the same promise chain as change
+cycles, with five focused local repetitions passing. The real-browser build
+bound is 30 seconds; no retries or ignored failures were added.
 
 Classification: ProviderBootstrap and CIUX
 

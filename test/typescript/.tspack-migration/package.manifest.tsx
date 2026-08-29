@@ -17,7 +17,7 @@ import {
  * MIGRATION_TODO_* comments mark unresolved or manually authored semantics.
  */
 const deps = defineDeps({
-  vitest: dep(workspace("vitest")),
+  vitest: dep(npm("vitest", "5.0.0-rc.3")),
   typescript: tool(npm("typescript", "^5.9.3")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   vueTsc: tool(npm("vue-tsc", "^3.3.11"), { key: "vue-tsc" }),
