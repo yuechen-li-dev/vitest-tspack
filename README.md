@@ -39,6 +39,28 @@ Next generation testing framework powered by Vite.
 <br>
 <br>
 
+## TSPack flagship workflow slice
+
+This fork contains a bounded TSPack migration proof, not a complete Vitest
+port. `VitestCoreCI` builds the native `@vitest/expect:package` and
+`@vitest/snapshot:package` BuildTargets, then runs the native
+`@vitest/test-unit:basic-threads` and
+`@vitest/test-unit:snapshot-threads` TestTargets.
+
+```powershell
+tspack inspect targets
+tspack workflow list
+tspack workflow inspect VitestCoreCI
+tspack workflow run VitestCoreCI --jobs 4
+```
+
+The existing GitHub Actions, package scripts, broader package builds, browser
+tests, release, and publish flows remain upstream authority. See
+[`docs/tspack-migration/m80b-report.md`](docs/tspack-migration/m80b-report.md)
+for the current workflow proof. A clean TSPack `update`/`sync` materialization
+now runs this slice without pnpm; broader Vitest CI and provider authority
+remain intentionally upstream.
+
 ## Features
 
 - [Vite](https://vitejs.dev/)'s config, transformers, resolvers, and plugins. Use the same setup from your app!

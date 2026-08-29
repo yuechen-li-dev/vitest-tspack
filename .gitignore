@@ -9,6 +9,7 @@ lib-cov
 coverage
 !**/integrations/coverage
 node_modules
+.tspack/
 .env
 .cache
 dist

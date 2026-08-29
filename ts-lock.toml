@@ -28,6 +28,19 @@ Workspace = ''
 Hash = 'sha256:9ab903614063fae4bf3ca5d8f08f0d037514ff09c64cd54b82e05d12c98287c0'
 
 [[package]]
+ID = 'npm:@babel/compat-data@7.29.7'
+Name = '@babel/compat-data'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-locTkQyKvwIEgBzVrn8693ebc97F2U8ZHjbXwDXJ5Fn2TCpNwTlKcaKLkdHop5c/icOFE7qt7Q9JC5hnKNa6Gg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0cf63b5ed704654bdc7574be035883b2eb3f8872c795a6b8dbb690cb7a3d54b9'
+
+[[package]]
 ID = 'npm:@babel/compat-data@8.0.0'
 Name = '@babel/compat-data'
 Version = '8.0.0'
@@ -39,6 +52,19 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:39d3a84ec4755cc964e7c8577b9ac1b12b69c07670b85c2f530845e01492e685'
+
+[[package]]
+ID = 'npm:@babel/core@7.29.7'
+Name = '@babel/core'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:46dd458b3d2bc29daa0e9e01f13b399ab544a8013f27ac6c51b56b831c8a0ed3'
 
 [[package]]
 ID = 'npm:@babel/core@8.0.1'
@@ -54,6 +80,19 @@ Workspace = ''
 Hash = 'sha256:0646cc1ce42c3f614285d4357942c9158f5bd3ddbcd05a6bc2cc28dedfae16e5'
 
 [[package]]
+ID = 'npm:@babel/generator@7.29.8'
+Name = '@babel/generator'
+Version = '7.29.8'
+Source = 'npm'
+Integrity = 'sha512-gZbepsdh3WDtgZKWL+vTPh71LSBrm/Y4/QDZBVCcYfmeTEEuoOYwlSy+G1StfJg+/Zy550u/3TATbm7qDbbMtg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b5ced4fd7c23a580549182676c43c03a8731b9625e66270f443ab27cd21b502d'
+
+[[package]]
 ID = 'npm:@babel/generator@8.0.0'
 Name = '@babel/generator'
 Version = '8.0.0'
@@ -65,6 +104,32 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:c7618d99958907f080cfa0a778ed2a762be13c59b9e919b5df7a672993af9634'
+
+[[package]]
+ID = 'npm:@babel/helper-annotate-as-pure@7.29.7'
+Name = '@babel/helper-annotate-as-pure'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-OoK6239jHPuSQOoS0kfTVKn0b/rVTk0seKq4Gd2UMLtmOVLjDC0ki3e+c90Trqv2gMfvJFqkiljrr568+qddiw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9c495b23b4c9f6b917a1363765eccd42a96c022e19a4f8bf3dc6620e19cdeeba'
+
+[[package]]
+ID = 'npm:@babel/helper-compilation-targets@7.29.7'
+Name = '@babel/helper-compilation-targets'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-wem6WaBj4NaVYVdNhLPPVacES6ZJ+KBBfSkTMD3YZxbP3rm3Di85tJU5ljaUNhaOynt+Aj0xruhYuzQBt8n71g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5b5446f3d32b10ba38cb308af5f65e76afcddaacd7b817e71055a6de6ab934e0'
 
 [[package]]
 ID = 'npm:@babel/helper-compilation-targets@8.0.0'
@@ -80,6 +145,32 @@ Workspace = ''
 Hash = 'sha256:2e42e5af533c83af7cbe5d29e448dd859f6cafc58a257c2aa011ee198000a5a4'
 
 [[package]]
+ID = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+Name = '@babel/helper-create-class-features-plugin'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-IY3ZD9Tmooqr3TUhc3DUWxiuo8xx1DWLhd5M7hQ+ZWJamqM2BbalrBJb2MisSLoYorOj75U03qULCxQTY9r3hg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:4732b4b71afda975aae01a8821bc5b77488254b162b87b527e3018548132e5ea'
+
+[[package]]
+ID = 'npm:@babel/helper-globals@7.29.7'
+Name = '@babel/helper-globals'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-3nQVUAtvkKH9zahfWgw96Jc/uFOmjACE1kQz82E2lqWmHBgjzbNlsC22nuQTfahmWeQtTq5nQ/4Nnd2A1wj4zA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:94fb962c489aae2c4e5581f1494721083dc76dddd7c703314dd4d7ff965d2a3f'
+
+[[package]]
 ID = 'npm:@babel/helper-globals@8.0.0'
 Name = '@babel/helper-globals'
 Version = '8.0.0'
@@ -91,6 +182,97 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:a5512660b485e7575c235b63b410fdc2ede38522caf23d7122c2db18ba204f53'
+
+[[package]]
+ID = 'npm:@babel/helper-member-expression-to-functions@7.29.7'
+Name = '@babel/helper-member-expression-to-functions'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-j+7JYmk1JYDtACIGj0QJqqWZjoUpMoEikQGADMaHgCMCSDqd2+P32rfcibUNrGOMWrlzK1WJBdxrB3JJQZwWtg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:19e4760889b4d8b3d55d2db83bfedc057ebea1839c13837386a7f0acf94a21e5'
+
+[[package]]
+ID = 'npm:@babel/helper-module-imports@7.29.7'
+Name = '@babel/helper-module-imports'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-ejHwrQQYcm9xnTivShn2IDOlIzInN34AXskvq9QicvCtEzq1Vzclu/tKF8Jq1Cg8JG2GL6/EmjgsCT7lXepE3g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:4bdf46cf597b875ce16770f151159ca34f96c20ba3c112dc8d7f6c6d6cce770c'
+
+[[package]]
+ID = 'npm:@babel/helper-module-transforms@7.29.7'
+Name = '@babel/helper-module-transforms'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-UPUVSyXbOh627KiCIGQSgwWzGeBKLkaJ9PJEdrngIwMSzxLR4jS4+f1f1jb7VzBbg8nFLaYotvVPFCTqdrmTAg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:dbb3b9b10b0a2828f5af58a6317685b1a150464c6bd54995069c526aba45e6e4'
+
+[[package]]
+ID = 'npm:@babel/helper-optimise-call-expression@7.29.7'
+Name = '@babel/helper-optimise-call-expression'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-+kmGVjcT9RGYzoDwdwEqEvGgKe3BYq+O1iGzjFubaNgZHwYHP6lsF2Yghf4kEuv9BV7tYDZ913aBW9am6YKong=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5fbcc1984e70178ddf399ed38d0a9c8e15061d083a7edaf947361b8922db49f5'
+
+[[package]]
+ID = 'npm:@babel/helper-plugin-utils@7.29.7'
+Name = '@babel/helper-plugin-utils'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-G7sHYigPY17oO5SYWnfD/0MTBwVR781S/JI643e/JhUYgVgWE/61SoW3NH9KWUKyKq5LVh3npif99Wkt6j86Jw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:00824ca9e3a146e73a071849b085668ae2012b7fff58056442ab9d33d1e357e8'
+
+[[package]]
+ID = 'npm:@babel/helper-replace-supers@7.29.7'
+Name = '@babel/helper-replace-supers'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-atfGXWSeCiF4DnKZIfmJfQRkSw9b9gNNXR1kqKjbhG4pGYCOnkp8OcTB8E3NXjBu8NpheSnOeNKz8KT7UNFTmQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:cd070ae564316796df48ff2476ce0448b87dd9d682a17197e60b706ebee5f1aa'
+
+[[package]]
+ID = 'npm:@babel/helper-skip-transparent-expression-wrappers@7.29.7'
+Name = '@babel/helper-skip-transparent-expression-wrappers'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-brcMGQaVzIeUb+6/bs1Av0f8YuNNjKY2JyvfRCsFuFsdKccEQ5Ges2y74D74NZ1Rz8lKJ9ksJkfqwQFJ/iNEyQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:3371575d536fc8d30fffb98a158ad17d626abd1ab897b7f48992ddf72eec79dd'
 
 [[package]]
 ID = 'npm:@babel/helper-string-parser@7.29.7'
@@ -145,6 +327,19 @@ Workspace = ''
 Hash = 'sha256:c263723d69d9039a6a856ae6a9be99e0e6380503d72417d09994905a47704aa3'
 
 [[package]]
+ID = 'npm:@babel/helper-validator-option@7.29.7'
+Name = '@babel/helper-validator-option'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-N9ZErrD+yW5geCDtBqnOoxmR8+tNKiGuxKlDpuJxfsqpa2dFcexaziGAE/qoHLiDDreVNMupxGmSoNlyvsA3gw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e32d8ff2cc0455c5210f92f0844d2cb6e1d61b83ee17d7b328fe410f9021e4cd'
+
+[[package]]
 ID = 'npm:@babel/helper-validator-option@8.0.0'
 Name = '@babel/helper-validator-option'
 Version = '8.0.0'
@@ -156,6 +351,19 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:986cae37982b3e0b9b0001077f1d04642abf6ed3587791f8f04d7c547fea13f6'
+
+[[package]]
+ID = 'npm:@babel/helpers@7.29.7'
+Name = '@babel/helpers'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-1k2lAGRMfHTcwuNYcCNUmaUffmQv8KWMfh2iJUUeRlwlwH4FdNG7mfPI10NPfLHJFThE4Tyr4mv7kTNZOiPuBg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:87dcd8372e8f2d0225de852c9f810c23712616cc2681556f8f4292535b7e42c6'
 
 [[package]]
 ID = 'npm:@babel/helpers@8.0.0'
@@ -197,6 +405,32 @@ Workspace = ''
 Hash = 'sha256:dc1d5211d2abd1e03071a21f171d88ef375fa154d6ee0d6049f5270c913bf520'
 
 [[package]]
+ID = 'npm:@babel/plugin-proposal-decorators@7.29.7'
+Name = '@babel/plugin-proposal-decorators'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-EtU0Hi3GvrTqD56xKmZvV/uCXK2ZbwVNPNLAquVItcAZpUhkXwWlo3Fmj0c2LxgSf2I8IDULeAepwNP1OefLXg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:6c84f2a4978fd4f3edc10cea28802de41170698a52b783fb48f45d0bc00fea90'
+
+[[package]]
+ID = 'npm:@babel/plugin-syntax-decorators@7.29.7'
+Name = '@babel/plugin-syntax-decorators'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-9MTTLbF39X6sqM92JPEsoI7++26hjZvzkxKZy64aMhWLH2mPkJ/Q3AV4QLmls3R14FpSpkOwQQfUh962JGQxxg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:f0368ab6eae519a0c53295a24177750d1c763e1533e0819b2b0a719d95b1ad07'
+
+[[package]]
 ID = 'npm:@babel/runtime@7.29.7'
 Name = '@babel/runtime'
 Version = '7.29.7'
@@ -210,6 +444,19 @@ Workspace = ''
 Hash = 'sha256:4d7f1bd502a1a64d47625cc738d13284865f0666d2ed01f244de0adf05b69aa5'
 
 [[package]]
+ID = 'npm:@babel/template@7.29.7'
+Name = '@babel/template'
+Version = '7.29.7'
+Source = 'npm'
+Integrity = 'sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5e0ee28d5536e986cf5ff2da0f096fb84810d9136c2a64c6c78a6b495a0e7764'
+
+[[package]]
 ID = 'npm:@babel/template@8.0.0'
 Name = '@babel/template'
 Version = '8.0.0'
@@ -221,6 +468,19 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:6cacbdb62a8a38e3c100077fc1072d8ec9f0737122e3876fca550850eeac905e'
+
+[[package]]
+ID = 'npm:@babel/traverse@7.29.8'
+Name = '@babel/traverse'
+Version = '7.29.8'
+Source = 'npm'
+Integrity = 'sha512-I5z7H3bf/41ktsNVLtpN0wAa336HkqIHQ5BuPLEhTkt1jVSyZpeNKIzTgEWmlxjdg81R0IgUCcaE+Ok3NvrfZg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:cf16861f356fd766361ba4d85d5462b6320e0e59f05cb55c762d8f5dff83e234'
 
 [[package]]
 ID = 'npm:@babel/traverse@8.0.4'
@@ -288,6 +548,123 @@ Workspace = ''
 Hash = 'sha256:7f50ae061c238ebc6b592222c23b131ca1d5f8921ab1197dcbb2e004f2b94237'
 
 [[package]]
+ID = 'npm:@emnapi/core@1.10.0'
+Name = '@emnapi/core'
+Version = '1.10.0'
+Source = 'npm'
+Integrity = 'sha512-yq6OkJ4p82CAfPl0u9mQebQHKPJkY7WrIuk205cTYnYe+k2Z8YBh11FrbRG/H6ihirqcacOgl2BIO8oyMQLeXw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:6834612073231f703a67aae5fa0192cef09748d634ba3701abe478988c28a720'
+
+[[package]]
+ID = 'npm:@emnapi/core@1.11.2'
+Name = '@emnapi/core'
+Version = '1.11.2'
+Source = 'npm'
+Integrity = 'sha512-TC8MkTuZUtcTSiFeuC0ksCh9QIJ5+F21MvZ4Wn4ORfYaFJ/0dsiudv5tVkejgwZlwQ39jL9WWDe2lz8x0WglOA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:dc7a3042b7cadca904d0225ad4028194f9bbc589ae95c62d31a7178fc4cc9cc9'
+
+[[package]]
+ID = 'npm:@emnapi/core@2.0.0-alpha.4'
+Name = '@emnapi/core'
+Version = '2.0.0-alpha.4'
+Source = 'npm'
+Integrity = 'sha512-KjoUR6mNvjT+z5bKMy+a5QDI+kTNTiMZi6uPKzWuWjwZGNa0UPwIVduTfeBRdf6v8Ws5fmHDh7Usf15w/ANfkg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5d38c3a344864250e1d48a2bd2b06c40bec509b7c25ec2a5e63f61bfa5d231af'
+
+[[package]]
+ID = 'npm:@emnapi/runtime@1.10.0'
+Name = '@emnapi/runtime'
+Version = '1.10.0'
+Source = 'npm'
+Integrity = 'sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:8c2e94821047dea035114ec42d094f8eb32f6e1af754c0a59b6180f7ec0700e8'
+
+[[package]]
+ID = 'npm:@emnapi/runtime@1.11.2'
+Name = '@emnapi/runtime'
+Version = '1.11.2'
+Source = 'npm'
+Integrity = 'sha512-kyOl3X0DuTiT1h2ft8r2fYO8JYtU9a9Xis/zBSiGArNaagCOWx90N1k2wxp18czFDH+OgcWGb5ZP/XMt3dcyPA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c27dcee7f92a5d8c604d8cbf30dd536f342c8c3421696404c6a3862d3d703543'
+
+[[package]]
+ID = 'npm:@emnapi/runtime@2.0.0-alpha.4'
+Name = '@emnapi/runtime'
+Version = '2.0.0-alpha.4'
+Source = 'npm'
+Integrity = 'sha512-Wy1TQ99obRP3Ah7cf/OOtK1zD9t3pYTWz+G/SpAwTFMhG5hoMdlvfzBpYoHUigS/izu3q+VhYMKhJd7Ii/trpg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:588bf184c50b75ef9c28e8306bd7f316bb83088f8a7e82aeea50623038dcb881'
+
+[[package]]
+ID = 'npm:@emnapi/wasi-threads@1.2.1'
+Name = '@emnapi/wasi-threads'
+Version = '1.2.1'
+Source = 'npm'
+Integrity = 'sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:30e4e3be96d12edba357579ec9924b1e59333db18a18f49efdb63e531cea8bb9'
+
+[[package]]
+ID = 'npm:@emnapi/wasi-threads@1.2.2'
+Name = '@emnapi/wasi-threads'
+Version = '1.2.2'
+Source = 'npm'
+Integrity = 'sha512-c95qOXkHdydNKhscBTebqEC1CVAZpyqOfVfBzQ1qgzyl3gfeldUjIggDbIZgDKsHLgnsM+igH7TJ/eAasaVuMA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:bc2f73bba7ec3f0bf52da313ed1e32b73e0ba36a300c9226cdc1d21383abcba6'
+
+[[package]]
+ID = 'npm:@emnapi/wasi-threads@2.0.1'
+Name = '@emnapi/wasi-threads'
+Version = '2.0.1'
+Source = 'npm'
+Integrity = 'sha512-9DsSk+o5NBX0CCJT8s0EROGSGxjR/tKu6aBTaVyq+SjAEQH4XcdcRxPBRzsBLizTTJ49MJjF+jgu3qnO9GLQcQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:48d23d1be87426ae77e9e505b2a41d2420c974b0ec93588edada5bd24ce3d41f'
+
+[[package]]
 ID = 'npm:@istanbuljs/schema@0.1.6'
 Name = '@istanbuljs/schema'
 Version = '0.1.6'
@@ -312,6 +689,24 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:bc16f658c1f6d63e0c8738ab881d03f49f1955d8f853cdcb8f7d315cf62f0082'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'npm run-s -n build test'
+
+[[package]]
+ID = 'npm:@jridgewell/remapping@2.3.5'
+Name = '@jridgewell/remapping'
+Version = '2.3.5'
+Source = 'npm'
+Integrity = 'sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:70b16782a39ad16672e47c33473559a25bff9640214df91cb9dd153005d71a02'
 
 [[package.capability]]
 kind = 'lifecycleScript'
@@ -404,6 +799,1046 @@ script = 'prepublishOnly'
 command = 'npm run check-version'
 
 [[package]]
+ID = 'npm:@napi-rs/lzma-linux-x64-gnu@1.5.1'
+Name = '@napi-rs/lzma-linux-x64-gnu'
+Version = '1.5.1'
+Source = 'npm'
+Integrity = 'sha512-oTXEIha4SsuXdTA4Iyskj0kpdx2yVXdhd75c2v3xGrHFfVMsbhTPZU/nMPL4sWKo4pBHm3aucLaqGlF696dTyQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e69ca2a96510be330953f5b04b1d74617e7ce5d4487db4876c4b02b8364ef7e7'
+
+[[package]]
+ID = 'npm:@napi-rs/wasm-runtime@1.2.3'
+Name = '@napi-rs/wasm-runtime'
+Version = '1.2.3'
+Source = 'npm'
+Integrity = 'sha512-UMduMbqO5s5zF2NkNacMT/yK5Y5QiKvWr2+50bzIIxFDwVJ2h49b+oyjaCGPhJxd2/gC2x39EHv/gHVuu36x2Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:434e1f4532cef2e9505ad597735cdad0eab0b3cfe3b6708f9dfb399f737346b2'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-android-arm-eabi@0.147.0'
+Name = '@oxc-minify/binding-android-arm-eabi'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-wekaT1itrXBYyOFa0qlNOI6k02DbSQ8S7MSZQesAmX/SbakZ460A5ZikmsqTiEBuU9zcHnP7ifRYEAraremHxA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:8dcaaf14a767557979e88f2520c6398ce36e9de7f2e102a1923838e99c7cdad0'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-android-arm64@0.147.0'
+Name = '@oxc-minify/binding-android-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-Z7hXk5RicUsCJctbC4374yEUTR9iCHdSFaxMo+614x29zZtuf8Iwi9N4NS388otZJL7jz+X8Q++EpnKxxHgirg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:1a6715950689100463d4274a1124e2ad46dfb4ceb88cc54193509c2ad1bdbdbc'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-darwin-arm64@0.147.0'
+Name = '@oxc-minify/binding-darwin-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-IjJJ779WH9b70KPSb0nHJW9oNSISO0bwEdNRK91Kz5c8iJLolikDGY99dhCsj407yikrwGY05/wgGydtgWy1aA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:deeed89fc83619a119b4f4d994e4af13220b90fd4a9a919283e44b483b432135'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-darwin-x64@0.147.0'
+Name = '@oxc-minify/binding-darwin-x64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-apgvVk8+leA/xFPgPNTR+IHB02eC6Gy/ifU0lENn/D1757yJ5jSRV1yPANgjCPn8XA9hgJ1grWjbE0PRRmiCfw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:4032ca11ea72cc3250250013d52f73b7ad735a35761fb5234e0792ab758d0a1e'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-freebsd-x64@0.147.0'
+Name = '@oxc-minify/binding-freebsd-x64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-5jgS8Ffc/TnGl0k9DCpZWhmxkMOtgnpoxVVxt8b6Svx7+h3dh7Suwn28eOJQWXXu93QxbKyti4d66W7w28MF1Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:3fc9149f4395d8f56deb4d9296d4a1930f57edc0b552efbff32f165ccb72f73c'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-arm-gnueabihf@0.147.0'
+Name = '@oxc-minify/binding-linux-arm-gnueabihf'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-FmoZJZS2E1lXNTKT15i2zh+egEZSZRuzPMh0zoQwqftJfWrmxl5uvyME4NOQ0/ltZarAyay2CxCp9OFKtGt2TQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:6ca972909789b93c4cb3c6477bc774d1748eab124105f55fee6537cd4570f7ea'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-arm-musleabihf@0.147.0'
+Name = '@oxc-minify/binding-linux-arm-musleabihf'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-fRAld2hTEiGTwk2/nPQuyDlIjxb49vXyULT84XgPIwFyslASdGuuPyM9oN/1ocPDcjffesix6BoylDQubF6vOg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0c36b18c064867bb84bf79e782ab03f97e5d6899a6a667aed8dc01618cd09b3a'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-arm64-gnu@0.147.0'
+Name = '@oxc-minify/binding-linux-arm64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-tHYuR51jVsbJtaUf0m+r/xJHiARJMMhz6vyROzHFnW+Rmt80F125/SBQr2jjIf7gtRT3aLDoeYm2WiRQuQ0q/Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c0e1b75c82d382d954372bb852e2ae13a8792066346918885e606634c781bfae'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-arm64-musl@0.147.0'
+Name = '@oxc-minify/binding-linux-arm64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-zfgi4UCae+vQjLJ85BwTD+nAph9h6BsUhaT3i1LfvZowTDDtc1FSofdb//9tzqkVYrHNDxUXSfXTgyWxlByL5Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:22b5263a20728de13de681bf25356cb19887225ec5478029fc914b4ca201afee'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-ppc64-gnu@0.147.0'
+Name = '@oxc-minify/binding-linux-ppc64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-bQVdQwNc4QVFALBCz/WvkxWdSYBZd3ctTFitN2wL9MOZdN2AA1YKi8KOrTBXJ585FAcit4y9NRsdPK8Cf55mmw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:60b2d0da30d632c4b51e75f4d619df1569037a4fb2fa33efcd945c20431de3f9'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-riscv64-gnu@0.147.0'
+Name = '@oxc-minify/binding-linux-riscv64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-bu8JZctdiiUKx+gVzrXxjIsJWnZGhq7xxhyg4LWP5F/bLLH4ksZmizaesYkO2yo898NGaQLI333Nxy/tC4UVtw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:3e02bdc850903956cd6de28199c8e4cde79b3f08ef4111dc306f104849bfbdae'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-riscv64-musl@0.147.0'
+Name = '@oxc-minify/binding-linux-riscv64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-vgtdI7OP+FEF50OpaUHGi9sVjlE10YQakPuegcc0l3V6QdVrvop2C/YlD8DQsMaZlmfSOFFeg8LP4isSEslF1A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:db550b82b3eb155a8572efe1d87512a1a6264238705079b84ee611aea8cbd018'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-s390x-gnu@0.147.0'
+Name = '@oxc-minify/binding-linux-s390x-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-MyK4UZ8/VstEV70SJ/mrfFw60yC/k65q6VahYQ9x6MX7qhmay0C2XogdgwdrMkfPnrgIlUOufv1evx10cIo3Lw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:1b4c527c010ca2263b61b2411db1aa0f8125d1a8e4b5909030f125d684b1fbd3'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-x64-gnu@0.147.0'
+Name = '@oxc-minify/binding-linux-x64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-D0/PlgcPDz7lr/tGmuvTBieUtzojY1enMZ2Sd3e2A0QxCEA5mK4Hj7DopvlC5Rw9WkSRxyxVNPIURSpu0mnkfQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:8490b3040d86f400636731af1847fb8ed839768746e81421ab90eb9140bd0849'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-linux-x64-musl@0.147.0'
+Name = '@oxc-minify/binding-linux-x64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-kFQMVRdyWZXqJwNLErBSVxgtdCMgoywTVraQly+CvB7ZN/o/8Rwc2aZJAmsxkXjCQsLvtIOAFAzmp7f8S3iRdA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:095400c000e28d36a7c84e2abfd8b5c2e820968e82a554180bdfd7835217eca6'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-openharmony-arm64@0.147.0'
+Name = '@oxc-minify/binding-openharmony-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-oCIcqzmrxWSiUftUgwPNbNhOeexc+X7Y8Otp2hBwC69lzbJOghPYECAaURjqZ4IwX5zMnWZpeOYgEt74Kj2ahA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:6c85cb0a8e7d278701c0825e6f70fc1b87f3ce5f9be7df46b9408ef53e02bfcd'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-win32-arm64-msvc@0.147.0'
+Name = '@oxc-minify/binding-win32-arm64-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-oXjEcWwDWu4TvtWbLiGItzdpoensalNUfUM7eHUgO8AmSKO2oHP1mdyD0kh8MXT+nOizWcK4jjYJnCQgMGnbPA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d6118f1b020222af3b037b0183123c7f1d4c9686427348ce38c97fe8cd93221b'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-win32-ia32-msvc@0.147.0'
+Name = '@oxc-minify/binding-win32-ia32-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-IbN/lD5ebXmHRyiyf4c4fAsyg0f3DV0Q2PC6mZzWWdG03ljZvh23H4XjaXmi3XSsuUPOGvZuiP4SmZJy71ommw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9c6567bb816970f83dee0afe2d0f3895613dea9b1fd451e767a673a87a608440'
+
+[[package]]
+ID = 'npm:@oxc-minify/binding-win32-x64-msvc@0.147.0'
+Name = '@oxc-minify/binding-win32-x64-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-YwdA1d7aH2zszl7lL2zq5mwOd6zthVECChbuum9TOtvFLm8antgEWEAAXiyxbuXEPTOgl7dkr1qdYpmg/ZKjPg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:439384e6c93adf23cce136a0ff73f00d6ffb5253e6e01e19177dfb8e1ca8a4fa'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-android-arm-eabi@0.147.0'
+Name = '@oxc-parser/binding-android-arm-eabi'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-fOtoGvIoirkvxQVw9J1WJPxz571XPgLsPf9uhRD+PJteUnvrJHMDmK9pw2yZEGGyismtRoEsp+JcXUdF/JDMDw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:1c6a71495ef42af6bae00d5bf1c90d8971234663dfde8c11977ccf975c8c6f69'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-android-arm64@0.147.0'
+Name = '@oxc-parser/binding-android-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-emjQHOYJaomo4ykaXQ1EItunr/I94Nk01oqBmU4dSkKSTupIDx6OysVDf2e8Eytm77rb+4ZxzgElyWP7rcEX7A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:2e69285cae0894eb58650f457fa272f0b04d86e4188c881010b5e8ec61cd230b'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-darwin-arm64@0.147.0'
+Name = '@oxc-parser/binding-darwin-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-kXvBPJL7RmDPJ2mze/vXPPVQimCDtFr9OFLjf7dyhV5Dx64cgcXh9KKrA1sMWvCObvJll9CZZUO0FBlFwD0l6A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:63117c34931c1b123482cb7e076da125ef83608aaef39237b613e8fd01993d63'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-darwin-x64@0.147.0'
+Name = '@oxc-parser/binding-darwin-x64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-mgFF8pLU6R64LbT27lSrtVRspVC/3IcZ0qyIikzmi78Y3Ik2OPnlAHHI0UEBRcC3qmNgtjaef7zkFt7/uPxIcw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9b802d7cfef5211808e34ad6e1615d57449b7e17e78c9db16d178e52867f17a5'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-freebsd-x64@0.147.0'
+Name = '@oxc-parser/binding-freebsd-x64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-v38aiF11qufOTBcCAKL4skgQf0zJ4NEvRlivq7B5kHrlyvjCLjvNrMtNWDTz1SDUL6/xVsJRmLDxv2e+Cp4oWw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:713bfb34313819e40933608083e712b2050b77d0a892579bbc63bec7e837e265'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-arm-gnueabihf@0.147.0'
+Name = '@oxc-parser/binding-linux-arm-gnueabihf'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-AeIiBbwUaP0H1+4/qGW9l5qHecS/+XA5iMuieVcGb1T+tyc2dVGspFW13BWk/XrLsiGP/CiDJTJqAPLLCzZHkw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e2dbb01714b1250aa2378306150674fc3a0476bbb251dfe65b077065533b16de'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-arm-musleabihf@0.147.0'
+Name = '@oxc-parser/binding-linux-arm-musleabihf'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-/41MKPW4RgPY4DJco0NCF0RYX3IMZaVlRNMNzvhaxRavc7tN3Txm+qllZbh0aMRs0VHdgUlbI8TcAOiTai4TKg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:2b906621ee54b3afcbf55ebcdca3090dff690ad2face49c80423f0b8446f4231'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-arm64-gnu@0.147.0'
+Name = '@oxc-parser/binding-linux-arm64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-bmpw/RPhVXgZbtb3xBDuwW5s8+LvZYdqcDSX/sP2ltL77aTio3DP/B5ZTwwgoJ6Mr9vJs4RrmgEKW9XkLNUU1g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:86e35ff1b8bea80d65dd178d145b9fc3f9ff003c6cd8e81b65c23f79ffc074d2'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-arm64-musl@0.147.0'
+Name = '@oxc-parser/binding-linux-arm64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-gd7VX/FDVOw6mjQcu45iIcp4QkgybgJwh3a0OFG2NxmPCj628mQWD96QGu1kK8+mZF9qK4b/gIEyC63vQoB7+Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:42fc08fc2f8bba2485d83da14bc273eb31b870c638b98f5e3f37b59f51dbb030'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-ppc64-gnu@0.147.0'
+Name = '@oxc-parser/binding-linux-ppc64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-HnAzcfki7dSUNHf510Q2NmbJlz8Ys7rn8l9l588Pkx0tYe1BHLZnmELIgqizJ4WPhHGSwN8Ce+B/menVxS3odA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:fa496f0ed9bd25a92561f615c09900dc34771db87dcf05037d2187163ce3ea75'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-riscv64-gnu@0.147.0'
+Name = '@oxc-parser/binding-linux-riscv64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-qlkOL6wT44U+fT5s/+sR6Shx0OdwvQF83JyIPZUxG/ovqZF5/7atOtjH+JPZ5/7ATQLbFBBSmghcy/+2NVB/ew=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7c43c31b12c6bfa59494597867ef5b771b7c2e8f9fa7eb59b5725215032f0696'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-riscv64-musl@0.147.0'
+Name = '@oxc-parser/binding-linux-riscv64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-DlefD7L7sMXs/3hIBH23Egk0phj8kG0SA81dVGOQ3S1ekjOlmTLH2E+F2Thwfh1slKx6aH+lNc5fQYAw0GU7/g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a692c534b9cfddf6e14128ef589834962cd1d13451723f809b8764bfa65ab2bd'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-s390x-gnu@0.147.0'
+Name = '@oxc-parser/binding-linux-s390x-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-Xqpagk/031IvZ4svrk2FF01YEqM/iN3MJV3SVZadKg/CsGlDCGoREqKHXYnoV5+8SfGe/m6RM1szXFLusTu/Uw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:4d9894564bca01ea00349a23086a5cf1e6d162a90af03c5e294dd13274b1e26f'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-x64-gnu@0.147.0'
+Name = '@oxc-parser/binding-linux-x64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-QioQOeUbI4ATUr0S2z88uA3Cds2R3Mm5Ge7U8XNYtlTb2GJF3rWlcj70z0AJhhOlbdm0YgVjqPBldUNbFylDIg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:bd3519b334d8b46e98d02c168370171dc58bbbd3c9c9ffe643bdd5907a5d192e'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-linux-x64-musl@0.147.0'
+Name = '@oxc-parser/binding-linux-x64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-NXy1tv/OdC+pPTwf9RiCZWPK53V/Xq/2cjSnjOSyKopajdaDqMIkgtDY+jXZemp2e8px5FeWfY2L2LwhKZQovg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:abe01e067fde52e9698c8693348dd5a116d0c4e142ee73080ebd702250ee0a72'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-openharmony-arm64@0.147.0'
+Name = '@oxc-parser/binding-openharmony-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-GpGWZ6oKz4bjCWW9Mz5pCaGPyk2Aaze6zEoaslIQqpSLtpx5pXj/ap5gUNb5Jn2LIbqWyjkGLX9yv3NMuNcBVQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:4610470fb6542e2629ce705ad88792e131aec0be2bb9a8ea054f48a0ff92685d'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-win32-arm64-msvc@0.147.0'
+Name = '@oxc-parser/binding-win32-arm64-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-a8mlt7CC8z7LUdCfaxhff4kCd+vSjE+NEFL0cxA8ukfuSnvAto/pWTjytW4BuVLnQGcCVdHJwcRKOfs++H+tjw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c1774c2f2a85b8570a375b57f54848b01e232cb0b0ec6a6a86c012a7fdfdc9e8'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-win32-ia32-msvc@0.147.0'
+Name = '@oxc-parser/binding-win32-ia32-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-M5ViVDBcFLnl2632AuuWuP35zEL5oikK1jTx8r3+902VEDeSNHxFZAB6RZyfZ7MU6Oi5QTOG8MmMkIeHsudSaw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5f15a53c9e2b0c4ba0ace8863f6e7dd5010d5816eec9dbb9662b9d452eff5472'
+
+[[package]]
+ID = 'npm:@oxc-parser/binding-win32-x64-msvc@0.147.0'
+Name = '@oxc-parser/binding-win32-x64-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-DUaE13OwnUSlHpLZNcC/nuT10ivlWqc5EZgsfgXuAmWYw0r3nDxGeLD1zlGwYwIgVk1/ZMAxoXpV+05stvbHaA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9b328a685d3b1d9af2b776cbb6c6291a1820505225cd3a0f46f4e588bd0c604e'
+
+[[package]]
+ID = 'npm:@oxc-project/types@0.128.0'
+Name = '@oxc-project/types'
+Version = '0.128.0'
+Source = 'npm'
+Integrity = 'sha512-huv1Y/LzBJkBVHt3OlC7u0zHBW9qXf1FdD7sGmc1rXc2P1mTwHssYv7jyGx5KAACSCH+9B3Bhn6Z9luHRvf7pQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e554f1eb47b71e75735c6f11ec9a89c3249f7f2a3f1a38db7168676b86a9ecd5'
+
+[[package]]
+ID = 'npm:@oxc-project/types@0.147.0'
+Name = '@oxc-project/types'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-IJ3s6ltHLp45S0bh7phkX+gJO7A1Wuz2EaqpAhb8WjqDwbzMiWKHhyyT42tskaWjEYXtHtVCPpnBJVT9+dcRLg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0fff413ee57f92766c75baf86c6a8fa1fc0ae56e528533586d12873a27da5e5f'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-android-arm-eabi@11.24.2'
+Name = '@oxc-resolver/binding-android-arm-eabi'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-y09e0L0SRI2OA2tUIrjBgoV3eH5hvUKXNkJqXmNo5V2WxIjyC7I7aJfRLMEVpA8yi95f90gFDvO0VMgrDw+vwA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:61fa56ae2a27aa55bf9f92ad100cd08721d506d11315c326a5c007144b980bb6'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-android-arm64@11.24.2'
+Name = '@oxc-resolver/binding-android-arm64'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-cl4icWaZFnLdg8m6qtnh5rBMuGbxc/ptStFHLeCNwr+2cZjkjNwQu/jYRS0CHlnPecOJMpuS5M6/BH+0J/YkEg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:aa2e0559bd3f5e9505594471ba626b2a0fdbc343b7bfccf5cd524433b50e9011'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-darwin-arm64@11.24.2'
+Name = '@oxc-resolver/binding-darwin-arm64'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-At29QEMF6HajbQvgY8K6OXnHD1x9rad74xBEfmCB6ZqCGsdq75aK7tOYcTbOanMy8qdIBrfL3SMr3p/lfSlb9w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:dc989a8995e1a684c38058d5b10bd395c9ef20c5da63b41798bfe0548f690f83'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-darwin-x64@11.24.2'
+Name = '@oxc-resolver/binding-darwin-x64'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-A5Kqr1EUj4oIL5CF4WRssq/o5P0Y11cwoFouMRmQ7YnC/A8V93nv1nb7aSU8HwcgmXropjLNkVTl4MN87cu28Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c158a6b67bf927b1cf1a5cad729b9eccae6370da68b1ed35ee7d5f6e650e6641'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-freebsd-x64@11.24.2'
+Name = '@oxc-resolver/binding-freebsd-x64'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-R5xkRBRRz7ceH/P5Jrc6G7FmdUdgpLYyESFAUDVTNQ9K0sGPxcp4ljiwEwEqsvNcQ4sYbMRrWcHHBCu7ksAJVw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:32320342fffb95b2e514d00e15a04ea3a839678b2203caed3c986a9361b63536'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-arm-gnueabihf@11.24.2'
+Name = '@oxc-resolver/binding-linux-arm-gnueabihf'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-k/RuYL4L/R58IBn3wT5ma3Wh4k62bp1eYCFRWCmMsasUOqL+H6sW0VGFadEzKWXFFlz+2uIMoeMk9ySSZJHgbg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:288ee5f5b8a5aed84f55517ef5c6bf9925da005fde65a345a2da6690c3ed81cc'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-arm-musleabihf@11.24.2'
+Name = '@oxc-resolver/binding-linux-arm-musleabihf'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-bnHAak3ujYfH5pKk4NieFNbvYvernfoQDgwLddbZ3OtMYrem87/qjlA+u+aKG0oZcqSLGCful/6/CEA+aeAgaA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:fc854ec5194b664860db65a122c52b7f8d18b2eb2566303237e2067b6dfe1930'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-arm64-gnu@11.24.2'
+Name = '@oxc-resolver/binding-linux-arm64-gnu'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-vDT3KHgzYp47gmtNOqL2VNhCyl5Zv643eyxm//A68J8DeUGXrvD1pZFiaT4jSfe+RInfnn1R2yVHye4enx6RnA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c47ce939aefff9e9205aba30c8661634d4465051bb322cf87553a9607f161274'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-arm64-musl@11.24.2'
+Name = '@oxc-resolver/binding-linux-arm64-musl'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-+kMlQvbzfyEYtu5FcjE4p+ttBLpKW4d/AsAsuE69BxV6V4twZJeIQZFfD8gh/wqglY0MkPSezWXQH0jBV13MUw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9050d0731a4f18737750d6cc637c0e9fe84ea5acea8a09d6bba7a7a3109147c1'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-ppc64-gnu@11.24.2'
+Name = '@oxc-resolver/binding-linux-ppc64-gnu'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-shjfMhmZ3gq9fv/w7bi3PnZlgOPG+2QAOFf0BJF0EgBSIGZ6PMLN2zbGEblTUYB/NKVDRyYhE2ff3dJ1QqNPkA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0715c34b148719978fd286487b77f86235d00010ae1d7de8e4cc9ae79e967ec6'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-riscv64-gnu@11.24.2'
+Name = '@oxc-resolver/binding-linux-riscv64-gnu'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-zGelwFR5oRo+b69k8Lrzun86DyUHzfKN6cnjbR9l7Z7NIRznOE/2ZvPa1IUKqAL2PzAXOdwkfVqNvO1H2RlpAw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:96be2bc0712b583f56ed896c08c8c535461539574829238cb9896b633a4bde98'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-riscv64-musl@11.24.2'
+Name = '@oxc-resolver/binding-linux-riscv64-musl'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-qxZ1SWCXJY0eyhAlP6Lmo9F2Nrtx7EkYj9oCgL8apDPCwXwCEDA2U697bbT81JIc2IrVjxO4KX6WU2N+oN9Z4w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0ed16c78c4bd309f79e2fb85bcdd97ca2b8c51230c295c26216790ea820fddbc'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-s390x-gnu@11.24.2'
+Name = '@oxc-resolver/binding-linux-s390x-gnu'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-sGCecF3cx2DFlH4t/z7ApnOnXqN48p5p5mlHDEnHTAukQa2P+qMVE4CwyWE9W+q/m3QJ7kKfGrIjax31f44oFQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7db394095856f860241b6f7e0eedda3b35bc157b2c8fd6d4109a6c91145e1626'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-x64-gnu@11.24.2'
+Name = '@oxc-resolver/binding-linux-x64-gnu'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-k/VlMMcSzMlahb3/fENM4rTlsJ0s3fFROA0KXPBmKggqmTSaE383sl8F3KCOXPLmVsYfW6hCitMhXCEtNeZxxg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7acd50695b02c66c7afd90651c34039b49ae51b44dc0393bc76936c434df5429'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-linux-x64-musl@11.24.2'
+Name = '@oxc-resolver/binding-linux-x64-musl'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-8hbnZyNi97b/8wapYaIF9+t9GmZKBW2vunaOc3h9HGJptH7b7XpvZqOTBSm/MpTjr7H497BlgOaSfLUdhmy2bw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:dd5a8372f17f48c6895fb68d3b92ee88707f2ae9a7fb34e70bade2abd0763ae9'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-openharmony-arm64@11.24.2'
+Name = '@oxc-resolver/binding-openharmony-arm64'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-MvyGik3a6pVgZ0t/kWlbmFxFLmXQJwgLsY2eYFHLpy0wGwRbfzeIGgDwQ3kXqE30z+kSXennRkCrT7TUvkptNg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:39af80356ff86ad55710a03a7456f2e06dafb45865f3d8f0651813edf720b501'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-wasm32-wasi@11.24.2'
+Name = '@oxc-resolver/binding-wasm32-wasi'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-vHcssMPwO08RTvj/c0iOBz90attxyG3wQJ0dTcyEQK43LRpcdLWZlV5feBhv6Isn6ahbQIzHbCgfa81+RiML0Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:535e006944fb77e254d6b03522783f3e36d72e315344f763b60b2e31f3331d9b'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-win32-arm64-msvc@11.24.2'
+Name = '@oxc-resolver/binding-win32-arm64-msvc'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-uokJqro2iBqkFvJdKQLP7d8/BUmFwESQFVmIJUQKj1Xn1a/LysJoe1vmeECLF5b3jsV8CAL5sEMJXX6SdK9Nhg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0ec55a333c3fa8d95da8b53c41af8f2d86527a49d859223fb1e1bce7ab458a3d'
+
+[[package]]
+ID = 'npm:@oxc-resolver/binding-win32-x64-msvc@11.24.2'
+Name = '@oxc-resolver/binding-win32-x64-msvc'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-UqGPmo56KDfLlfXFAFIrNflHT8tFxWGEivWg3Zeyp4Uy2NlKN1FGPr6/BxcLGG3+kZ6Wp14g5Uj+n71boqZfiw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e83b0bde600538706db0dab1f7de6c668074138fb331d1e9261abb83253d9584'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-android-arm-eabi@0.147.0'
+Name = '@oxc-transform/binding-android-arm-eabi'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-nXKEO0K20Px6CmGl2PVqVKgkct56QRtGBtW36kEmUOpTofHZ7DdxoYrM9POLd5nIoier0gKqNQVmP1xn8KfGBA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b0807506b5a0315e5f7320b8518372b5425ab494599ebd2240cbe878555a52ad'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-android-arm64@0.147.0'
+Name = '@oxc-transform/binding-android-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-HVdPZeXzBs9BXKUdQaa1PvyN96nGAOk6xPbhkBuJRyLvj35ia+YGWlY8evWAEmHZLFAmd1tEjrsHrwL3ySxWww=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:3c3bf5808f62dac5cab4ccb4fc14780ccb1705a2443032932e7d1dd0c9d2f4fe'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-darwin-arm64@0.147.0'
+Name = '@oxc-transform/binding-darwin-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-1S52DkH9HHTpMfQPKuTMTc9ge35N69OGTg2Ex9EEqvMmK7YayAxQWhOeqKBSRbGVkSumqcpx0K/t5aejv/05zA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:3e356a7ec297d7507c01f2111aae2644e2b00d679c9ea6fe8750eaddbb229e28'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-darwin-x64@0.147.0'
+Name = '@oxc-transform/binding-darwin-x64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-j/Bi0u604qsn4pi/jCMoXXAVGL13vjF4UqFg65lIbwGZH+S1dtm8u9yCvtwvxTgyucfkVCviq3OBo3EojHEKPw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:42a3a8d69c27efd42bdd833dfa9986bc786e82fb7eb56d9271626a83ae5ac76b'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-freebsd-x64@0.147.0'
+Name = '@oxc-transform/binding-freebsd-x64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-oFWm18B23ZUEZ705VGCQlb0naWNyZXQXRYa3RByiDW5AgAgY089DUM2QGNjWU/2FHYe93SZGk0LRddr+2/yw8w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:928521891953edad60638b7c1feecd51b9cdf4713bd1d51743ca633d441ddacd'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-arm-gnueabihf@0.147.0'
+Name = '@oxc-transform/binding-linux-arm-gnueabihf'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-G0tPdWMEFQLa2xqWu7rUmeET9hpr7c/MDi0fE2W6fOGmGhn4/RJMF0ywR01fHGYyq7xmBzpcKCm3xoSlQXiVOA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d80166e191d70ec75fe40f4d0834c71ba7456950e68e7cc06f8b6607c2154e0f'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-arm-musleabihf@0.147.0'
+Name = '@oxc-transform/binding-linux-arm-musleabihf'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-JvVu2FqGO+fogVSdVMggIR7Q5zQLNrdVTjUoWM7GOH79GkmiDTdWSrPVHNnOfmbAdRlRsRcBKA2NOYbato3qxg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7e97fe46b287db4ea8997e0a9065623268467ef577812debea505699b7360d23'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-arm64-gnu@0.147.0'
+Name = '@oxc-transform/binding-linux-arm64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-iBJSWOdb9NYYq0XH1afo+7kD+Mh3vEQvP4u/r1hWqePTZY1u5eG03jWi28l7phpPyRQU7+4FXEDn7G+g9k58Xw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:24ec409ad53ca8b1a6d5b208b4f8aa1bedd2817f03f2622acda71fa8c4c67355'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-arm64-musl@0.147.0'
+Name = '@oxc-transform/binding-linux-arm64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-1SDvUsgZETvXXYdADr1bLxtjonh5uBSZLbCYYeJKvVEWbDrnpfvnwDzfossV2JVn6ZLuEov16ZzLiuaByK8fAA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:705c88b1010742903db7438718b031bda08a8bf0d80dc535c4857d114ac97e79'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-ppc64-gnu@0.147.0'
+Name = '@oxc-transform/binding-linux-ppc64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-VnLNBMZvqIwh4p1f4jHcTdcvB9eiYnyLe43HWxO08G6sAE32eRzeiP3Kca3eTDfJQyKwYMk5JywlGstmKB5uNQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:47b255611d17ecece9b14a16eb14aa6aeeb2a640c0a1ae858a80aa71be32c752'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-riscv64-gnu@0.147.0'
+Name = '@oxc-transform/binding-linux-riscv64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-HHd5ENuYymXe0LGgCzcKQ85D+p8fIhH+R9oSbh5K/45dt9uPFv+yjp3jwM6V5+T62VVjhAeepyYGo6qNpiAUdw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9919e8e123c620b8104cd39015ec61dc0db986922af5ee9ef389545f9ecd3811'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-riscv64-musl@0.147.0'
+Name = '@oxc-transform/binding-linux-riscv64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-OVgHgc6fjN5MaM+ruU0pB3+OpRBd5UlKycmWNpPuJgOkN8RPqywDcZ5rrVWw8ydj1LZPVdYsZqDtzeBAsaFH9A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:6e5ba49f5d6a867efb34a21b0cc2fb3aed90f0b1d60b2bf52869076490ab74b4'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-s390x-gnu@0.147.0'
+Name = '@oxc-transform/binding-linux-s390x-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-qDFdcfZjlVfdKWECGch+RzzY/LzueSXoKNfM+MA4DW0gYyUlKtXMwkDtJTnf1AJ9WYBZ1n3AoIoBMZ8PvVDYeQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:56504d1d19ae5b897e7db8cf3051729678aa7aeeeb1b313b4017b357e22a4072'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-x64-gnu@0.147.0'
+Name = '@oxc-transform/binding-linux-x64-gnu'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-ZAmvqUs+IrXQkxMGiDu0KAblhqQAa/utszB5HhRPbwcTcyegfthllxsR7EW8i5ZUXp+kEcv5KW2OXVJTbmDKmA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:663cd2af18c49c393da6fc106496141d8444984ec9cbe755b9335ad444f8f419'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-linux-x64-musl@0.147.0'
+Name = '@oxc-transform/binding-linux-x64-musl'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-mBvjsBtI3oVXLx+9LpsAB422lRJOPWqGJsXUFt5ThgVihnDsmHzWs1nRab8MaB2B7emJ0+O1sE8fvvLxfJxo4w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b1f07fcb999825e2d725aaf66f1b629ff6c09cce9ba9a0a3aab882c3ee77a0cb'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-openharmony-arm64@0.147.0'
+Name = '@oxc-transform/binding-openharmony-arm64'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-qy08slHzOZb5IVxa7RPkIeKJjzKO4VuINlLvrxt3+eiT9DobeHryN84HZ0Kdde5NLr2jZIC+fkmJksAuQ83TRA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d3a7d278f3107e03559bab4f90b332c513a2e87c256f894ba5d65b763b5d226f'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-win32-arm64-msvc@0.147.0'
+Name = '@oxc-transform/binding-win32-arm64-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-5cyVdptM9GIZavwrOHaQeJdrWWeEv3pS0nQcTIS1DM998TyZ0B4IZTB5Va3OHs2oh0QCcCDFYTYwMS8nlyfyCA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:835270c2e9a5d837540d57c190abfe0ec5be8bdc82d2e6bfc826c1e2352ddb82'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-win32-ia32-msvc@0.147.0'
+Name = '@oxc-transform/binding-win32-ia32-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-6Tf6tzMSrk+aQvcaC9CBFly7l1gEH5ErTAH9AxJfCb8VI3fwWLa1E96YpO8NKSqN1i5pbL9atQryHhwoJO5fxA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:80b2675c898c481269f706259811c084a1c62b12b89ee17cad9a085a7c9689ef'
+
+[[package]]
+ID = 'npm:@oxc-transform/binding-win32-x64-msvc@0.147.0'
+Name = '@oxc-transform/binding-win32-x64-msvc'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-rpaJY9I+0vOy0MA4HPzK4XqvG1ydec1yoXJIsOceYanCFX5vDmJtwOjpiFUieYSYM9KKrv8r2hCMgBrQ9sdhIg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:ff0fc4b53a7e4e3fee94503a86248358c769ea142cc89639f2d0842d0d18fa6f'
+
+[[package]]
 ID = 'npm:@polka/url@1.0.0-next.29'
 Name = '@polka/url'
 Version = '1.0.0-next.29'
@@ -415,6 +1850,591 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:7219da1e8f50cffc0f82f2ddfb44bb04cd5ef9feeca96e1e61c0c981a92ccdc2'
+
+[[package]]
+ID = 'npm:@rolldown/binding-android-arm64@1.0.0-rc.18'
+Name = '@rolldown/binding-android-arm64'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-lIDyUAfD7U3+BWKzdxMbJcsYHuqXqmGz40aeRqvuAm3y5TkJSYTBW2RDrn65DJFPQqVjUAUqq5uz8urzQ8aBdQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:28fae76e1e361fc48b21202c23cffeb6a30fff0e9f905739abd632e43faf8421'
+
+[[package]]
+ID = 'npm:@rolldown/binding-darwin-arm64@1.0.0-rc.18'
+Name = '@rolldown/binding-darwin-arm64'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-apJq2ktnGp27nSInMR5Vcj8kY6xJzDAvfdIFlpDcAK/w4cDO58qVoi1YQsES/SKiFNge/6e4CUzgjfHduYqWpQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:615fbc2d707291cb8f5dce6dc1c1f18beec343a2a4ae46620441b533839879ea'
+
+[[package]]
+ID = 'npm:@rolldown/binding-darwin-x64@1.0.0-rc.18'
+Name = '@rolldown/binding-darwin-x64'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-5Ofot8xbs+pxRHJqm9/9N/4sTQOvdrwEsmPE9pdLEEoAbdZtG6F2LMDfO1sp6ZAtXJuJV/21ew2srq3W8NXB5g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d09a3ee87eb84accbdf0b9ac13f1cbe07aa2f9818824f9bcfe2fb9e21dc9f5e0'
+
+[[package]]
+ID = 'npm:@rolldown/binding-freebsd-x64@1.0.0-rc.18'
+Name = '@rolldown/binding-freebsd-x64'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-7h8eeOTT1eyqJyx64BFCnWZpNm486hGWt2sqeLLgDxA0xI1oGZ9H7gK1S85uNGmBhkdPwa/6reTxfFFKvIsebw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:15e10f3f3318946b56544883a7cf7b65850189c05d9860981d569374b53b02db'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-arm-gnueabihf'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-eRcm/HVt9U/JFu5RKAEKwGQYtDCKWLiaH6wOnsSEp6NMBb/3Os8LgHZlNyzMpFVNmiiMFlfb2zEnebfzJrHFmg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:29cba515466ded52f0cdc9cd4924a93e29fbf800871897ee679459301c19d8b8'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-arm64-gnu@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-arm64-gnu'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-SOrT/cT4ukTmgnrEz/Hg3m7LBnuCLW9psDeMKrimRWY4I8DmnO7Lco8W2vtqPmMkbVu8iJ+g4GFLVLLOVjJ9DQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9982cdf4f5261e459a4ff0e5571f79b63df087c183ae2062b41dbc5fbb9dbc33'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-arm64-musl@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-arm64-musl'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-QWjdxN1HJCpBTAcZ5N5F7wju3gVPzRzSpmGzx7na0c/1qpN9CFil+xt+l9lV/1M6/gqHSNXCiqPfwhVJPeLnug=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:dbabc3582f8083b003e302774aa9e2c5684e87359867ab205d09379999e1d7b5'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-ppc64-gnu'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-ugCOyj7a4d9h3q9B+wXmf6g3a68UsjGh6dob5DHevHGMwDUbhsYNbSPxJsENcIttJZ9jv7qGM2UesLw5jqIhdg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9d2679b1f791e67f8343300b927c6e37c1d40a83a2b3015bb1ef22a242e2d212'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-s390x-gnu@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-s390x-gnu'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-kKWRhbsotpXkGbcd5dllUWg5gEXcDAa8u5YnP9AV5DYNbvJHGzzuwv7dpmhc8NqKMJldl0a+x76IHbspEpEmdA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5ace8f5729eaa52b3ff57c43ed537d0f7bcf4ccd438b4cbc979f7d804f081b43'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-x64-gnu@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-x64-gnu'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-uCo8ElcCIAMyYAZyuIZ81oFkhTSIllNvUCHCAlbhlN4ji3uC28h7IIdlXyIvGO7HsuqnV9p3rD/bpH7XhIyhRw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:412867612d06350bf648ea2e91270c6654b3034883a1e7abe700b645a345d227'
+
+[[package]]
+ID = 'npm:@rolldown/binding-linux-x64-musl@1.0.0-rc.18'
+Name = '@rolldown/binding-linux-x64-musl'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-XNOQZtuE6yUIvx4rwGemwh8kpL1xvU41FXy/s9K7T/3JVcqGzo3NfKM2HrbrGgfPYGFW42f07Wk++aOC6B9NWA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9982d58e91718d405203daafb31898627d3e972ccca4c8d22d122f7e40a87268'
+
+[[package]]
+ID = 'npm:@rolldown/binding-openharmony-arm64@1.0.0-rc.18'
+Name = '@rolldown/binding-openharmony-arm64'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-tSn/kzrfa7tNOXr7sEacDBN4YsIqTyLqh45IO0nHDwtpKIDNDJr+VFojt+4klSpChxB29JLyduSsE0MKEwa65A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:63373f8c63bbd96511cdb190047deeb14346b228491d82506ee2a3e065a1df5a'
+
+[[package]]
+ID = 'npm:@rolldown/binding-wasm32-wasi@1.0.0-rc.18'
+Name = '@rolldown/binding-wasm32-wasi'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-+J9YGmc+czgqlhYmwun3S3O0FIZhsH8ep2456xwjAdIOmuJxM7xz4P4PtrxU+Bz17a/5bqPA8o3HAAoX0teUdg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:54e3235b7db9479cd8f7080f7616ecbfd835810883edb75e682633ead8e3b44f'
+
+[[package]]
+ID = 'npm:@rolldown/binding-win32-arm64-msvc@1.0.0-rc.18'
+Name = '@rolldown/binding-win32-arm64-msvc'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-zsu47DgU0FQzSwi6sU9dZoEdUv7pc1AptSEz/Z8HBg54sV0Pbs3N0+CrIbTsgiu6EyoaNN9CHboqbLaz9lhOyQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7f7321527b7df9a4480c79a165e7f0d9d0945eb7c5f3112a57b3c4caeea16c71'
+
+[[package]]
+ID = 'npm:@rolldown/binding-win32-x64-msvc@1.0.0-rc.18'
+Name = '@rolldown/binding-win32-x64-msvc'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-7H+3yqGgmnlDTRRhw/xpYY9J1kf4GC681nVc4GqKhExZTDrVVrV2tsOR9kso0fvgBdcTCcQShx4SLLoHgaLwhg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d0ef96627c8a95347577d9b50ff1001701b26207fda0ab57deeaa847856ba1f0'
+
+[[package]]
+ID = 'npm:@rolldown/plugin-babel@0.2.3'
+Name = '@rolldown/plugin-babel'
+Version = '0.2.3'
+Source = 'npm'
+Integrity = 'sha512-+zEk16yGlz1F9STiRr6uG9hmIXb6nprjLczV/htGptYuLoCuxb+itZ03RKCEeOhBpDDd1NU7qF6x1VLMUp62bw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e7caa08dfcdafe3752beaf426723f6f7ab11bb6506a5943175cb8053d0f8365c'
+
+[[package]]
+ID = 'npm:@rolldown/pluginutils@1.0.0-rc.18'
+Name = '@rolldown/pluginutils'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-CUY5Mnhe64xQBGZEEXQ5WyZwsc1JU3vAZLIxtrsBt3LO6UOb+C8GunVKqe9sT8NeWb4lqSaoJtp2xo6GxT1MNw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:80eaf59d041e877e801da6ffc56b69fa5b873a66f329d88f0b38eeeff7f43b3d'
+
+[[package]]
+ID = 'npm:@rollup/plugin-commonjs@29.0.3'
+Name = '@rollup/plugin-commonjs'
+Version = '29.0.3'
+Source = 'npm'
+Integrity = 'sha512-ZaOxZceP7SOUW7Lqw5IRVweSQYWaeIPnXIGLiB690EBA3FGJTO40EEr2L5yZplJWsgTCogILRSpcAe7+U0Otdg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:46277b79d3fc450844485095a9e4984934ba36675ea2c40b76abb65332fd9993'
+
+[[package]]
+ID = 'npm:@rollup/plugin-node-resolve@16.0.3'
+Name = '@rollup/plugin-node-resolve'
+Version = '16.0.3'
+Source = 'npm'
+Integrity = 'sha512-lUYM3UBGuM93CnMPG1YocWu7X802BrNF3jW2zny5gQyLQgRFJhV1Sq0Zi74+dh/6NBx1DxFC4b4GXg9wUCG5Qg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7d25e2b297ecf73542673e8ce4ca150443c3caf40269406371b94d883e0a7ced'
+
+[[package]]
+ID = 'npm:@rollup/pluginutils@5.4.0'
+Name = '@rollup/pluginutils'
+Version = '5.4.0'
+Source = 'npm'
+Integrity = 'sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c4df1e6a0def471252dddb45a0975e7fb21faa492b8ba1e93b2c35c3ee11c6da'
+
+[[package]]
+ID = 'npm:@rollup/rollup-android-arm-eabi@4.63.1'
+Name = '@rollup/rollup-android-arm-eabi'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-UZ8sUxPTiHWYX9QNdJedb1kDZSpS1t/VPWBWGSgqHNi9w3Cu6IXvu2mzbhiTiPvtrqgTQJ+zqiAq2iPIPilpaQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:f6730f1a17898821dde053bd388c11be9c2f3a68bf6596825dd89993efd803a9'
+
+[[package]]
+ID = 'npm:@rollup/rollup-android-arm64@4.63.1'
+Name = '@rollup/rollup-android-arm64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-cQ4nFQABN5cDvDpbvJ7bMStCpnaVxynZrRMfUJYgxcIk9Sh54FIO1vtfkg0B69REjER77ioZ/ov+eAApx/KmLQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:10d153b0d95f0306f59bf9b9b5c39a43aca1aa0dd3fdb62274c65b6261d31a93'
+
+[[package]]
+ID = 'npm:@rollup/rollup-darwin-arm64@4.63.1'
+Name = '@rollup/rollup-darwin-arm64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-FQNqd1lRy/0QhDk3xeRIkSBiCpXCiDnZO3YLVdcDKN1UBiKToNftCzcXYNLshmPDUMlu2TdeS8tGcsU6f3YF1Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e77e9727cd510da5656401849661712bf2fb03e3ff78705c694ac291921e07b6'
+
+[[package]]
+ID = 'npm:@rollup/rollup-darwin-x64@4.63.1'
+Name = '@rollup/rollup-darwin-x64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-pvD16V939D3CloK0+qikpGaxiPrDUXTe7Y5cWOMkMSy7m1cawa8EGy/kXYi/G/cKAC4HDAbSnzCIk1WmsoOKXg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c23702606083f5782d443cd7bcb8b0b4ceaff3ae32536b445f4a3ba3e0189d59'
+
+[[package]]
+ID = 'npm:@rollup/rollup-freebsd-arm64@4.63.1'
+Name = '@rollup/rollup-freebsd-arm64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-pcFGeL2345VwdTnJhA6zLbew+YgWB0qBG2+dMtXjCicf6+rm6kO6cOoh5VnTe0ZMrMRgRyuHmCJxZWrIdzYuOw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:63dc6bfd5e0f6e9d8ca44163c44e6c3bf00f9aced86093a354e11e96962a80a3'
+
+[[package]]
+ID = 'npm:@rollup/rollup-freebsd-x64@4.63.1'
+Name = '@rollup/rollup-freebsd-x64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-mRJlqSRulVzcKq/LKA6ICSIc3K/l4fzlVn/gePn2nXIHy8seRi5z/eeRE0d/XMBxcMldiXtQTSpRj0tkkC3g8Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:7d34494d3f085f47f1201f42409b41e028075ca2cb6f99de165527ab78add3c0'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-arm-gnueabihf@4.63.1'
+Name = '@rollup/rollup-linux-arm-gnueabihf'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-YDUNvVM85TI3g/1OpnqKP1h4NeW/j64DfWMf+G3M809xNk1bJSnpFp4sh83NpmVE5DXnkh8ULor4LTVZKoYLHw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:2691e02beb5024b69361a740c6c5c99ef9930d546591491006cb09801e551b3a'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-arm-musleabihf@4.63.1'
+Name = '@rollup/rollup-linux-arm-musleabihf'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-7Mcn71p9ZuQFAj+h+dhQXy/yeLePRS2yKRnmW1DijA9thKO5qap0GNOIQK4yQ6iP3SU0Mrb/yWo8h8vgRba8lw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9796db1ee6ddd64b24ba5b39ebed4d89333d4ae88415077f9ba0e5df8637b5cc'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-arm64-gnu@4.63.1'
+Name = '@rollup/rollup-linux-arm64-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-4YiLQTX6U4CSl0L9cluep9A9W6UmTfqBDc2/CH6wlu54pl4E7Jn3cOD8oxzvBDEGk/JMKgJ47C8g+radF7mwvg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a777c17e4a24610d45cd67cefadfb1196e966212b7014cef58cf5684f3a0c7b5'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-arm64-musl@4.63.1'
+Name = '@rollup/rollup-linux-arm64-musl'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-2ra8F7w8OquwZN9z2/fKFnli69wa8PLwaVzRMIPGb13ByMJwC28Fbp8YcVGoUhlYMTt7j5j9bNgpysrN2UM+vw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9b50bee7736d02634651f30cbbe9788e01e6ae080c8037788a1b99401bc99bec'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-loong64-gnu@4.63.1'
+Name = '@rollup/rollup-linux-loong64-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-Sy20ncyhjmBP0Ml+UvQbimjlk6VFgjW5uNP+qqwHB00mTE8Bl2C1TuHTlRwK2YoXeZbee5lP2XevBWVkAQAtSQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:21ec19f564b2edc2774826781dc392d1480b702b142885eecf96f85cc610df06'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-loong64-musl@4.63.1'
+Name = '@rollup/rollup-linux-loong64-musl'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-noITLp8oNjYliPnGWmLyelIHwULGqbHloQHGw1rtxbWhTuWooRpnZarZQJ1y9EUC4szuCusCc+HEpUtxpIwYvA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:072d4c38757183c328867428939bc3519029bfc6fe2ad3bab6bdf1f290b8646a'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-ppc64-gnu@4.63.1'
+Name = '@rollup/rollup-linux-ppc64-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-hlxxXd+F1mWiAcaFR7Sv9ZQT6m6UfI8+Vy/kFJzztq2pDMU/0wZ9sish0iszNZvsQDo8Gc0i5yuFEOz5dDf6fA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:f787d6d9f3269b668f17a4194efe3001fec50b17447e09c942e0d2c47b26ccfa'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-ppc64-musl@4.63.1'
+Name = '@rollup/rollup-linux-ppc64-musl'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-EF7OpqQTQ/BvGqLzUi4rEHuagCV9MugAUXSHemwPW5vxZ75RR+jxO/2j95Ph2dalMpFHSVECjRoioHZgA9zOYA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:ff6585d77d9179d202e1b47e40f67c9534351e74d81a8d8c1b53c9bb7446cea9'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-riscv64-gnu@4.63.1'
+Name = '@rollup/rollup-linux-riscv64-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-wQO3JesW9PRkwlabQ27y7sPfVOOTLRG73I4F2UYHG5PXun3J9U3y+b7ezVKSYbsvSKGQ1k1cq8Qlun4C9kLt3w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:1f476a74a267a2047a360ed047fa63db6e98862d19ec4e73801280663a939b21'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-riscv64-musl@4.63.1'
+Name = '@rollup/rollup-linux-riscv64-musl'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-ouAGwhO6wHRXdnOVCOsB0tRFkA7nhNB2Nwax6oECXN0YiN8EYUTBAOudADOB1PI+yDL61TeNx/u7MVCzksNbkQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a7e4a65b51f672fd7b2007ca008c1915520a29f6c68087cd1d4b450fa4f1be1d'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-s390x-gnu@4.63.1'
+Name = '@rollup/rollup-linux-s390x-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-q2R38Sn+1J8RxhfJ+T54wSWmyKXWec+9jgDfqO2AtArEqHO5R2aeayp5H5OYLr5UYDVGsVaZPEFUooMhYCdz5A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:093422bf27774e58cd34a2796da2b2579db107d9cc1c84829ace2d7f3c30fe03'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-x64-gnu@4.63.1'
+Name = '@rollup/rollup-linux-x64-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-gfI5T24WLLuFfSKw7Go/zDXjAAV0fny0swTaDv+WjK7vqcw4cRhFfdsyKL1n+ukI+ooBxn3bVQnyrn06WpI50w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:283f7ac6dc628d2c8693cd78ad438c21a4230f8f39c37df85ddceb704fea28eb'
+
+[[package]]
+ID = 'npm:@rollup/rollup-linux-x64-musl@4.63.1'
+Name = '@rollup/rollup-linux-x64-musl'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-4h6XqthmB4Hspji84wvgk+ElodTsGj+dbZqHJHHtKxj4mYq0ANSEEPX9ys3moJueqsRjwpaJYH7874Itwnj2ow=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:22b35af63ff1b414c42836064eb74c06e5c18f82821399de00117fd1c076a2d2'
+
+[[package]]
+ID = 'npm:@rollup/rollup-openbsd-x64@4.63.1'
+Name = '@rollup/rollup-openbsd-x64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-dlfCOa87o1VAYegLQ9EKilx2JCeRofiyPGhTCmqnuXZ6bMPiycO1rq1+sKoulAp7pGLIsTIw+1x5R+zgh5LhhA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:76a0757f065ee179f76267c2eef25f3d3d39204af49b02ed7b907bc99bfc6a7b'
+
+[[package]]
+ID = 'npm:@rollup/rollup-openharmony-arm64@4.63.1'
+Name = '@rollup/rollup-openharmony-arm64'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-cjkLbOlfcm3QGhMM1J5zaZjsw1GggbN6rw9UTSSRrPrR1KkcXnN7Uq9rPw34xImQ9VOY9GN+6u2Zj80B9ptkcw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c3e890e02d191a67bae3746424fa04fca3bc27868706e853a7ee4d93d7b40fb3'
+
+[[package]]
+ID = 'npm:@rollup/rollup-win32-arm64-msvc@4.63.1'
+Name = '@rollup/rollup-win32-arm64-msvc'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-Li1KdUnWGE4N3e1F/B4RTB1ms+nG4WBgjByO46pkeBVX/2UBsY53xf5vK9WygVmnH3RwncIST7lkSdLSY6P9lg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a39eeb0af798c6d62112f1c3e64947b8ff17e106a0d494d7a3223adddab5215a'
+
+[[package]]
+ID = 'npm:@rollup/rollup-win32-ia32-msvc@4.63.1'
+Name = '@rollup/rollup-win32-ia32-msvc'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-t4ZYOSoLTgwhuFMrmTMLx/+i1DQVK7HYqMc6kY46EApwi8X0nIVphzdNoThU3xt6n+N5urG1/gxBdCaKDLavfg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a04c1a3e0a784b0165ee675f61d030ad6af3174a760de185cc1154938224943c'
+
+[[package]]
+ID = 'npm:@rollup/rollup-win32-x64-gnu@4.63.1'
+Name = '@rollup/rollup-win32-x64-gnu'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-RgroPfMmKlD1RzSDxvwgcPiy2HNQKoYV7OmwIXDsk73uKW5t6B/V8KIy27SMv/FNXFo/oSBtWc9J0X7t91ezZg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b1f34a880f78ac7d777dbb5f5dc505a6f9a87b67e1de4c6770382c618078cee6'
+
+[[package]]
+ID = 'npm:@rollup/rollup-win32-x64-msvc@4.63.1'
+Name = '@rollup/rollup-win32-x64-msvc'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-at8QVep6S3h5Y6gSbdGU06bRY5WJkf6WUduM9YtvYMbYhB1MOFfUgc6kehitQXzOtMSaT70q7f9ydPhpqu821w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e2d8ac0f4f9e51ad0b647332ddd3da836a54c27250600c121002e342419a228a'
 
 [[package]]
 ID = 'npm:@standard-schema/spec@1.1.0'
@@ -454,6 +2474,24 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:514f52e80ba5bf7146de1729e56ab1df6ed885f1e7f7d23a4223cd3bb33d30f0'
+
+[[package]]
+ID = 'npm:@tybys/wasm-util@0.10.3'
+Name = '@tybys/wasm-util'
+Version = '0.10.3'
+Source = 'npm'
+Integrity = 'sha512-F3fo1MYrRJYL3zER0OUOmkutjr1Vp23m7OsSgp7nq4SP6OqX6C/56XFIPAl5bt3zaBRjmW7SGz3u/6LwFpYcOg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:509f6b8f8fca49118dbb2a7fd7726e5b6fe4b5a22344c9ce91eefdd8dcd34761'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepare'
+command = 'npm run build'
 
 [[package]]
 ID = 'npm:@types/aria-query@5.0.4'
@@ -534,6 +2572,19 @@ Workspace = ''
 Hash = 'sha256:9fc72849a5074e88d4918a9860b920e02b489bdd8d60111739e153ae2681e6f8'
 
 [[package]]
+ID = 'npm:@types/resolve@1.20.2'
+Name = '@types/resolve'
+Version = '1.20.2'
+Source = 'npm'
+Integrity = 'sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d7ef981d611d08b7c7b3e203fab19d71168a27c6b8ce869a3ad49464f6de6a12'
+
+[[package]]
 ID = 'npm:@types/trusted-types@2.0.7'
 Name = '@types/trusted-types'
 Version = '2.0.7'
@@ -558,266 +2609,6 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:4a4f306ca21c82e2dd4af488f32835101e30668463902643bf20ce14b076d5db'
-
-[[package]]
-ID = 'npm:@typescript/typescript-aix-ppc64@7.0.2'
-Name = '@typescript/typescript-aix-ppc64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:b6e558bbdc9206b7b99f6f4f4ce4fa4f6157640ab580cc7d563703767d43d8cc'
-
-[[package]]
-ID = 'npm:@typescript/typescript-darwin-arm64@7.0.2'
-Name = '@typescript/typescript-darwin-arm64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:902e2fe1cf0799198ef902c6b8c310a450fef629a6baba41d45641ef75c04ebd'
-
-[[package]]
-ID = 'npm:@typescript/typescript-darwin-x64@7.0.2'
-Name = '@typescript/typescript-darwin-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:eba158cb54050f723d5ff781438f33de5640054440bb4f2bd170cfe9bc2eb551'
-
-[[package]]
-ID = 'npm:@typescript/typescript-freebsd-arm64@7.0.2'
-Name = '@typescript/typescript-freebsd-arm64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:42d23a91be92d7e761cc808b10c34430f1f5f6cb6dc9c594e832fdf7d65d4c5b'
-
-[[package]]
-ID = 'npm:@typescript/typescript-freebsd-x64@7.0.2'
-Name = '@typescript/typescript-freebsd-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:d982b0db967346becc4ccbc8cdac69e0335995c419bf129616e18a87832edb8c'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-arm64@7.0.2'
-Name = '@typescript/typescript-linux-arm64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:c83d931ac9dd7549cde6e71246aa9d6a9812843023df3e277fe3b5dcf41dd0ea'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-arm@7.0.2'
-Name = '@typescript/typescript-linux-arm'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:33a15a7badb207a38957373c410b970319baac8960109232ab64502497caea06'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-loong64@7.0.2'
-Name = '@typescript/typescript-linux-loong64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:4d0a2d19f0563df4d12b1e4197a5aefc9827b2977aa48282e7647926085d3c1f'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-mips64el@7.0.2'
-Name = '@typescript/typescript-linux-mips64el'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:6743a786c65e33b5b17d34bd9f2a66446dce95dc028cf21b6e6a975e7f576352'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-ppc64@7.0.2'
-Name = '@typescript/typescript-linux-ppc64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:8c30ad95ff40cff8bba2ab294abde3bfee6fa12b2b649f80ec90ef3188842db1'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-riscv64@7.0.2'
-Name = '@typescript/typescript-linux-riscv64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:b5afba89cef6c1c9e6142893018fdbd04183abe1e281a710fe31bb9578d2dc72'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-s390x@7.0.2'
-Name = '@typescript/typescript-linux-s390x'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:badc50ce68cd84c462fcbddfe0c8a7acf9b16a334397cc73e889f6e783f1903d'
-
-[[package]]
-ID = 'npm:@typescript/typescript-linux-x64@7.0.2'
-Name = '@typescript/typescript-linux-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:7ecad6f67377e831856367ab062ef394f21506a611405bf8ac0ff039348637d3'
-
-[[package]]
-ID = 'npm:@typescript/typescript-netbsd-arm64@7.0.2'
-Name = '@typescript/typescript-netbsd-arm64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:afc662ba78fe126f96209b39d6c64c08088ff12b6df363c4bae04a6b79a26000'
-
-[[package]]
-ID = 'npm:@typescript/typescript-netbsd-x64@7.0.2'
-Name = '@typescript/typescript-netbsd-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:9eb8b25b298b61912cb821e598d883742fa24778267fa88dc94b86acfe3edfe7'
-
-[[package]]
-ID = 'npm:@typescript/typescript-openbsd-arm64@7.0.2'
-Name = '@typescript/typescript-openbsd-arm64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:c8729f2a2ea9a0f0efb0c36ea7b638ebdaad0eaf31943406a488ab3083e13b5a'
-
-[[package]]
-ID = 'npm:@typescript/typescript-openbsd-x64@7.0.2'
-Name = '@typescript/typescript-openbsd-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:90aeadb743517361f902c6e7ef1e57113175aaf483fb5f2abc1701c8246c66a4'
-
-[[package]]
-ID = 'npm:@typescript/typescript-sunos-x64@7.0.2'
-Name = '@typescript/typescript-sunos-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:a625970be8f04944de633929eb0777c2c60c6c242590b79fc37750cf4a577e85'
-
-[[package]]
-ID = 'npm:@typescript/typescript-win32-arm64@7.0.2'
-Name = '@typescript/typescript-win32-arm64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:0a73534e6ee50cdbb2a29ac48657ca0ad13cf0f424cf63808e4df7baeb87b8be'
-
-[[package]]
-ID = 'npm:@typescript/typescript-win32-x64@7.0.2'
-Name = '@typescript/typescript-win32-x64'
-Version = '7.0.2'
-Source = 'npm'
-Integrity = 'sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:61fc4e141d2bc687db580e71bbfa63b9c209f0310645d82ca1b457eb3a24fd19'
 
 [[package]]
 ID = 'npm:@vitest/istanbul-lib-coverage@1.0.0'
@@ -1124,24 +2915,6 @@ Workspace = ''
 Hash = 'sha256:6cbf6cf3bcb0f8d436b0f8347a2b6c606e765f7705f859aa39d1e444300f884f'
 
 [[package]]
-ID = 'npm:bufferutil@4.1.0'
-Name = 'bufferutil'
-Version = '4.1.0'
-Source = 'npm'
-Integrity = 'sha512-ZMANVnAixE6AWWnPzlW2KpUrxhm9woycYvPOo67jWHyFowASTEd9s+QN1EIMsSDtwhIxN4sWE1jotpuDUIgyIw=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:19af5978088739b8baf861a95ab4a1feb69a2d30830ced707c37920591046a87'
-
-[[package.capability]]
-kind = 'lifecycleScript'
-script = 'install'
-command = 'node-gyp-build'
-
-[[package]]
 ID = 'npm:caniuse-lite@1.0.30001810'
 Name = 'caniuse-lite'
 Version = '1.0.30001810'
@@ -1166,6 +2939,19 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:702cd574375345c56198e96b52f55abeb445cd73a52cf7f9ee0d57bba4055b58'
+
+[[package]]
+ID = 'npm:commondir@1.0.1'
+Name = 'commondir'
+Version = '1.0.1'
+Source = 'npm'
+Integrity = 'sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5b89851be4f799923e48320a13165883d2ffcb8cd4ec71023263255497c251b0'
 
 [[package]]
 ID = 'npm:convert-source-map@2.0.0'
@@ -1199,6 +2985,32 @@ script = 'prepublish'
 command = 'npm install --no-save --prefix __tests__ && npm install --no-save --prefix __tests__/__fixtures__'
 
 [[package]]
+ID = 'npm:debug@4.4.3'
+Name = 'debug'
+Version = '4.4.3'
+Source = 'npm'
+Integrity = 'sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:89c1ac9c946ee8905a875837114528e97eeae35e03be3190584b2216af43e4a7'
+
+[[package]]
+ID = 'npm:deepmerge@4.3.1'
+Name = 'deepmerge'
+Version = '4.3.1'
+Source = 'npm'
+Integrity = 'sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:4003a0a348276a95543fa969f561f6b5968629acbbb59d66018dd23e7b8f1d5c'
+
+[[package]]
 ID = 'npm:dequal@2.0.3'
 Name = 'dequal'
 Version = '2.0.3'
@@ -1210,6 +3022,19 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:941d90d6629878167d10d2a05d8c6df8f8fa13acc826616abb49db63ac6a5c35'
+
+[[package]]
+ID = 'npm:detect-libc@2.1.2'
+Name = 'detect-libc'
+Version = '2.1.2'
+Source = 'npm'
+Integrity = 'sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:270dec0fc06cff86481da8af2dd8f18dee6b602790b14ef0e1c2c18d7da39427'
 
 [[package]]
 ID = 'npm:dom-accessibility-api@0.5.16'
@@ -1267,6 +3092,34 @@ Hash = 'sha256:554b7e2a79fa9eda0439714011fa42d77c6829842faa91e022070015bfd483a0'
 kind = 'lifecycleScript'
 script = 'prepublishOnly'
 command = 'tshy'
+
+[[package]]
+ID = 'npm:es-errors@1.3.0'
+Name = 'es-errors'
+Version = '1.3.0'
+Source = 'npm'
+Integrity = 'sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d14dd1c35b4bd3b8aca3219fd3627eb7f3eb49cf6b4c8a7ca58b91fd7a190993'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepack'
+command = 'npmignore --auto --commentLines=autogenerated'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublish'
+command = 'not-in-publish || npm run prepublishOnly'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'safe-publish-latest'
 
 [[package]]
 ID = 'npm:es-module-lexer@2.3.2'
@@ -1393,6 +3246,57 @@ Workspace = ''
 Hash = 'sha256:5ddc55129d365193496e8ae1f6e21e4beabe639b6c00f5f67e2e0843b72efa55'
 
 [[package]]
+ID = 'npm:fsevents@2.3.3'
+Name = 'fsevents'
+Version = '2.3.3'
+Source = 'npm'
+Integrity = 'sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c77e7a5d5ff31dd7acea7c44d4a0455e0528cdacbd24a8cb6c82b66d239b587e'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'install'
+command = 'node-gyp rebuild'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'npm run build'
+
+[[package]]
+ID = 'npm:function-bind@1.1.2'
+Name = 'function-bind'
+Version = '1.1.2'
+Source = 'npm'
+Integrity = 'sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:704402651b02a1454f17d445fc7dd716efc282d059407126d58ef30a47e807aa'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepack'
+command = 'npmignore --auto --commentLines=autogenerated'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublish'
+command = 'not-in-publish || npm run prepublishOnly'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'safe-publish-latest'
+
+[[package]]
 ID = 'npm:gensync@1.0.0-beta.2'
 Name = 'gensync'
 Version = '1.0.0-beta.2'
@@ -1404,6 +3308,34 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:df9f92ef26a35d4f92cb8a73415dfea8dadaf294a03e60e4d176df82f38d17c9'
+
+[[package]]
+ID = 'npm:hasown@2.0.4'
+Name = 'hasown'
+Version = '2.0.4'
+Source = 'npm'
+Integrity = 'sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e9d2b03f95573600e1c13124ce618e3142ed2c538d164595bedcd4408b8a4e4c'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepack'
+command = 'npmignore --auto --commentLines=autogenerated'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublish'
+command = 'not-in-publish || npm run prepublishOnly'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'safe-publish-latest'
 
 [[package]]
 ID = 'npm:import-meta-resolve@4.2.0'
@@ -1422,6 +3354,70 @@ Hash = 'sha256:89d5895c64d5b1099df79ba1f6cf3f054fd0265cb5e17acb94de84d46bc01085'
 kind = 'lifecycleScript'
 script = 'prepack'
 command = 'npm run generate && npm run build && npm run format'
+
+[[package]]
+ID = 'npm:is-core-module@2.16.2'
+Name = 'is-core-module'
+Version = '2.16.2'
+Source = 'npm'
+Integrity = 'sha512-evOr8xfXKxE6qSR0hSXL2r3sd7ALj8+7jQEUvPYcm5sgZFdJ+AYzT6yNmJenvIYQBgIGwfwz08sL8zoL7yq2BA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e2f933640de144ca2e96d754b51b1fd6b96e2ad44e72eeffce17aa24436a41b3'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepack'
+command = 'npmignore --auto --commentLines=autogenerated'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublish'
+command = 'not-in-publish || npm run prepublishOnly'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'safe-publish-latest'
+
+[[package]]
+ID = 'npm:is-module@1.0.0'
+Name = 'is-module'
+Version = '1.0.0'
+Source = 'npm'
+Integrity = 'sha512-51ypPSPCoTEIN9dy5Oy+h4pShgJmPCygKfyRCISBI+JoWT/2oJvK8QPxmwv7b/p239jXrm9M1mlQbyKJ5A152g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:22bf997e4deeb4a29682d4235c9abfea0b183810bbc9baab1edc858afbc2512c'
+
+[[package]]
+ID = 'npm:is-reference@1.2.1'
+Name = 'is-reference'
+Version = '1.2.1'
+Source = 'npm'
+Integrity = 'sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:64378adcaca033879d0a0172497bae4a73f9c07a0e57df1c9469db82f18fafd5'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepare'
+command = 'npm run build'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'npm test'
 
 [[package]]
 ID = 'npm:js-tokens@10.0.0'
@@ -1479,6 +3475,172 @@ Hash = 'sha256:08afb33db600d11fc89b98fac4054f19d5d3e0fe527063116150e1ecc2d2377b'
 kind = 'lifecycleScript'
 script = 'prepublishOnly'
 command = 'npm run production'
+
+[[package]]
+ID = 'npm:lightningcss-android-arm64@1.33.0'
+Name = 'lightningcss-android-arm64'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:e6fd2befa439a4934dd50a9283820a7b95725246a3251c60588f074aff20509a'
+
+[[package]]
+ID = 'npm:lightningcss-darwin-arm64@1.33.0'
+Name = 'lightningcss-darwin-arm64'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-Sciaz8eenNTKn9b3t7+xr0ipTp9YxKQY4npwQ3mrRuL0BAVHBLyZxofhaKBAVtzmtRZ/zTyo0/to4B1uWG/Djg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:06e9d271513d7e3f08e680d5e48bb70543c13161ff41bc5b56934726d9a2e913'
+
+[[package]]
+ID = 'npm:lightningcss-darwin-x64@1.33.0'
+Name = 'lightningcss-darwin-x64'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-Z5UPAxzrjlWNNyGy6i65cJzzvgJ5D3T6wMvs+gWpY9d7qRhANrxqAp6LhxIgZhWEw18RfJTGcRxjuLIBr+m8XQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c0b555fe6ec4c5c660503b1e87aad7ac90ba5af1e2cb1742155d485a39d5b973'
+
+[[package]]
+ID = 'npm:lightningcss-freebsd-x64@1.33.0'
+Name = 'lightningcss-freebsd-x64'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-QQM/Ti/hQajJwCY+RiWuCZ9sdtI/XQk7nDK5vC8kkdwixezOlDgvDx7+RT+QjK6FcFT4MpsuoBnHIo/O3StRRg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:828e9a915d504a2796bdbe56643397d3ac639bf9abc629ba11163e7b7ef150a6'
+
+[[package]]
+ID = 'npm:lightningcss-linux-arm-gnueabihf@1.33.0'
+Name = 'lightningcss-linux-arm-gnueabihf'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-N7FVBe6iS24MlM6R/4RBTxGhQheZGs7tiQ9U32UtF75NzP5Q7xWPRqLBCKxlRQRk3rY1jCIPLzx7WzOhuUIRLQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b2a0af78c27da36a2449c2fe71eb3730e6c40d7aaab20bdc3689282432bb3117'
+
+[[package]]
+ID = 'npm:lightningcss-linux-arm64-gnu@1.33.0'
+Name = 'lightningcss-linux-arm64-gnu'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-j2v/itmy4HlNxlc6voKXYgBqNi0Ng2LShg4z7GufpEgs05P+2suBVyi9I6YHq5uoVFx9ETin3eCEhLVyXGQnKg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:257b51498dfd90fc99b87afd28408ff9b53162e521db4e06a493e356b8536711'
+
+[[package]]
+ID = 'npm:lightningcss-linux-arm64-musl@1.33.0'
+Name = 'lightningcss-linux-arm64-musl'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-yiO5ROMuYQgXbC60yjZU5CYSFZGKXL0HFATXt9mHJn1+zW55oCtMI9NfcVhYLMFDL7gV7oBPon/EmMMGg2OvtQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:048a00d8ef519a413e01907a5a50e01d7c4e86ddcde49a5020eed7747196b9f6'
+
+[[package]]
+ID = 'npm:lightningcss-linux-x64-gnu@1.33.0'
+Name = 'lightningcss-linux-x64-gnu'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-ar+Ju7LmcN0Jo4FpL4hpFybwNG9/3A/Br5KW2n2jyODg3MEZXaDYADdemoNS+BDNfMgKvylJLj4S5tyRActuAg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:fd485dfd57082c4ef864dd867fa87fd8e1a9b5d58ee85c2b76e28e42c8f3e1d3'
+
+[[package]]
+ID = 'npm:lightningcss-linux-x64-musl@1.33.0'
+Name = 'lightningcss-linux-x64-musl'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-RYiYbkokw0trfKqqzfF55lginwEPrD3OJDfTuJzFs1MK6iFnDenaz1fqLLtX4ITG3OktJQXOeTaw1awrBAlZPw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:f3a1a10f3c393db5ce03438035b94fcd48bc7b7b52bb97f76a3ed52784624441'
+
+[[package]]
+ID = 'npm:lightningcss-win32-arm64-msvc@1.33.0'
+Name = 'lightningcss-win32-arm64-msvc'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-1K+MPfLSFVpphzpdbfkhlWk6wBrTObBzS2T6db10PNOZgR9GoVsAWzwNyuhUYYbTp23j+4RrncfujZ4uAzXvwA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9c211ef0a63a92626091f7c0a97b0ddb39b4278da5b11d13512b7eed9680bd7d'
+
+[[package]]
+ID = 'npm:lightningcss-win32-x64-msvc@1.33.0'
+Name = 'lightningcss-win32-x64-msvc'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-OlEICDx/Xl0FqSp4bry8zFnCvGpig3Gl4gCquvYwHuqJKEC1+n9NgDniFvqHGmMv1ZkqDJrDqKKSykTDX+ehuA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:feb506faf3bdf4139826f521777c71b53c355f8eb6bcdd3220e16c5e131f1197'
+
+[[package]]
+ID = 'npm:lightningcss@1.33.0'
+Name = 'lightningcss'
+Version = '1.33.0'
+Source = 'npm'
+Integrity = 'sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d492f4278bb7234ceaa3c2638ef944e108ea17a23db7c6a2367c14fa725598cf'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepare'
+command = 'patch-package'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'node scripts/build-flow.js'
 
 [[package]]
 ID = 'npm:lit-element@4.2.2'
@@ -1553,6 +3715,24 @@ script = 'prepublishOnly'
 command = 'git push origin --follow-tags'
 
 [[package]]
+ID = 'npm:lru-cache@5.1.1'
+Name = 'lru-cache'
+Version = '5.1.1'
+Source = 'npm'
+Integrity = 'sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b11e78819544a6606e3317647a5593c102ea38d3c5afae62cd63f9c2c369485a'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'postpublish'
+command = 'git push origin --all; git push origin --tags'
+
+[[package]]
 ID = 'npm:lz-string@1.5.0'
 Name = 'lz-string'
 Version = '1.5.0'
@@ -1618,6 +3798,19 @@ Workspace = ''
 Hash = 'sha256:2cc6d534bb1f78f70dcb513c9b3b7ab982e22291ebc291e3366dee085fadbadd'
 
 [[package]]
+ID = 'npm:ms@2.1.3'
+Name = 'ms'
+Version = '2.1.3'
+Source = 'npm'
+Integrity = 'sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:f6616e15e530ed552f9daa2d3ce71963947c6bc7c98c9b64fd3e673fd02622c6'
+
+[[package]]
 ID = 'npm:nanoid@3.3.18'
 Name = 'nanoid'
 Version = '3.3.18'
@@ -1644,19 +3837,6 @@ Workspace = ''
 Hash = 'sha256:5e5569ecd12064f73632a8c18a45b1d1de4a27b699a671864801f1c35ee779ee'
 
 [[package]]
-ID = 'npm:node-gyp-build@4.8.4'
-Name = 'node-gyp-build'
-Version = '4.8.4'
-Source = 'npm'
-Integrity = 'sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=='
-Repo = ''
-Rev = ''
-TreeHash = ''
-Path = ''
-Workspace = ''
-Hash = 'sha256:940450fb4158bddc23ae156432a67338a4d7ab6a585b639c61b3b0a14d2bac24'
-
-[[package]]
 ID = 'npm:node-releases@2.0.54'
 Name = 'node-releases'
 Version = '2.0.54'
@@ -1681,6 +3861,71 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:87618f4dd0510e47759d5527a34c05aae0752c5aef8417e30898a8db4afb5375'
+
+[[package]]
+ID = 'npm:oxc-minify@0.147.0'
+Name = 'oxc-minify'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-4oRcA7zlxGWUIDoZ4X/KzYWhxwzyhnVRBBihDf0pyljcT58cpq1YWmewble2N93AeFnbJXY2FCYrHLCYa2FEYg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a20a3930e7a26ee8b14d8018ce45193e709141ff1c0f51ec2aeacc96fa41ac1c'
+
+[[package]]
+ID = 'npm:oxc-parser@0.147.0'
+Name = 'oxc-parser'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-5xaug6t7GfV3BO5Iv+xHW1rmQkDEQ3BEu3L8g3InsvWO5i8CYGc4tCZ2X985QcwWNycFJam+aOns6Nr2XAThTA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:ebb67d7b3bd86d3ca07abbef71358182fbeecade95272091886d3d62d028c837'
+
+[[package]]
+ID = 'npm:oxc-resolver@11.24.2'
+Name = 'oxc-resolver'
+Version = '11.24.2'
+Source = 'npm'
+Integrity = 'sha512-FY91FiDBj7ls5MsFS9jN3tjz2o0/zsdSsymlakySaBwVJZorHhkWyICLZMKxlu1R9vYo+sd3z1jwb4J8x7bNDw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:b57944394f868c415a32f08cd846cb173194e515fa9767b6451ba73ce0882424'
+
+[[package]]
+ID = 'npm:oxc-transform@0.147.0'
+Name = 'oxc-transform'
+Version = '0.147.0'
+Source = 'npm'
+Integrity = 'sha512-FkGVLTM83USPtu7Oa8iWKuLygto+gQRz7Kvb2SZsoVjFrJ0VJFQvIOHWW02GBN/8MzwT5G5hC9HM8HsWY72ufg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d4fd381be52ec6b7dc5542e4f332ef523a885b165ffa12d0ea4cf0100370c86e'
+
+[[package]]
+ID = 'npm:path-parse@1.0.7'
+Name = 'path-parse'
+Version = '1.0.7'
+Source = 'npm'
+Integrity = 'sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:a07a198ca727816296616928237bfab6571f211750d798030b3b7a3f4a5473a3'
 
 [[package]]
 ID = 'npm:pathe@2.0.3'
@@ -1779,6 +4024,106 @@ Workspace = ''
 Hash = 'sha256:9b1850c05b4fc08e9b814a201281a103a7651ac46500dce7b6bedd0865963eb1'
 
 [[package]]
+ID = 'npm:resolve@1.22.12'
+Name = 'resolve'
+Version = '1.22.12'
+Source = 'npm'
+Integrity = 'sha512-TyeJ1zif53BPfHootBGwPRYT1RUt6oGWsaQr8UyZW/eAm9bKoijtvruSDEmZHm92CwS9nj7/fWttqPCgzep8CA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:c6a29dbf1f4c0754a94387b379e699f5594216e16ef0d5ee17ccf9518f844dc1'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepack'
+command = 'npmignore --auto --commentLines=autogenerated && cp node_modules/is-core-module/core.json ./lib/ ||:'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublish'
+command = 'not-in-publish || npm run prepublishOnly'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'safe-publish-latest'
+
+[[package]]
+ID = 'npm:rolldown@1.0.0-rc.18'
+Name = 'rolldown'
+Version = '1.0.0-rc.18'
+Source = 'npm'
+Integrity = 'sha512-phmyKBpuBdRYDf4hgyynGAYn/rDDe+iZXKVJ7WX5b1zQzpLkP5oJRPGsfJuHdzPMlyyEO/4sPW6yfSx2gf7lVg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:d4d25b3d372f1a2fe0b14b698031f2df7b61f2c68e18b9a9c9263caa06620170'
+
+[[package]]
+ID = 'npm:rollup-plugin-dts@6.5.1'
+Name = 'rollup-plugin-dts'
+Version = '6.5.1'
+Source = 'npm'
+Integrity = 'sha512-jODTXp3H7MK/Ur/ErtsrQ0G1GvaCmc3du+y5pNrdBMf6d7HlL2Nd/N6TkEr+f75CkUj01zEoEd7y2elH0eHi1Q=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9162e332f7d226235ce82ec400dd2b24b87af01730d47a3055a8633137055a88'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'npm run test'
+
+[[package]]
+ID = 'npm:rollup@4.63.1'
+Name = 'rollup'
+Version = '4.63.1'
+Source = 'npm'
+Integrity = 'sha512-3Df9jsstwhccuEfmAMi9l8XUh/GOkVObmFTU7CCVBysEbcOZLl84jCtaAZMcPiMz2EGKsATzQcU+Xr3n/wU6cg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:88b9180834f6d0472f49d379e13cb8d5d909eab28a34a4c766ec1676502e8f78'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'postpublish'
+command = 'node scripts/postpublish.js'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepare'
+command = 'husky && npm run prepare:patch && node scripts/check-release.js || npm run build:prepare'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'node scripts/check-release.js && node scripts/prepublish.js'
+
+[[package]]
+ID = 'npm:semver@6.3.1'
+Name = 'semver'
+Version = '6.3.1'
+Source = 'npm'
+Integrity = 'sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:3c9b042a38e099cbd00a9bd792042aefb62a70b3f0f1ba1a3cbddf07e5eb1230'
+
+[[package]]
 ID = 'npm:semver@7.8.5'
 Name = 'semver'
 Version = '7.8.5'
@@ -1862,6 +4207,29 @@ script = 'prepack'
 command = 'obuild'
 
 [[package]]
+ID = 'npm:supports-preserve-symlinks-flag@1.0.0'
+Name = 'supports-preserve-symlinks-flag'
+Version = '1.0.0'
+Source = 'npm'
+Integrity = 'sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:97da1160af5344534182e72502978374d20875d32c6071cd2dae997be604f7f9'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublish'
+command = 'not-in-publish || npm run prepublishOnly'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepublishOnly'
+command = 'safe-publish-latest'
+
+[[package]]
 ID = 'npm:tinybench@6.1.3'
 Name = 'tinybench'
 Version = '6.1.3'
@@ -1932,17 +4300,82 @@ Workspace = ''
 Hash = 'sha256:43f85fe769d147c4555e6f69e33690dc19c39ff90461a6fbe0faa38d1279c787'
 
 [[package]]
-ID = 'npm:typescript@7.0.2'
-Name = 'typescript'
-Version = '7.0.2'
+ID = 'npm:tslib@2.8.1'
+Name = 'tslib'
+Version = '2.8.1'
 Source = 'npm'
-Integrity = 'sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA=='
+Integrity = 'sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=='
 Repo = ''
 Rev = ''
 TreeHash = ''
 Path = ''
 Workspace = ''
-Hash = 'sha256:da2513f4b95176d6dde8b51aab7afe8a927656c9d277369793f77f7e59371c08'
+Hash = 'sha256:66f635d5eeabae44807534976913a102cf615b9a045368359c9f79ae6ee2119e'
+
+[[package]]
+ID = 'npm:typescript@5.9.3'
+Name = 'typescript'
+Version = '5.9.3'
+Source = 'npm'
+Integrity = 'sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:10e108c9cf7d5f2879053dff18515fb405abf2ccef63eaaf017d9c571687a1d3'
+
+[[package]]
+ID = 'npm:unplugin-isolated-decl@0.17.0'
+Name = 'unplugin-isolated-decl'
+Version = '0.17.0'
+Source = 'npm'
+Integrity = 'sha512-WW+N5NZoAdnaUu8sPOkNQcY41jpvsTK3wiruMI6+LKQRO3z8/ZBFXXPWldLtdFYqPWO4iAfSbOhlbtuvvFeGPw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:1b6d2f21836a9c9f7b2e75d0a4f47ea6bf504ba10f2f69a976d56c84006f2f43'
+
+[[package]]
+ID = 'npm:unplugin-oxc@0.6.1'
+Name = 'unplugin-oxc'
+Version = '0.6.1'
+Source = 'npm'
+Integrity = 'sha512-76s6ITSDmozD00M7kY1hLwb4vqel2heyqWXBu8sO0bR/fdgM53WKwzE8fXrQAhOLp0mfuvZsY5N5KK+y5btsdQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:40d39b702851a7a0e1e6cbb485c8222a221dd146259263e566e74263ce2751a1'
+
+[[package]]
+ID = 'npm:unplugin-utils@0.3.2'
+Name = 'unplugin-utils'
+Version = '0.3.2'
+Source = 'npm'
+Integrity = 'sha512-xVToRh2CTmLk2HnEG7ac4rl1MJTT3RFkpS8B++/SnB0kXvuaavD+n3m/vrzyWQOdJNSZQACnbz01pnppbwV5BA=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:36f1d0bbd3874ce03564d6453aefc87d9106ffd6c4a95ea40e339ac85877f1d8'
+
+[[package]]
+ID = 'npm:unplugin@3.3.0'
+Name = 'unplugin'
+Version = '3.3.0'
+Source = 'npm'
+Integrity = 'sha512-qa66K+crbfyE6JK10GjvbJeRrOsuC/JpbnHctfyp/i4oBTxWOzJfRZyDiOk1PtErMFRu8JhsU/wPvOdBNWe5Rg=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:0f2aa53cb488bd95ba11a9a95916a922c04d6a5f20e38579e4603f264a59f35c'
 
 [[package]]
 ID = 'npm:update-browserslist-db@1.3.2'
@@ -1958,22 +4391,17 @@ Workspace = ''
 Hash = 'sha256:8e0c63ecbde7003aac9c3361ad79a19a5129aa39ffc9d29b633b3c3cad877098'
 
 [[package]]
-ID = 'npm:utf-8-validate@6.0.6'
-Name = 'utf-8-validate'
-Version = '6.0.6'
+ID = 'npm:vite@8.0.11'
+Name = 'vite'
+Version = '8.0.11'
 Source = 'npm'
-Integrity = 'sha512-q3l3P9UtEEiAHcsgsqTgf9PPjctrDWoIXW3NpOHFdRDbLvu4DLIcxHangJ4RLrWkBcKjmcs/6NkerI8T/rE4LA=='
+Integrity = 'sha512-Jz1mxtUBR5xTT65VOdJZUUeoyLtqljmFkiUXhPTLZka3RDc9vpi/xXkyrnsdRcm2lIi3l3GPMnAidTsEGIj3Ow=='
 Repo = ''
 Rev = ''
 TreeHash = ''
 Path = ''
 Workspace = ''
-Hash = 'sha256:f65e05feb1174937bd67b5ddb7a70d5eed314989d2bc8637e1594e1623c4a00f'
-
-[[package.capability]]
-kind = 'lifecycleScript'
-script = 'install'
-command = 'node-gyp-build'
+Hash = 'sha256:5987d4e176cd053b313e7bc92faa9b8f82190c73d8ebb5fc0379f0ecc572e4ac'
 
 [[package]]
 ID = 'npm:vue@3.5.42'
@@ -1987,6 +4415,24 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:f0eba09abfc441bc0108b44259376d6857fede9b0adf5d408e8807d5b4b49d6b'
+
+[[package]]
+ID = 'npm:webpack-virtual-modules@0.6.2'
+Name = 'webpack-virtual-modules'
+Version = '0.6.2'
+Source = 'npm'
+Integrity = 'sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:9506996a90d4cf9ed547a0459884e4eb8e391e6b9512f23d137feafe697ab719'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'prepack'
+command = 'yarn clean && yarn build'
 
 [[package]]
 ID = 'npm:why-is-node-running@2.3.0'
@@ -2013,6 +4459,24 @@ TreeHash = ''
 Path = ''
 Workspace = ''
 Hash = 'sha256:df3454ef205791ce50b5b9241762dcf9bfe1aa9f7f01d3057229be7dac0c2dc3'
+
+[[package]]
+ID = 'npm:yallist@3.1.1'
+Name = 'yallist'
+Version = '3.1.1'
+Source = 'npm'
+Integrity = 'sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:50f14ae6cfe8360cb2259ba3e93305e069036f13251d69d3cbee9e1d4775ca04'
+
+[[package.capability]]
+kind = 'lifecycleScript'
+script = 'postpublish'
+command = 'git push origin --all; git push origin --tags'
 
 [[package]]
 ID = 'path:test/e2e/fixtures/conditions-subpackage#b176c88cf324dfdb2086ce6ce966fd419f3bf4f3eb7a194b6c38a5677b686ec6'
@@ -2106,7 +4570,7 @@ Workspace = '@vitest/utils'
 Hash = 'sha256:7a8fefb043f12f613bcaf941538831401313cb27cc0111f739822f9c4ff5b2ed'
 
 [[package]]
-ID = 'workspace:vitest#9333f451119ca66a3dd9315cc9974a572e153c815bb7d13d1ee19bff56c2d966'
+ID = 'workspace:vitest#ecf4fc49b84a3d85dd45b1bd1eb4d68197e9a97e89bbff730561557abaab379d'
 Name = 'vitest'
 Version = '5.0.0-rc.3'
 Source = 'workspace'
@@ -2116,7 +4580,7 @@ Rev = ''
 TreeHash = ''
 Path = 'packages/vitest'
 Workspace = 'vitest'
-Hash = 'sha256:9333f451119ca66a3dd9315cc9974a572e153c815bb7d13d1ee19bff56c2d966'
+Hash = 'sha256:ecf4fc49b84a3d85dd45b1bd1eb4d68197e9a97e89bbff730561557abaab379d'
 
 [[edge]]
 From = '@vitest/browser-playwright:dependency'
@@ -2372,6 +4836,13 @@ Reference = ''
 
 [[edge]]
 From = '@vitest/expect:target:package'
+To = 'npm:rollup@4.63.1'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/expect:target:package'
 To = 'npm:tinyrainbow@3.1.1'
 Kind = 'runtime'
 Optional = false
@@ -2420,6 +4891,48 @@ Optional = false
 Reference = ''
 
 [[edge]]
+From = '@vitest/monorepo:tool'
+To = 'npm:@rollup/plugin-commonjs@29.0.3'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/monorepo:tool'
+To = 'npm:@rollup/plugin-node-resolve@16.0.3'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/monorepo:tool'
+To = 'npm:rollup-plugin-dts@6.5.1'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/monorepo:tool'
+To = 'npm:typescript@5.9.3'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/monorepo:tool'
+To = 'npm:unplugin-isolated-decl@0.17.0'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/monorepo:tool'
+To = 'npm:unplugin-oxc@0.6.1'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
 From = '@vitest/pretty-format:dependency'
 To = 'npm:tinyrainbow@3.1.1'
 Kind = 'runtime'
@@ -2449,6 +4962,13 @@ Reference = ''
 
 [[edge]]
 From = '@vitest/snapshot:target:package'
+To = 'npm:rollup@4.63.1'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/snapshot:target:package'
 To = 'workspace:@vitest/pretty-format#d7cd962ae563c90a017f763bb1c9fd0fd6a15e54c9812ff2c2ccec43ef3dc519'
 Kind = 'runtime'
 Optional = false
@@ -2463,8 +4983,57 @@ Reference = ''
 
 [[edge]]
 From = '@vitest/test-typescript:dependency'
-To = 'workspace:vitest#9333f451119ca66a3dd9315cc9974a572e153c815bb7d13d1ee19bff56c2d966'
+To = 'workspace:vitest#ecf4fc49b84a3d85dd45b1bd1eb4d68197e9a97e89bbff730561557abaab379d'
 Kind = 'runtime'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:test:basic-threads'
+To = 'npm:vite@8.0.11'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:test:basic-threads'
+To = 'workspace:vitest#ecf4fc49b84a3d85dd45b1bd1eb4d68197e9a97e89bbff730561557abaab379d'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:test:snapshot-threads'
+To = 'npm:vite@8.0.11'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:test:snapshot-threads'
+To = 'workspace:vitest#ecf4fc49b84a3d85dd45b1bd1eb4d68197e9a97e89bbff730561557abaab379d'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:tool'
+To = 'npm:@babel/core@7.29.7'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:tool'
+To = 'npm:@babel/plugin-proposal-decorators@7.29.7'
+Kind = 'tool'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/test-unit:tool'
+To = 'npm:@rolldown/plugin-babel@0.2.3'
+Kind = 'tool'
 Optional = false
 Reference = ''
 
@@ -2595,6 +5164,111 @@ Optional = false
 Reference = 'js-tokens'
 
 [[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/code-frame@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/code-frame'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/generator@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/generator'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/helper-compilation-targets@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-compilation-targets'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/helper-module-transforms@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-module-transforms'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/helpers@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helpers'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/parser@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/parser'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/template@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/template'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:@jridgewell/remapping@2.3.5'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/remapping'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:convert-source-map@2.0.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'convert-source-map'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:debug@4.4.3'
+Kind = 'runtime'
+Optional = false
+Reference = 'debug'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:gensync@1.0.0-beta.2'
+Kind = 'runtime'
+Optional = false
+Reference = 'gensync'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:json5@2.2.3'
+Kind = 'runtime'
+Optional = false
+Reference = 'json5'
+
+[[edge]]
+From = 'npm:@babel/core@7.29.7'
+To = 'npm:semver@6.3.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'semver'
+
+[[edge]]
 From = 'npm:@babel/core@8.0.1'
 To = 'npm:@babel/code-frame@8.0.0'
 Kind = 'runtime'
@@ -2707,6 +5381,41 @@ Optional = false
 Reference = 'semver'
 
 [[edge]]
+From = 'npm:@babel/generator@7.29.8'
+To = 'npm:@babel/parser@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/parser'
+
+[[edge]]
+From = 'npm:@babel/generator@7.29.8'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/generator@7.29.8'
+To = 'npm:@jridgewell/gen-mapping@0.3.13'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/gen-mapping'
+
+[[edge]]
+From = 'npm:@babel/generator@7.29.8'
+To = 'npm:@jridgewell/trace-mapping@0.3.31'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/trace-mapping'
+
+[[edge]]
+From = 'npm:@babel/generator@7.29.8'
+To = 'npm:jsesc@3.1.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'jsesc'
+
+[[edge]]
 From = 'npm:@babel/generator@8.0.0'
 To = 'npm:@babel/parser@8.0.4'
 Kind = 'runtime'
@@ -2749,6 +5458,48 @@ Optional = false
 Reference = 'jsesc'
 
 [[edge]]
+From = 'npm:@babel/helper-annotate-as-pure@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/helper-compilation-targets@7.29.7'
+To = 'npm:@babel/compat-data@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/compat-data'
+
+[[edge]]
+From = 'npm:@babel/helper-compilation-targets@7.29.7'
+To = 'npm:@babel/helper-validator-option@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-validator-option'
+
+[[edge]]
+From = 'npm:@babel/helper-compilation-targets@7.29.7'
+To = 'npm:browserslist@4.28.8'
+Kind = 'runtime'
+Optional = false
+Reference = 'browserslist'
+
+[[edge]]
+From = 'npm:@babel/helper-compilation-targets@7.29.7'
+To = 'npm:lru-cache@5.1.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'lru-cache'
+
+[[edge]]
+From = 'npm:@babel/helper-compilation-targets@7.29.7'
+To = 'npm:semver@6.3.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'semver'
+
+[[edge]]
 From = 'npm:@babel/helper-compilation-targets@8.0.0'
 To = 'npm:@babel/compat-data@8.0.0'
 Kind = 'runtime'
@@ -2784,6 +5535,160 @@ Optional = false
 Reference = 'semver'
 
 [[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:@babel/helper-annotate-as-pure@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-annotate-as-pure'
+
+[[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:@babel/helper-member-expression-to-functions@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-member-expression-to-functions'
+
+[[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:@babel/helper-optimise-call-expression@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-optimise-call-expression'
+
+[[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:@babel/helper-replace-supers@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-replace-supers'
+
+[[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:@babel/helper-skip-transparent-expression-wrappers@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-skip-transparent-expression-wrappers'
+
+[[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+To = 'npm:semver@6.3.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'semver'
+
+[[edge]]
+From = 'npm:@babel/helper-member-expression-to-functions@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/helper-member-expression-to-functions@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/helper-module-imports@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/helper-module-imports@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/helper-module-transforms@7.29.7'
+To = 'npm:@babel/helper-module-imports@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-module-imports'
+
+[[edge]]
+From = 'npm:@babel/helper-module-transforms@7.29.7'
+To = 'npm:@babel/helper-validator-identifier@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-validator-identifier'
+
+[[edge]]
+From = 'npm:@babel/helper-module-transforms@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/helper-optimise-call-expression@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/helper-replace-supers@7.29.7'
+To = 'npm:@babel/helper-member-expression-to-functions@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-member-expression-to-functions'
+
+[[edge]]
+From = 'npm:@babel/helper-replace-supers@7.29.7'
+To = 'npm:@babel/helper-optimise-call-expression@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-optimise-call-expression'
+
+[[edge]]
+From = 'npm:@babel/helper-replace-supers@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/helper-skip-transparent-expression-wrappers@7.29.7'
+To = 'npm:@babel/traverse@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/traverse'
+
+[[edge]]
+From = 'npm:@babel/helper-skip-transparent-expression-wrappers@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/helpers@7.29.7'
+To = 'npm:@babel/template@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/template'
+
+[[edge]]
+From = 'npm:@babel/helpers@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
 From = 'npm:@babel/helpers@8.0.0'
 To = 'npm:@babel/template@8.0.0'
 Kind = 'runtime'
@@ -2812,6 +5717,55 @@ Optional = false
 Reference = '@babel/types'
 
 [[edge]]
+From = 'npm:@babel/plugin-proposal-decorators@7.29.7'
+To = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-create-class-features-plugin'
+
+[[edge]]
+From = 'npm:@babel/plugin-proposal-decorators@7.29.7'
+To = 'npm:@babel/helper-plugin-utils@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-plugin-utils'
+
+[[edge]]
+From = 'npm:@babel/plugin-proposal-decorators@7.29.7'
+To = 'npm:@babel/plugin-syntax-decorators@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/plugin-syntax-decorators'
+
+[[edge]]
+From = 'npm:@babel/plugin-syntax-decorators@7.29.7'
+To = 'npm:@babel/helper-plugin-utils@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-plugin-utils'
+
+[[edge]]
+From = 'npm:@babel/template@7.29.7'
+To = 'npm:@babel/code-frame@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/code-frame'
+
+[[edge]]
+From = 'npm:@babel/template@7.29.7'
+To = 'npm:@babel/parser@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/parser'
+
+[[edge]]
+From = 'npm:@babel/template@7.29.7'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
 From = 'npm:@babel/template@8.0.0'
 To = 'npm:@babel/code-frame@8.0.0'
 Kind = 'runtime'
@@ -2831,6 +5785,55 @@ To = 'npm:@babel/types@8.0.4'
 Kind = 'runtime'
 Optional = false
 Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:@babel/code-frame@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/code-frame'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:@babel/generator@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/generator'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:@babel/helper-globals@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/helper-globals'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:@babel/parser@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/parser'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:@babel/template@7.29.7'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/template'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:@babel/types@7.29.8'
+Kind = 'runtime'
+Optional = false
+Reference = '@babel/types'
+
+[[edge]]
+From = 'npm:@babel/traverse@7.29.8'
+To = 'npm:debug@4.4.3'
+Kind = 'runtime'
+Optional = false
+Reference = 'debug'
 
 [[edge]]
 From = 'npm:@babel/traverse@8.0.4'
@@ -2910,6 +5913,90 @@ Optional = false
 Reference = '@babel/helper-validator-identifier'
 
 [[edge]]
+From = 'npm:@emnapi/core@1.10.0'
+To = 'npm:@emnapi/wasi-threads@1.2.1'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/wasi-threads'
+
+[[edge]]
+From = 'npm:@emnapi/core@1.10.0'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/core@1.11.2'
+To = 'npm:@emnapi/wasi-threads@1.2.2'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/wasi-threads'
+
+[[edge]]
+From = 'npm:@emnapi/core@1.11.2'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/core@2.0.0-alpha.4'
+To = 'npm:@emnapi/wasi-threads@2.0.1'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/wasi-threads'
+
+[[edge]]
+From = 'npm:@emnapi/core@2.0.0-alpha.4'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/runtime@1.10.0'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/runtime@1.11.2'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/runtime@2.0.0-alpha.4'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/wasi-threads@1.2.1'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/wasi-threads@1.2.2'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
+From = 'npm:@emnapi/wasi-threads@2.0.1'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
+
+[[edge]]
 From = 'npm:@jridgewell/gen-mapping@0.3.13'
 To = 'npm:@jridgewell/sourcemap-codec@1.6.0'
 Kind = 'runtime'
@@ -2918,6 +6005,20 @@ Reference = '@jridgewell/sourcemap-codec'
 
 [[edge]]
 From = 'npm:@jridgewell/gen-mapping@0.3.13'
+To = 'npm:@jridgewell/trace-mapping@0.3.31'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/trace-mapping'
+
+[[edge]]
+From = 'npm:@jridgewell/remapping@2.3.5'
+To = 'npm:@jridgewell/gen-mapping@0.3.13'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/gen-mapping'
+
+[[edge]]
+From = 'npm:@jridgewell/remapping@2.3.5'
 To = 'npm:@jridgewell/trace-mapping@0.3.31'
 Kind = 'runtime'
 Optional = false
@@ -2943,6 +6044,167 @@ To = 'npm:@lit-labs/ssr-dom-shim@1.6.0'
 Kind = 'runtime'
 Optional = false
 Reference = '@lit-labs/ssr-dom-shim'
+
+[[edge]]
+From = 'npm:@napi-rs/wasm-runtime@1.2.3'
+To = 'npm:@tybys/wasm-util@0.10.3'
+Kind = 'runtime'
+Optional = false
+Reference = '@tybys/wasm-util'
+
+[[edge]]
+From = 'npm:@oxc-resolver/binding-wasm32-wasi@11.24.2'
+To = 'npm:@emnapi/core@1.11.2'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/core'
+
+[[edge]]
+From = 'npm:@oxc-resolver/binding-wasm32-wasi@11.24.2'
+To = 'npm:@emnapi/runtime@1.11.2'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/runtime'
+
+[[edge]]
+From = 'npm:@oxc-resolver/binding-wasm32-wasi@11.24.2'
+To = 'npm:@napi-rs/wasm-runtime@1.2.3'
+Kind = 'runtime'
+Optional = false
+Reference = '@napi-rs/wasm-runtime'
+
+[[edge]]
+From = 'npm:@rolldown/binding-wasm32-wasi@1.0.0-rc.18'
+To = 'npm:@emnapi/core@1.10.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/core'
+
+[[edge]]
+From = 'npm:@rolldown/binding-wasm32-wasi@1.0.0-rc.18'
+To = 'npm:@emnapi/runtime@1.10.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@emnapi/runtime'
+
+[[edge]]
+From = 'npm:@rolldown/binding-wasm32-wasi@1.0.0-rc.18'
+To = 'npm:@napi-rs/wasm-runtime@1.2.3'
+Kind = 'runtime'
+Optional = false
+Reference = '@napi-rs/wasm-runtime'
+
+[[edge]]
+From = 'npm:@rolldown/plugin-babel@0.2.3'
+To = 'npm:picomatch@4.0.7'
+Kind = 'runtime'
+Optional = false
+Reference = 'picomatch'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:@rollup/pluginutils@5.4.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@rollup/pluginutils'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:commondir@1.0.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'commondir'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:estree-walker@2.0.2'
+Kind = 'runtime'
+Optional = false
+Reference = 'estree-walker'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:fdir@6.5.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'fdir'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:is-reference@1.2.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'is-reference'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:magic-string@0.30.21'
+Kind = 'runtime'
+Optional = false
+Reference = 'magic-string'
+
+[[edge]]
+From = 'npm:@rollup/plugin-commonjs@29.0.3'
+To = 'npm:picomatch@4.0.7'
+Kind = 'runtime'
+Optional = false
+Reference = 'picomatch'
+
+[[edge]]
+From = 'npm:@rollup/plugin-node-resolve@16.0.3'
+To = 'npm:@rollup/pluginutils@5.4.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@rollup/pluginutils'
+
+[[edge]]
+From = 'npm:@rollup/plugin-node-resolve@16.0.3'
+To = 'npm:@types/resolve@1.20.2'
+Kind = 'runtime'
+Optional = false
+Reference = '@types/resolve'
+
+[[edge]]
+From = 'npm:@rollup/plugin-node-resolve@16.0.3'
+To = 'npm:deepmerge@4.3.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'deepmerge'
+
+[[edge]]
+From = 'npm:@rollup/plugin-node-resolve@16.0.3'
+To = 'npm:is-module@1.0.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'is-module'
+
+[[edge]]
+From = 'npm:@rollup/plugin-node-resolve@16.0.3'
+To = 'npm:resolve@1.22.12'
+Kind = 'runtime'
+Optional = false
+Reference = 'resolve'
+
+[[edge]]
+From = 'npm:@rollup/pluginutils@5.4.0'
+To = 'npm:@types/estree@1.0.9'
+Kind = 'runtime'
+Optional = false
+Reference = '@types/estree'
+
+[[edge]]
+From = 'npm:@rollup/pluginutils@5.4.0'
+To = 'npm:estree-walker@2.0.2'
+Kind = 'runtime'
+Optional = false
+Reference = 'estree-walker'
+
+[[edge]]
+From = 'npm:@rollup/pluginutils@5.4.0'
+To = 'npm:picomatch@4.0.7'
+Kind = 'runtime'
+Optional = false
+Reference = 'picomatch'
 
 [[edge]]
 From = 'npm:@testing-library/dom@10.4.1'
@@ -2999,6 +6261,13 @@ To = 'npm:pretty-format@27.5.1'
 Kind = 'runtime'
 Optional = false
 Reference = 'pretty-format'
+
+[[edge]]
+From = 'npm:@tybys/wasm-util@0.10.3'
+To = 'npm:tslib@2.8.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'tslib'
 
 [[edge]]
 From = 'npm:@types/chai@5.2.3'
@@ -3358,11 +6627,11 @@ Optional = false
 Reference = 'update-browserslist-db'
 
 [[edge]]
-From = 'npm:bufferutil@4.1.0'
-To = 'npm:node-gyp-build@4.8.4'
+From = 'npm:debug@4.4.3'
+To = 'npm:ms@2.1.3'
 Kind = 'runtime'
 Optional = false
-Reference = 'node-gyp-build'
+Reference = 'ms'
 
 [[edge]]
 From = 'npm:estree-walker@3.0.3'
@@ -3370,6 +6639,111 @@ To = 'npm:@types/estree@1.0.9'
 Kind = 'runtime'
 Optional = false
 Reference = '@types/estree'
+
+[[edge]]
+From = 'npm:hasown@2.0.4'
+To = 'npm:function-bind@1.1.2'
+Kind = 'runtime'
+Optional = false
+Reference = 'function-bind'
+
+[[edge]]
+From = 'npm:is-core-module@2.16.2'
+To = 'npm:hasown@2.0.4'
+Kind = 'runtime'
+Optional = false
+Reference = 'hasown'
+
+[[edge]]
+From = 'npm:is-reference@1.2.1'
+To = 'npm:@types/estree@1.0.9'
+Kind = 'runtime'
+Optional = false
+Reference = '@types/estree'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:detect-libc@2.1.2'
+Kind = 'runtime'
+Optional = false
+Reference = 'detect-libc'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-android-arm64@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-android-arm64'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-darwin-arm64@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-darwin-arm64'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-darwin-x64@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-darwin-x64'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-freebsd-x64@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-freebsd-x64'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-linux-arm-gnueabihf@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-linux-arm64-gnu@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-linux-arm64-musl@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-linux-x64-gnu@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-linux-x64-musl@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-linux-x64-musl'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-win32-arm64-msvc@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:lightningcss@1.33.0'
+To = 'npm:lightningcss-win32-x64-msvc@1.33.0'
+Kind = 'runtime'
+Optional = true
+Reference = 'lightningcss-win32-x64-msvc'
 
 [[edge]]
 From = 'npm:lit-element@4.2.2'
@@ -3421,6 +6795,13 @@ Optional = false
 Reference = 'lit-html'
 
 [[edge]]
+From = 'npm:lru-cache@5.1.1'
+To = 'npm:yallist@3.1.1'
+Kind = 'runtime'
+Optional = false
+Reference = 'yallist'
+
+[[edge]]
 From = 'npm:magic-string@0.30.21'
 To = 'npm:@jridgewell/sourcemap-codec@1.6.0'
 Kind = 'runtime'
@@ -3454,6 +6835,545 @@ To = 'npm:source-map-js@1.2.1'
 Kind = 'runtime'
 Optional = false
 Reference = 'source-map-js'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-android-arm-eabi@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-android-arm-eabi'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-android-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-android-arm64'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-darwin-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-darwin-arm64'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-darwin-x64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-darwin-x64'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-freebsd-x64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-freebsd-x64'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-arm-gnueabihf@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-arm-musleabihf@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-arm-musleabihf'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-arm64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-arm64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-ppc64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-ppc64-gnu'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-riscv64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-riscv64-gnu'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-riscv64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-riscv64-musl'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-s390x-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-s390x-gnu'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-x64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-linux-x64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-linux-x64-musl'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-openharmony-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-openharmony-arm64'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-win32-arm64-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-win32-ia32-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-win32-ia32-msvc'
+
+[[edge]]
+From = 'npm:oxc-minify@0.147.0'
+To = 'npm:@oxc-minify/binding-win32-x64-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-minify/binding-win32-x64-msvc'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-android-arm-eabi@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-android-arm-eabi'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-android-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-android-arm64'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-darwin-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-darwin-arm64'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-darwin-x64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-darwin-x64'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-freebsd-x64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-freebsd-x64'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-arm-gnueabihf@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-arm-musleabihf@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-arm-musleabihf'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-arm64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-arm64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-ppc64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-ppc64-gnu'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-riscv64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-riscv64-gnu'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-riscv64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-riscv64-musl'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-s390x-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-s390x-gnu'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-x64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-linux-x64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-linux-x64-musl'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-openharmony-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-openharmony-arm64'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-win32-arm64-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-win32-ia32-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-win32-ia32-msvc'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-parser/binding-win32-x64-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-parser/binding-win32-x64-msvc'
+
+[[edge]]
+From = 'npm:oxc-parser@0.147.0'
+To = 'npm:@oxc-project/types@0.147.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@oxc-project/types'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-android-arm-eabi@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-android-arm-eabi'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-android-arm64@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-android-arm64'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-darwin-arm64@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-darwin-arm64'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-darwin-x64@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-darwin-x64'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-freebsd-x64@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-freebsd-x64'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-arm-gnueabihf@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-arm-musleabihf@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-arm-musleabihf'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-arm64-gnu@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-arm64-musl@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-ppc64-gnu@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-ppc64-gnu'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-riscv64-gnu@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-riscv64-gnu'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-riscv64-musl@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-riscv64-musl'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-s390x-gnu@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-s390x-gnu'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-x64-gnu@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-linux-x64-musl@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-linux-x64-musl'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-openharmony-arm64@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-openharmony-arm64'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-wasm32-wasi@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-wasm32-wasi'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-win32-arm64-msvc@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:oxc-resolver@11.24.2'
+To = 'npm:@oxc-resolver/binding-win32-x64-msvc@11.24.2'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-resolver/binding-win32-x64-msvc'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-android-arm-eabi@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-android-arm-eabi'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-android-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-android-arm64'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-darwin-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-darwin-arm64'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-darwin-x64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-darwin-x64'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-freebsd-x64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-freebsd-x64'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-arm-gnueabihf@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-arm-musleabihf@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-arm-musleabihf'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-arm64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-arm64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-ppc64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-ppc64-gnu'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-riscv64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-riscv64-gnu'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-riscv64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-riscv64-musl'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-s390x-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-s390x-gnu'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-x64-gnu@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-linux-x64-musl@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-linux-x64-musl'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-openharmony-arm64@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-openharmony-arm64'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-win32-arm64-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-win32-ia32-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-win32-ia32-msvc'
+
+[[edge]]
+From = 'npm:oxc-transform@0.147.0'
+To = 'npm:@oxc-transform/binding-win32-x64-msvc@0.147.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@oxc-transform/binding-win32-x64-msvc'
 
 [[edge]]
 From = 'npm:postcss@8.5.26'
@@ -3498,6 +7418,384 @@ Optional = false
 Reference = 'react-is'
 
 [[edge]]
+From = 'npm:resolve@1.22.12'
+To = 'npm:es-errors@1.3.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'es-errors'
+
+[[edge]]
+From = 'npm:resolve@1.22.12'
+To = 'npm:is-core-module@2.16.2'
+Kind = 'runtime'
+Optional = false
+Reference = 'is-core-module'
+
+[[edge]]
+From = 'npm:resolve@1.22.12'
+To = 'npm:path-parse@1.0.7'
+Kind = 'runtime'
+Optional = false
+Reference = 'path-parse'
+
+[[edge]]
+From = 'npm:resolve@1.22.12'
+To = 'npm:supports-preserve-symlinks-flag@1.0.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'supports-preserve-symlinks-flag'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@oxc-project/types@0.128.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@oxc-project/types'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-android-arm64@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-android-arm64'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-darwin-arm64@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-darwin-arm64'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-darwin-x64@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-darwin-x64'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-freebsd-x64@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-freebsd-x64'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-arm-gnueabihf@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-arm64-gnu@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-arm64-musl@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-ppc64-gnu@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-ppc64-gnu'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-s390x-gnu@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-s390x-gnu'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-x64-gnu@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-linux-x64-musl@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-linux-x64-musl'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-openharmony-arm64@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-openharmony-arm64'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-wasm32-wasi@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-wasm32-wasi'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-win32-arm64-msvc@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/binding-win32-x64-msvc@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = true
+Reference = '@rolldown/binding-win32-x64-msvc'
+
+[[edge]]
+From = 'npm:rolldown@1.0.0-rc.18'
+To = 'npm:@rolldown/pluginutils@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = false
+Reference = '@rolldown/pluginutils'
+
+[[edge]]
+From = 'npm:rollup-plugin-dts@6.5.1'
+To = 'npm:@babel/code-frame@8.0.0'
+Kind = 'runtime'
+Optional = true
+Reference = '@babel/code-frame'
+
+[[edge]]
+From = 'npm:rollup-plugin-dts@6.5.1'
+To = 'npm:@jridgewell/remapping@2.3.5'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/remapping'
+
+[[edge]]
+From = 'npm:rollup-plugin-dts@6.5.1'
+To = 'npm:@jridgewell/sourcemap-codec@1.6.0'
+Kind = 'runtime'
+Optional = false
+Reference = '@jridgewell/sourcemap-codec'
+
+[[edge]]
+From = 'npm:rollup-plugin-dts@6.5.1'
+To = 'npm:convert-source-map@2.0.0'
+Kind = 'runtime'
+Optional = false
+Reference = 'convert-source-map'
+
+[[edge]]
+From = 'npm:rollup-plugin-dts@6.5.1'
+To = 'npm:magic-string@0.30.21'
+Kind = 'runtime'
+Optional = false
+Reference = 'magic-string'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@napi-rs/lzma-linux-x64-gnu@1.5.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@napi-rs/lzma-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-android-arm-eabi@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-android-arm-eabi'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-android-arm64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-android-arm64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-darwin-arm64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-darwin-arm64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-darwin-x64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-darwin-x64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-freebsd-arm64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-freebsd-arm64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-freebsd-x64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-freebsd-x64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-arm-gnueabihf@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-arm-gnueabihf'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-arm-musleabihf@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-arm-musleabihf'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-arm64-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-arm64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-arm64-musl@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-arm64-musl'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-loong64-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-loong64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-loong64-musl@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-loong64-musl'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-ppc64-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-ppc64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-ppc64-musl@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-ppc64-musl'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-riscv64-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-riscv64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-riscv64-musl@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-riscv64-musl'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-s390x-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-s390x-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-x64-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-x64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-linux-x64-musl@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-linux-x64-musl'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-openbsd-x64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-openbsd-x64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-openharmony-arm64@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-openharmony-arm64'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-win32-arm64-msvc@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-win32-arm64-msvc'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-win32-ia32-msvc@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-win32-ia32-msvc'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-win32-x64-gnu@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-win32-x64-gnu'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@rollup/rollup-win32-x64-msvc@4.63.1'
+Kind = 'runtime'
+Optional = true
+Reference = '@rollup/rollup-win32-x64-msvc'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:@types/estree@1.0.9'
+Kind = 'runtime'
+Optional = false
+Reference = '@types/estree'
+
+[[edge]]
+From = 'npm:rollup@4.63.1'
+To = 'npm:fsevents@2.3.3'
+Kind = 'runtime'
+Optional = true
+Reference = 'fsevents'
+
+[[edge]]
 From = 'npm:sirv@3.0.2'
 To = 'npm:@polka/url@1.0.0-next.29'
 Kind = 'runtime'
@@ -3533,284 +7831,109 @@ Optional = false
 Reference = 'picomatch'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-aix-ppc64@7.0.2'
+From = 'npm:unplugin-isolated-decl@0.17.0'
+To = 'npm:magic-string@1.2.3'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-aix-ppc64'
+Reference = 'magic-string'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-aix-ppc64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-aix-ppc64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-darwin-arm64@7.0.2'
+From = 'npm:unplugin-isolated-decl@0.17.0'
+To = 'npm:obug@2.1.4'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-darwin-arm64'
+Reference = 'obug'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-darwin-arm64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-darwin-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-darwin-x64@7.0.2'
+From = 'npm:unplugin-isolated-decl@0.17.0'
+To = 'npm:oxc-parser@0.147.0'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-darwin-x64'
+Reference = 'oxc-parser'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-darwin-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-darwin-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-freebsd-arm64@7.0.2'
+From = 'npm:unplugin-isolated-decl@0.17.0'
+To = 'npm:oxc-transform@0.147.0'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-freebsd-arm64'
+Reference = 'oxc-transform'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-freebsd-arm64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-freebsd-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-freebsd-x64@7.0.2'
+From = 'npm:unplugin-isolated-decl@0.17.0'
+To = 'npm:unplugin-utils@0.3.2'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-freebsd-x64'
+Reference = 'unplugin-utils'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-freebsd-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-freebsd-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-arm64@7.0.2'
+From = 'npm:unplugin-isolated-decl@0.17.0'
+To = 'npm:unplugin@3.3.0'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-arm64'
+Reference = 'unplugin'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-arm64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-arm@7.0.2'
+From = 'npm:unplugin-oxc@0.6.1'
+To = 'npm:oxc-minify@0.147.0'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-arm'
+Reference = 'oxc-minify'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-arm@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-arm'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-loong64@7.0.2'
+From = 'npm:unplugin-oxc@0.6.1'
+To = 'npm:oxc-resolver@11.24.2'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-loong64'
+Reference = 'oxc-resolver'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-loong64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-loong64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-mips64el@7.0.2'
+From = 'npm:unplugin-oxc@0.6.1'
+To = 'npm:oxc-transform@0.147.0'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-mips64el'
+Reference = 'oxc-transform'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-mips64el@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-mips64el'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-ppc64@7.0.2'
+From = 'npm:unplugin-oxc@0.6.1'
+To = 'npm:unplugin@3.3.0'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-ppc64'
+Reference = 'unplugin'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-ppc64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-ppc64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-riscv64@7.0.2'
+From = 'npm:unplugin-utils@0.3.2'
+To = 'npm:pathe@2.0.3'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-riscv64'
+Reference = 'pathe'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-riscv64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-riscv64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-s390x@7.0.2'
+From = 'npm:unplugin-utils@0.3.2'
+To = 'npm:picomatch@4.0.7'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-s390x'
+Reference = 'picomatch'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-s390x@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-s390x'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-x64@7.0.2'
+From = 'npm:unplugin@3.3.0'
+To = 'npm:@jridgewell/remapping@2.3.5'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-linux-x64'
+Reference = '@jridgewell/remapping'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-linux-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-linux-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-netbsd-arm64@7.0.2'
+From = 'npm:unplugin@3.3.0'
+To = 'npm:picomatch@4.0.7'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-netbsd-arm64'
+Reference = 'picomatch'
 
 [[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-netbsd-arm64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-netbsd-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-netbsd-x64@7.0.2'
+From = 'npm:unplugin@3.3.0'
+To = 'npm:webpack-virtual-modules@0.6.2'
 Kind = 'runtime'
 Optional = false
-Reference = '@typescript/typescript-netbsd-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-netbsd-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-netbsd-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-openbsd-arm64@7.0.2'
-Kind = 'runtime'
-Optional = false
-Reference = '@typescript/typescript-openbsd-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-openbsd-arm64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-openbsd-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-openbsd-x64@7.0.2'
-Kind = 'runtime'
-Optional = false
-Reference = '@typescript/typescript-openbsd-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-openbsd-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-openbsd-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-sunos-x64@7.0.2'
-Kind = 'runtime'
-Optional = false
-Reference = '@typescript/typescript-sunos-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-sunos-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-sunos-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-win32-arm64@7.0.2'
-Kind = 'runtime'
-Optional = false
-Reference = '@typescript/typescript-win32-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-win32-arm64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-win32-arm64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-win32-x64@7.0.2'
-Kind = 'runtime'
-Optional = false
-Reference = '@typescript/typescript-win32-x64'
-
-[[edge]]
-From = 'npm:typescript@7.0.2'
-To = 'npm:@typescript/typescript-win32-x64@7.0.2'
-Kind = 'runtime'
-Optional = true
-Reference = '@typescript/typescript-win32-x64'
+Reference = 'webpack-virtual-modules'
 
 [[edge]]
 From = 'npm:update-browserslist-db@1.3.2'
@@ -3827,11 +7950,46 @@ Optional = false
 Reference = 'picocolors'
 
 [[edge]]
-From = 'npm:utf-8-validate@6.0.6'
-To = 'npm:node-gyp-build@4.8.4'
+From = 'npm:vite@8.0.11'
+To = 'npm:fsevents@2.3.3'
+Kind = 'runtime'
+Optional = true
+Reference = 'fsevents'
+
+[[edge]]
+From = 'npm:vite@8.0.11'
+To = 'npm:lightningcss@1.33.0'
 Kind = 'runtime'
 Optional = false
-Reference = 'node-gyp-build'
+Reference = 'lightningcss'
+
+[[edge]]
+From = 'npm:vite@8.0.11'
+To = 'npm:picomatch@4.0.7'
+Kind = 'runtime'
+Optional = false
+Reference = 'picomatch'
+
+[[edge]]
+From = 'npm:vite@8.0.11'
+To = 'npm:postcss@8.5.26'
+Kind = 'runtime'
+Optional = false
+Reference = 'postcss'
+
+[[edge]]
+From = 'npm:vite@8.0.11'
+To = 'npm:rolldown@1.0.0-rc.18'
+Kind = 'runtime'
+Optional = false
+Reference = 'rolldown'
+
+[[edge]]
+From = 'npm:vite@8.0.11'
+To = 'npm:tinyglobby@0.2.17'
+Kind = 'runtime'
+Optional = false
+Reference = 'tinyglobby'
 
 [[edge]]
 From = 'npm:vue@3.5.42'
@@ -3974,32 +8132,184 @@ Optional = false
 Reference = ''
 
 [[edge]]
+From = 'workspace:peer:npm:@babel/core'
+To = 'npm:@babel/core@7.29.7'
+Kind = 'peer'
+Optional = false
+Reference = '@babel/core'
+
+[[edge]]
+From = 'workspace:peer:npm:@emnapi/core'
+To = 'npm:@emnapi/core@2.0.0-alpha.4'
+Kind = 'peer'
+Optional = false
+Reference = '@emnapi/core'
+
+[[edge]]
+From = 'workspace:peer:npm:@emnapi/runtime'
+To = 'npm:@emnapi/runtime@2.0.0-alpha.4'
+Kind = 'peer'
+Optional = false
+Reference = '@emnapi/runtime'
+
+[[edge]]
 From = 'workspace:peer:npm:browserslist'
 To = 'npm:browserslist@4.28.8'
 Kind = 'peer'
 Optional = false
 Reference = 'browserslist'
 
-[[edge]]
-From = 'workspace:peer:npm:bufferutil'
-To = 'npm:bufferutil@4.1.0'
+[[requirement]]
+ID = 'peer:npm:@babel/plugin-proposal-decorators@7.29.7:@babel/core:000060'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/core'
+Reference = '@babel/core'
+Constraint = '^7.0.0-0'
 Kind = 'peer'
-Optional = true
-Reference = 'bufferutil'
+RequiringPackage = ''
+PackageID = 'npm:@babel/plugin-proposal-decorators@7.29.7'
+DependencyKey = '@babel/core'
+OriginSource = 'registry-metadata'
+Order = 60
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:@rolldown/plugin-babel@0.2.3:@babel/core:000061'
+Status = 'shadowed-compatible'
+SelectedVersion = '7.29.7'
 
-[[edge]]
-From = 'workspace:peer:npm:typescript'
-To = 'npm:typescript@7.0.2'
+[[requirement]]
+ID = 'peer:npm:@rolldown/plugin-babel@0.2.3:@babel/core:000061'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/core'
+Reference = '@babel/core'
+Constraint = '^7.29.0 || ^8.0.0-rc.1'
 Kind = 'peer'
-Optional = true
-Reference = 'typescript'
+RequiringPackage = ''
+PackageID = 'npm:@rolldown/plugin-babel@0.2.3'
+DependencyKey = '@babel/core'
+OriginSource = 'registry-metadata'
+Order = 61
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:@babel/helper-create-class-features-plugin@7.29.7:@babel/core:000091'
+Status = 'shadowed-compatible'
+SelectedVersion = '7.29.7'
 
-[[edge]]
-From = 'workspace:peer:npm:utf-8-validate'
-To = 'npm:utf-8-validate@6.0.6'
+[[requirement]]
+ID = 'peer:npm:@babel/helper-create-class-features-plugin@7.29.7:@babel/core:000091'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/core'
+Reference = '@babel/core'
+Constraint = '^7.0.0'
 Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@babel/helper-create-class-features-plugin@7.29.7'
+DependencyKey = '@babel/core'
+OriginSource = 'registry-metadata'
+Order = 91
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:@babel/helper-module-transforms@7.29.7:@babel/core:000092'
+Status = 'shadowed-compatible'
+SelectedVersion = '7.29.7'
+
+[[requirement]]
+ID = 'peer:npm:@babel/helper-module-transforms@7.29.7:@babel/core:000092'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/core'
+Reference = '@babel/core'
+Constraint = '^7.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@babel/helper-module-transforms@7.29.7'
+DependencyKey = '@babel/core'
+OriginSource = 'registry-metadata'
+Order = 92
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:@babel/plugin-syntax-decorators@7.29.7:@babel/core:000093'
+Status = 'shadowed-compatible'
+SelectedVersion = '7.29.7'
+
+[[requirement]]
+ID = 'peer:npm:@babel/plugin-syntax-decorators@7.29.7:@babel/core:000093'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/core'
+Reference = '@babel/core'
+Constraint = '^7.0.0-0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@babel/plugin-syntax-decorators@7.29.7'
+DependencyKey = '@babel/core'
+OriginSource = 'registry-metadata'
+Order = 93
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:@babel/helper-replace-supers@7.29.7:@babel/core:000106'
+Status = 'shadowed-compatible'
+SelectedVersion = '7.29.7'
+
+[[requirement]]
+ID = 'peer:npm:@babel/helper-replace-supers@7.29.7:@babel/core:000106'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/core'
+Reference = '@babel/core'
+Constraint = '^7.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@babel/helper-replace-supers@7.29.7'
+DependencyKey = '@babel/core'
+OriginSource = 'registry-metadata'
+Order = 106
+Optional = false
+Controlling = true
+ShadowedBy = ''
+Status = 'controlling'
+SelectedVersion = '7.29.7'
+
+[[requirement]]
+ID = 'peer:npm:@rolldown/plugin-babel@0.2.3:@babel/plugin-transform-runtime:000062'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/plugin-transform-runtime'
+Reference = '@babel/plugin-transform-runtime'
+Constraint = '^7.29.0 || ^8.0.0-rc.1'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rolldown/plugin-babel@0.2.3'
+DependencyKey = '@babel/plugin-transform-runtime'
+OriginSource = 'registry-metadata'
+Order = 62
 Optional = true
-Reference = 'utf-8-validate'
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:@rolldown/plugin-babel@0.2.3:@babel/runtime:000063'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@babel/runtime'
+Reference = '@babel/runtime'
+Constraint = '^7.27.0 || ^8.0.0-rc.1'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rolldown/plugin-babel@0.2.3'
+DependencyKey = '@babel/runtime'
+OriginSource = 'registry-metadata'
+Order = 63
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/coverage-v8:dependency:@bcoe/v8-coverage:000018'
@@ -4038,6 +8348,63 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '1.10.0'
+
+[[requirement]]
+ID = 'peer:npm:@napi-rs/wasm-runtime@1.2.3:@emnapi/core:000107'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@emnapi/core'
+Reference = '@emnapi/core'
+Constraint = '^1.7.1 || ^2.0.0-alpha.4'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@napi-rs/wasm-runtime@1.2.3'
+DependencyKey = '@emnapi/core'
+OriginSource = 'registry-metadata'
+Order = 107
+Optional = false
+Controlling = true
+ShadowedBy = ''
+Status = 'controlling'
+SelectedVersion = '2.0.0-alpha.4'
+
+[[requirement]]
+ID = 'peer:npm:@napi-rs/wasm-runtime@1.2.3:@emnapi/runtime:000108'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@emnapi/runtime'
+Reference = '@emnapi/runtime'
+Constraint = '^1.7.1 || ^2.0.0-alpha.4'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@napi-rs/wasm-runtime@1.2.3'
+DependencyKey = '@emnapi/runtime'
+OriginSource = 'registry-metadata'
+Order = 108
+Optional = false
+Controlling = true
+ShadowedBy = ''
+Status = 'controlling'
+SelectedVersion = '2.0.0-alpha.4'
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:@farmfe/core:000097'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@farmfe/core'
+Reference = '@farmfe/core'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = '@farmfe/core'
+OriginSource = 'registry-metadata'
+Order = 97
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/coverage-istanbul:dependency:@jridgewell/gen-mapping:000009'
@@ -4097,6 +8464,25 @@ Status = 'controlling'
 SelectedVersion = '0.3.31'
 
 [[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:@rspack/core:000098'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@rspack/core'
+Reference = '@rspack/core'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = '@rspack/core'
+OriginSource = 'registry-metadata'
+Order = 98
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
 ID = 'direct:@vitest/expect:target:package:@standard-schema/spec:000027'
 Scope = 'workspace'
 TargetSource = 'npm'
@@ -4114,6 +8500,25 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '1.1.0'
+
+[[requirement]]
+ID = 'peer:npm:unplugin-isolated-decl@0.17.0:@swc/core:000073'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@swc/core'
+Reference = '@swc/core'
+Constraint = '^1.6.6'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin-isolated-decl@0.17.0'
+DependencyKey = '@swc/core'
+OriginSource = 'registry-metadata'
+Order = 73
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/browser-preview:dependency:@testing-library/dom:000007'
@@ -4135,7 +8540,7 @@ Status = 'controlling'
 SelectedVersion = '10.4.1'
 
 [[requirement]]
-ID = 'peer:npm:@testing-library/user-event@14.6.6:@testing-library/dom:000060'
+ID = 'peer:npm:@testing-library/user-event@14.6.6:@testing-library/dom:000068'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = '@testing-library/dom'
@@ -4146,7 +8551,7 @@ RequiringPackage = ''
 PackageID = 'npm:@testing-library/user-event@14.6.6'
 DependencyKey = '@testing-library/dom'
 OriginSource = 'registry-metadata'
-Order = 60
+Order = 68
 Optional = false
 Controlling = false
 ShadowedBy = 'direct:@vitest/browser-preview:dependency:@testing-library/dom:000007'
@@ -4209,6 +8614,63 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '5.2.3'
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:@types/node:000076'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@types/node'
+Reference = '@types/node'
+Constraint = '^20.19.0 || >=22.12.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = '@types/node'
+OriginSource = 'registry-metadata'
+Order = 76
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:rollup-plugin-dts@6.5.1:@typescript/typescript6:000070'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@typescript/typescript6'
+Reference = '@typescript/typescript6'
+Constraint = '^6'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:rollup-plugin-dts@6.5.1'
+DependencyKey = '@typescript/typescript6'
+OriginSource = 'registry-metadata'
+Order = 70
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:@vitejs/devtools:000077'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = '@vitejs/devtools'
+Reference = '@vitejs/devtools'
+Constraint = '^0.1.18'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = '@vitejs/devtools'
+OriginSource = 'registry-metadata'
+Order = 77
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/coverage-istanbul:dependency:@vitest/istanbul-lib-coverage:000011'
@@ -4363,7 +8825,7 @@ Status = 'controlling'
 SelectedVersion = '1.0.5'
 
 [[requirement]]
-ID = 'peer:npm:update-browserslist-db@1.3.2:browserslist:000067'
+ID = 'peer:npm:update-browserslist-db@1.3.2:browserslist:000109'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'browserslist'
@@ -4374,7 +8836,7 @@ RequiringPackage = ''
 PackageID = 'npm:update-browserslist-db@1.3.2'
 DependencyKey = 'browserslist'
 OriginSource = 'registry-metadata'
-Order = 67
+Order = 109
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4382,7 +8844,7 @@ Status = 'controlling'
 SelectedVersion = '4.28.8'
 
 [[requirement]]
-ID = 'peer:npm:ws@8.21.3:bufferutil:000063'
+ID = 'peer:npm:ws@8.21.3:bufferutil:000089'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'bufferutil'
@@ -4393,12 +8855,31 @@ RequiringPackage = ''
 PackageID = 'npm:ws@8.21.3'
 DependencyKey = 'bufferutil'
 OriginSource = 'registry-metadata'
-Order = 63
+Order = 89
 Optional = true
 Controlling = true
 ShadowedBy = ''
-Status = 'controlling'
-SelectedVersion = '4.1.0'
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:bun-types-no-globals:000099'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'bun-types-no-globals'
+Reference = 'bun-types-no-globals'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'bun-types-no-globals'
+OriginSource = 'registry-metadata'
+Order = 99
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/expect:target:package:chai:000029'
@@ -4477,6 +8958,44 @@ Status = 'controlling'
 SelectedVersion = '2.3.2'
 
 [[requirement]]
+ID = 'peer:npm:vite@8.0.11:esbuild:000078'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'esbuild'
+Reference = 'esbuild'
+Constraint = '^0.27.0 || ^0.28.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'esbuild'
+OriginSource = 'registry-metadata'
+Order = 78
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:unplugin@3.3.0:esbuild:000100'
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:esbuild:000100'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'esbuild'
+Reference = 'esbuild'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'esbuild'
+OriginSource = 'registry-metadata'
+Order = 100
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
 ID = 'direct:@vitest/mocker:dependency:estree-walker:000032'
 Scope = 'workspace'
 TargetSource = 'npm'
@@ -4551,6 +9070,44 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '3.4.4'
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:jiti:000079'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'jiti'
+Reference = 'jiti'
+Constraint = '>=1.21.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'jiti'
+OriginSource = 'registry-metadata'
+Order = 79
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:less:000080'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'less'
+Reference = 'less'
+Constraint = '^4.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'less'
+OriginSource = 'registry-metadata'
+Order = 80
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/example-lit:dependency:lit:000026'
@@ -4838,7 +9395,7 @@ Status = 'controlling'
 SelectedVersion = '4.0.7'
 
 [[requirement]]
-ID = 'peer:npm:fdir@6.5.0:picomatch:000066'
+ID = 'peer:npm:fdir@6.5.0:picomatch:000096'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'picomatch'
@@ -4849,7 +9406,7 @@ RequiringPackage = ''
 PackageID = 'npm:fdir@6.5.0'
 DependencyKey = 'picomatch'
 OriginSource = 'registry-metadata'
-Order = 66
+Order = 96
 Optional = true
 Controlling = false
 ShadowedBy = 'direct:vitest:dependency:picomatch:000054'
@@ -4874,6 +9431,177 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '7.0.0'
+
+[[requirement]]
+ID = 'peer:npm:@rolldown/plugin-babel@0.2.3:rolldown:000064'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rolldown'
+Reference = 'rolldown'
+Constraint = '^1.0.0-rc.5'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rolldown/plugin-babel@0.2.3'
+DependencyKey = 'rolldown'
+OriginSource = 'registry-metadata'
+Order = 64
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:unplugin@3.3.0:rolldown:000101'
+Status = 'pending'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:rolldown:000101'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rolldown'
+Reference = 'rolldown'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'rolldown'
+OriginSource = 'registry-metadata'
+Order = 101
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:@rollup/plugin-commonjs@29.0.3:rollup:000066'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rollup'
+Reference = 'rollup'
+Constraint = '^2.68.0||^3.0.0||^4.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rollup/plugin-commonjs@29.0.3'
+DependencyKey = 'rollup'
+OriginSource = 'registry-metadata'
+Order = 66
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:@rollup/plugin-node-resolve@16.0.3:rollup:000067'
+Status = 'shadowed-compatible'
+SelectedVersion = '4.63.1'
+
+[[requirement]]
+ID = 'peer:npm:@rollup/plugin-node-resolve@16.0.3:rollup:000067'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rollup'
+Reference = 'rollup'
+Constraint = '^2.78.0||^3.0.0||^4.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rollup/plugin-node-resolve@16.0.3'
+DependencyKey = 'rollup'
+OriginSource = 'registry-metadata'
+Order = 67
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:rollup-plugin-dts@6.5.1:rollup:000071'
+Status = 'shadowed-compatible'
+SelectedVersion = '4.63.1'
+
+[[requirement]]
+ID = 'peer:npm:rollup-plugin-dts@6.5.1:rollup:000071'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rollup'
+Reference = 'rollup'
+Constraint = '^3 || ^4'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:rollup-plugin-dts@6.5.1'
+DependencyKey = 'rollup'
+OriginSource = 'registry-metadata'
+Order = 71
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:@rollup/pluginutils@5.4.0:rollup:000094'
+Status = 'shadowed-compatible'
+SelectedVersion = '4.63.1'
+
+[[requirement]]
+ID = 'peer:npm:@rollup/pluginutils@5.4.0:rollup:000094'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rollup'
+Reference = 'rollup'
+Constraint = '^1.20.0||^2.0.0||^3.0.0||^4.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rollup/pluginutils@5.4.0'
+DependencyKey = 'rollup'
+OriginSource = 'registry-metadata'
+Order = 94
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:unplugin@3.3.0:rollup:000102'
+Status = 'shadowed-compatible'
+SelectedVersion = '4.63.1'
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:rollup:000102'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'rollup'
+Reference = 'rollup'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'rollup'
+OriginSource = 'registry-metadata'
+Order = 102
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'controlling'
+SelectedVersion = '4.63.1'
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:sass:000081'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'sass'
+Reference = 'sass'
+Constraint = '^1.70.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'sass'
+OriginSource = 'registry-metadata'
+Order = 81
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:sass-embedded:000082'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'sass-embedded'
+Reference = 'sass-embedded'
+Constraint = '^1.70.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'sass-embedded'
+OriginSource = 'registry-metadata'
+Order = 82
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:@vitest/browser:dependency:sirv:000003'
@@ -4950,6 +9678,63 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '4.2.0'
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:stylus:000083'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'stylus'
+Reference = 'stylus'
+Constraint = '>=0.54.8'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'stylus'
+OriginSource = 'registry-metadata'
+Order = 83
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:sugarss:000084'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'sugarss'
+Reference = 'sugarss'
+Constraint = '^5.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'sugarss'
+OriginSource = 'registry-metadata'
+Order = 84
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:terser:000085'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'terser'
+Reference = 'terser'
+Constraint = '^5.16.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'terser'
+OriginSource = 'registry-metadata'
+Order = 85
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:vitest:dependency:tinybench:000056'
@@ -5161,7 +9946,64 @@ Status = 'controlling'
 SelectedVersion = '3.1.1'
 
 [[requirement]]
-ID = 'peer:npm:vue@3.5.42:typescript:000062'
+ID = 'peer:npm:vite@8.0.11:tsx:000086'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'tsx'
+Reference = 'tsx'
+Constraint = '^4.8.1'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'tsx'
+OriginSource = 'registry-metadata'
+Order = 86
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:rollup-plugin-dts@6.5.1:typescript:000072'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'typescript'
+Reference = 'typescript'
+Constraint = '^4.5 || ^5 || ^6 || ^7'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:rollup-plugin-dts@6.5.1'
+DependencyKey = 'typescript'
+OriginSource = 'registry-metadata'
+Order = 72
+Optional = false
+Controlling = false
+ShadowedBy = 'peer:npm:unplugin-isolated-decl@0.17.0:typescript:000074'
+Status = 'shadowed-compatible'
+SelectedVersion = '5.9.3'
+
+[[requirement]]
+ID = 'peer:npm:unplugin-isolated-decl@0.17.0:typescript:000074'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'typescript'
+Reference = 'typescript'
+Constraint = '^5.5.2 || ^6.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin-isolated-decl@0.17.0'
+DependencyKey = 'typescript'
+OriginSource = 'registry-metadata'
+Order = 74
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:vue@3.5.42:typescript:000088'
+Status = 'shadowed-compatible'
+SelectedVersion = '5.9.3'
+
+[[requirement]]
+ID = 'peer:npm:vue@3.5.42:typescript:000088'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'typescript'
@@ -5172,15 +10014,53 @@ RequiringPackage = ''
 PackageID = 'npm:vue@3.5.42'
 DependencyKey = 'typescript'
 OriginSource = 'registry-metadata'
-Order = 62
+Order = 88
 Optional = true
 Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
-SelectedVersion = '7.0.2'
+SelectedVersion = '5.9.3'
 
 [[requirement]]
-ID = 'peer:npm:ws@8.21.3:utf-8-validate:000064'
+ID = 'peer:npm:unplugin-oxc@0.6.1:unloader:000075'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'unloader'
+Reference = 'unloader'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin-oxc@0.6.1'
+DependencyKey = 'unloader'
+OriginSource = 'registry-metadata'
+Order = 75
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:unplugin@3.3.0:unloader:000103'
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:unloader:000103'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'unloader'
+Reference = 'unloader'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'unloader'
+OriginSource = 'registry-metadata'
+Order = 103
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:ws@8.21.3:utf-8-validate:000090'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'utf-8-validate'
@@ -5191,12 +10071,50 @@ RequiringPackage = ''
 PackageID = 'npm:ws@8.21.3'
 DependencyKey = 'utf-8-validate'
 OriginSource = 'registry-metadata'
-Order = 64
+Order = 90
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
+
+[[requirement]]
+ID = 'peer:npm:@rolldown/plugin-babel@0.2.3:vite:000065'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'vite'
+Reference = 'vite'
+Constraint = '^8.0.0'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:@rolldown/plugin-babel@0.2.3'
+DependencyKey = 'vite'
+OriginSource = 'registry-metadata'
+Order = 65
+Optional = true
+Controlling = false
+ShadowedBy = 'peer:npm:unplugin@3.3.0:vite:000104'
+Status = 'shadowed-compatible'
+SelectedVersion = '8.0.11'
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:vite:000104'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'vite'
+Reference = 'vite'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'vite'
+OriginSource = 'registry-metadata'
+Order = 104
 Optional = true
 Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
-SelectedVersion = '6.0.6'
+SelectedVersion = '8.0.11'
 
 [[requirement]]
 ID = 'direct:docs:dependency:vue:000047'
@@ -5218,7 +10136,7 @@ Status = 'controlling'
 SelectedVersion = '3.5.42'
 
 [[requirement]]
-ID = 'peer:npm:@vueuse/core@14.4.0:vue:000061'
+ID = 'peer:npm:@vueuse/core@14.4.0:vue:000069'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'vue'
@@ -5229,15 +10147,15 @@ RequiringPackage = ''
 PackageID = 'npm:@vueuse/core@14.4.0'
 DependencyKey = 'vue'
 OriginSource = 'registry-metadata'
-Order = 61
+Order = 69
 Optional = false
 Controlling = false
-ShadowedBy = 'peer:npm:@vueuse/shared@14.4.0:vue:000065'
+ShadowedBy = 'peer:npm:@vueuse/shared@14.4.0:vue:000095'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.5.42'
 
 [[requirement]]
-ID = 'peer:npm:@vueuse/shared@14.4.0:vue:000065'
+ID = 'peer:npm:@vueuse/shared@14.4.0:vue:000095'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'vue'
@@ -5248,12 +10166,31 @@ RequiringPackage = ''
 PackageID = 'npm:@vueuse/shared@14.4.0'
 DependencyKey = 'vue'
 OriginSource = 'registry-metadata'
-Order = 65
+Order = 95
 Optional = false
 Controlling = false
 ShadowedBy = 'direct:docs:dependency:vue:000047'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.5.42'
+
+[[requirement]]
+ID = 'peer:npm:unplugin@3.3.0:webpack:000105'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'webpack'
+Reference = 'webpack'
+Constraint = '*'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:unplugin@3.3.0'
+DependencyKey = 'webpack'
+OriginSource = 'registry-metadata'
+Order = 105
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[requirement]]
 ID = 'direct:vitest:dependency:why-is-node-running:000059'
@@ -5292,6 +10229,25 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '8.21.3'
+
+[[requirement]]
+ID = 'peer:npm:vite@8.0.11:yaml:000087'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'yaml'
+Reference = 'yaml'
+Constraint = '^2.4.2'
+Kind = 'peer'
+RequiringPackage = ''
+PackageID = 'npm:vite@8.0.11'
+DependencyKey = 'yaml'
+OriginSource = 'registry-metadata'
+Order = 87
+Optional = true
+Controlling = true
+ShadowedBy = ''
+Status = 'optional-unsatisfied'
+SelectedVersion = ''
 
 [[target]]
 Package = '@vitest/expect'

@@ -367,3 +367,51 @@ are externalized.
   reproduce a stable artifact set.
 - Automatic target-dependency derivation remains deferred until artifact
   consumption makes an edge semantically certain.
+
+## M80b status update
+
+- **F-018 Workflow TestTarget selection — ResolvedM80b.** `Test` effects now
+  preserve one declared package plus TestTarget identity through manifest IR,
+  Flow planning, validation, and `project.RunTest`. This is generic target
+  interop; no Vitest command or file selection is copied into the workflow.
+  Classification: TargetInterop and FlowBug.
+- **F-019 workflow JSON included raw child output — ResolvedM80b.** Structured
+  workflow mode suppresses raw Rollup/Vitest chatter on stdout while retaining
+  typed artifacts, diagnostics, counts, assertion evidence, events, trace, and
+  terminal snapshot. Twenty JSONL records parse independently on a successful
+  flagship run. Classification: WorkflowUX and FlowBug.
+- **F-020 human inspect hid target identities — ResolvedM80b.** Human Flow
+  inspection now prints qualified Build/Test selection such as
+  `@vitest/expect:package` and `@vitest/test-unit:basic-threads`.
+  Classification: WorkflowUX.
+
+## F-021 — target tools were absent from authoritative materialization
+
+Severity: P1
+
+Context:
+The initial real Workflow ran only after pnpm materialization. A controlled
+`tspack sync` replaced root tool shims with the 153-package bounded TSPack
+materialization, whose lock did not contain the Rollup or Vitest requirements
+implied by the authored BuildTargets/TestTargets.
+
+Evidence:
+The first clean run failed both build branches with
+`TSPACK_COMPILER_TOOL_MISSING` for `node_modules/.bin/rollup.cmd`; the old
+`tspack update` reported `+0 -0`. The follow-up also exposed four narrower
+interop defects: historical npm metadata with non-string `scripts`, optional
+peers being auto-installed, stale partial workspace artifacts being trusted by
+directory existence alone, and Windows Vitest lookup ignoring `.cmd` shims.
+
+Resolution:
+Resolved in the target/resolver/materializer path. BuildTarget compiler and
+TestTarget harness identities are projected as tool roots; config-imported
+plugins remain explicit `Tools(...)` intent. Optional peers are no longer
+invented, old registry script metadata is decoded tolerantly, local artifacts
+are content-verified and repaired, and Windows uses materialized `.cmd` shims.
+A clean update now produces a 332-package lock, clean sync materializes Rollup
+and Vitest, and the four-effect Workflow succeeds twice without pnpm.
+
+Classification: ProviderBootstrap and TargetInterop
+
+M80b status: ResolvedFollowup; Outcome A qualification passed.

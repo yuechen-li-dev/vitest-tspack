@@ -1,5 +1,6 @@
 import {
   Package,
+  Tools,
   Publish,
   defineDeps,
   definePackage,
@@ -78,5 +79,16 @@ export default definePackage(
     version="5.0.0-rc.3"
     kind="app"
     dependencies={{ values: [deps.antfuEslintConfig, deps.playwrightTest, deps.rollupPluginCommonjs, deps.rollupPluginJson, deps.rollupPluginNodeResolve, deps.typesNode, deps.typesSemver, deps.typesWs, deps.vitestBrowser, deps.vitestCoverageIstanbul, deps.vitestCoverageV8, deps.vitestUi, deps.bumpp, deps.changelogithub, deps.eslint, deps.knip, deps.magicString, deps.pathe, deps.premove, deps.rollup, deps.rollupPluginDts, deps.rollupPluginLicense, deps.semver, deps.tinyglobby, deps.tsx, deps.typescript, deps.unpluginIsolatedDecl, deps.unpluginOxc, deps.vite, deps.vitest, deps.zx] }}
-  />,
+  >
+    <Tools
+      values={[
+        deps.rollupPluginCommonjs,
+        deps.rollupPluginNodeResolve,
+        deps.rollupPluginDts,
+        deps.typescript,
+        deps.unpluginIsolatedDecl,
+        deps.unpluginOxc,
+      ]}
+    />
+  </Package>,
 );

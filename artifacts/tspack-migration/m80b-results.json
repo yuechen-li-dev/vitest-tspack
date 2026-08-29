@@ -1,0 +1,62 @@
+{
+  "milestone": "M80b",
+  "outcome": "A",
+  "workflow": {
+    "identity": "VitestCoreCI",
+    "schemaVersion": 4,
+    "effects": [
+      { "operation": "build", "package": "@vitest/expect", "target": "package", "artifacts": 2 },
+      { "operation": "build", "package": "@vitest/snapshot", "target": "package", "artifacts": 8 },
+      { "operation": "test", "package": "@vitest/test-unit", "target": "basic-threads", "passed": 8, "failed": 0, "skipped": 1 },
+      { "operation": "test", "package": "@vitest/test-unit", "target": "snapshot-threads", "passed": 16, "failed": 0, "skipped": 0 }
+    ],
+    "repeatWallMs": [3214, 3126],
+    "semanticSteps": 9,
+    "jsonl": { "events": 19, "results": 1, "rawLifecycleLines": 0 }
+  },
+  "parallelism": {
+    "buildEffectsStartedBeforeCompletion": true,
+    "testEffectsStartedBeforeCompletion": true,
+    "stableSemanticOrdering": true
+  },
+  "controlledFailure": {
+    "workflowState": "failed",
+    "basic": { "passed": 7, "failed": 1, "skipped": 1, "outcome": "failed" },
+    "snapshot": { "passed": 16, "failed": 0, "skipped": 0, "outcome": "succeeded" },
+    "sourceRestored": true
+  },
+  "cancellation": { "state": "cancelled", "nativeTestCancelled": true, "orphanProcesses": 0, "sourceRestored": true },
+  "timeout": { "state": "timedOut", "activeEffects": 0, "sourceRestored": true },
+  "githubExport": {
+    "path": ".github/workflows/tspack-vitestcoreci.yml",
+    "thinRunner": true,
+    "semanticLifecycleDuplication": false,
+    "command": "tspack workflow run VitestCoreCI --ci-provider github"
+  },
+  "cleanMaterialization": {
+    "updateCompleted": true,
+    "syncCompleted": true,
+    "workflowState": "succeeded",
+    "lockPackages": 332,
+    "rollupShim": true,
+    "vitestShim": true,
+    "selectedArtifactsStartedAbsent": true,
+    "pnpmCompatibilityMaterializationStillRequired": false
+  },
+  "followupFixes": [
+    "target compiler and harness tool projection",
+    "optional peer resolution correctness",
+    "historical npm scripts metadata tolerance",
+    "local artifact content verification and repair",
+    "Windows .cmd Vitest shim lookup"
+  ],
+  "validation": {
+    "m80a3Lifecycle": "passed",
+    "upstreamBuilds": "passed",
+    "upstreamTests": "passed: 8/0/1 and 16/0/0",
+    "tspackBuilds": "passed",
+    "tspackTests": "passed: 8/0/1 and 16/0/0",
+    "workflowRepeated": "passed twice"
+  },
+  "recommendation": "Proceed to one bounded M80b1 CI slice; defer M80c until a released TSPack thin-runner provider smoke test passes"
+}

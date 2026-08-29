@@ -2,6 +2,7 @@ import {
   Package,
   Publish,
   TestTargets,
+  Tools,
   defineDeps,
   definePackage,
   dep,
@@ -91,6 +92,13 @@ export default definePackage(
     kind="app"
     dependencies={{ values: [deps.babelCore, deps.babelPluginProposalDecorators, deps.rolldownPluginBabel, deps.standardSchemaSpec, deps.testDepEsmNonExisting, deps.testViteEnvironmentExternal, deps.testViteExternal, deps.vitestExpect, deps.vitestMocker, deps.vitestPrettyFormat, deps.vitestTestDepCjs, deps.vitestTestDepNestedCjs, deps.vitestTestDep1, deps.vitestTestDep2, deps.vitestTestFn, deps.vitestUtils, deps.vitestWebWorker, deps.vueuseIntegrations, deps.httpClient, deps.immutable, deps.loupe, deps.memfs, deps.obug, deps.react, deps.react18, deps.sinon, deps.sinonChai, deps.temporalPolyfill, deps.tinyrainbow, deps.tinyspy, deps.url, deps.vitest, deps.vitestEnvironmentCustom, deps.vitestPackageExports, deps.vue] }}
   >
+    <Tools
+      values={[
+        deps.babelCore,
+        deps.babelPluginProposalDecorators,
+        deps.rolldownPluginBabel,
+      ]}
+    />
     <TestTargets
       rows={[
         {

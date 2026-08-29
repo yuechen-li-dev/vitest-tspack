@@ -1,4 +1,16 @@
-import { Packages, Workspace, defineWorkspace } from "tspack/manifest";
+import {
+  Branch,
+  Build,
+  Manual,
+  Packages,
+  Parallel,
+  Sequence,
+  Test,
+  Workflow,
+  Workflows,
+  Workspace,
+  defineWorkspace,
+} from "tspack/manifest";
 
 /**
  * M80a1 hand-finished TSPack project skeleton.
@@ -54,6 +66,51 @@ export default defineWorkspace(
         { name: "@vitest/test-unit", root: "test/unit", manifest: "test/unit/.tspack-migration/package.manifest.tsx" },
         { name: "@vitest/test-workspaces", root: "test/workspaces", manifest: "test/workspaces/.tspack-migration/package.manifest.tsx" },
         { name: "@vitest/test-workspaces-browser", root: "test/workspaces-browser", manifest: "test/workspaces-browser/.tspack-migration/package.manifest.tsx" },
+      ]}
+    />
+    <Workflows
+      rows={[
+        Workflow("VitestCoreCI", {
+          triggers: [Manual()],
+          flow: Sequence(
+            Parallel(
+              Branch(
+                "build-expect",
+                Build({
+                  name: "Build @vitest/expect",
+                  packages: ["@vitest/expect"],
+                  targets: ["package"],
+                }),
+              ),
+              Branch(
+                "build-snapshot",
+                Build({
+                  name: "Build @vitest/snapshot",
+                  packages: ["@vitest/snapshot"],
+                  targets: ["package"],
+                }),
+              ),
+            ),
+            Parallel(
+              Branch(
+                "test-basic-threads",
+                Test({
+                  name: "Test basic-threads",
+                  packages: ["@vitest/test-unit"],
+                  target: "basic-threads",
+                }),
+              ),
+              Branch(
+                "test-snapshot-threads",
+                Test({
+                  name: "Test snapshot-threads",
+                  packages: ["@vitest/test-unit"],
+                  target: "snapshot-threads",
+                }),
+              ),
+            ),
+          ),
+        }),
       ]}
     />
   </Workspace>,
