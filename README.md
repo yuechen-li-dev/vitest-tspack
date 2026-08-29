@@ -58,7 +58,7 @@ tspack workflow run VitestCoreCI --jobs 4
 
 GitHub runs the same Flow through the generated
 `.github/workflows/tspack-vitestcoreci.yml` thin runner. It pins Node 24 and the
-checksum-verified TSPack `v0.1.9-m80b1.2` prerelease, verifies an empty
+checksum-verified TSPack `v0.1.9-m80b1.3` prerelease, verifies an empty
 dependency state, materializes the committed `ts-lock.toml`, checks the
 project, and invokes only `tspack workflow run VitestCoreCI` for lifecycle
 semantics. It does not run pnpm.

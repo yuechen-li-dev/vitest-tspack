@@ -434,7 +434,7 @@ The installed `v0.1.8` reported unknown `Workflows`, `Workflow`, `Build`,
 
 Resolution:
 TSPack's GitHub export now pins Node 24, the first-party setup action, and the
-binary to `v0.1.9-m80b1.2`; prints binary provenance; proves `node_modules` and
+binary to `v0.1.9-m80b1.3`; prints binary provenance; proves `node_modules` and
 `.tspack` are absent; runs lock-only `sync --clean`; checks the project; then
 runs the one semantic Workflow command. The prerelease is built by the normal
 release matrix, publishes `checksums.txt`, and the setup action verifies the
@@ -443,6 +443,32 @@ Linux archive before extraction.
 Classification: ProviderBootstrap and InstalledTSPack
 
 M80b1 status: Resolved.
+
+### F-027 — pre-build project checks required generated type outputs
+
+Severity: P1
+
+Context:
+The generated runner correctly checks the project before executing the Flow.
+The two bounded package targets declare generated declaration outputs, so a
+clean checkout cannot contain those paths until their Build effects run.
+
+Evidence:
+Vitest run `33270177934` installed and checksum-verified
+`v0.1.9-m80b1.2`, proved an empty dependency state, and completed clean
+lock-only realization of 1,116 entries. `tspack check` then emitted
+`TSPACK_TYPE_MISSING_OUTPUT` for the expect and snapshot declaration outputs.
+
+Resolution:
+Project-level check, update, and outdated operations now validate declared
+type surfaces while allowing generated outputs to be absent. Packaging keeps
+the strict behavior because it consumes those outputs. Focused regressions and
+the full Go suite cover both branches, and the clean local runner reaches the
+same successful four-effect Flow after the pre-build check.
+
+Classification: InstalledTSPack and BuildTarget
+
+M80b1 status: Resolved in `v0.1.9-m80b1.3`.
 
 ### F-023 — release qualification browser tests used workstation-sized timeouts
 
