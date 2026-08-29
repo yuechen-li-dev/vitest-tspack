@@ -415,3 +415,55 @@ and Vitest, and the four-effect Workflow succeeds twice without pnpm.
 Classification: ProviderBootstrap and TargetInterop
 
 M80b status: ResolvedFollowup; Outcome A qualification passed.
+
+## M80b1 status update
+
+### F-022 — the generated provider bootstrap referenced an unavailable action and release
+
+Severity: P0
+
+Context:
+The M80b runner referenced `setup-tspack@v1`, but no `v1` ref existed, and the
+latest released CLI (`v0.1.8`) predated Workflows, Build/Test effects, and the
+clean target-tool materialization fixes.
+
+Evidence:
+The installed `v0.1.8` reported unknown `Workflows`, `Workflow`, `Build`,
+`Test`, and Flow helpers. `git ls-remote` found no `refs/tags/v1` or
+`refs/heads/v1`.
+
+Resolution:
+TSPack's GitHub export now pins Node 24, the first-party setup action, and the
+binary to `v0.1.9-m80b1.1`; prints binary provenance; proves `node_modules` and
+`.tspack` are absent; runs lock-only `sync --clean`; checks the project; then
+runs the one semantic Workflow command. The prerelease is built by the normal
+release matrix, publishes `checksums.txt`, and the setup action verifies the
+Linux archive before extraction.
+
+Classification: ProviderBootstrap and InstalledTSPack
+
+M80b1 status: Resolved pending final Vitest runner evidence.
+
+### F-023 — release qualification browser tests used workstation-sized timeouts
+
+Severity: P2
+
+Context:
+The first prerelease run reached the normal Linux release qualification but two
+real-browser integration cases exceeded Vitest's default five-second timeout
+on the hosted runner. The same cases passed locally in under two seconds.
+
+Evidence:
+TSPack release run `33268831925`, Linux amd64 job `99143547862`, timed out at
+the two named integration tests before packaging. Four non-Linux matrix lanes
+had already packaged successfully; the release job was correctly withheld.
+
+Resolution:
+Only the two browser-bearing integration cases received an explicit 15-second
+bound. The focused local test passed 4/4, and release run `33268914548` then
+passed all five build lanes, the Linux no-dist smoke, checksum generation, and
+release publication.
+
+Classification: ProviderBootstrap and CIUX
+
+M80b1 status: Resolved.

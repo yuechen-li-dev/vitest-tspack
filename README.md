@@ -51,15 +51,26 @@ port. `VitestCoreCI` builds the native `@vitest/expect:package` and
 tspack inspect targets
 tspack workflow list
 tspack workflow inspect VitestCoreCI
+tspack sync --clean
+tspack check
 tspack workflow run VitestCoreCI --jobs 4
 ```
 
-The existing GitHub Actions, package scripts, broader package builds, browser
-tests, release, and publish flows remain upstream authority. See
-[`docs/tspack-migration/m80b-report.md`](docs/tspack-migration/m80b-report.md)
-for the current workflow proof. A clean TSPack `update`/`sync` materialization
-now runs this slice without pnpm; broader Vitest CI and provider authority
-remain intentionally upstream.
+GitHub runs the same Flow through the generated
+`.github/workflows/tspack-vitestcoreci.yml` thin runner. It pins Node 24 and the
+checksum-verified TSPack `v0.1.9-m80b1.1` prerelease, verifies an empty
+dependency state, materializes the committed `ts-lock.toml`, checks the
+project, and invokes only `tspack workflow run VitestCoreCI` for lifecycle
+semantics. It does not run pnpm.
+
+TSPack now owns only this bounded build/test slice. The broad upstream unit
+matrix still carries additional Node and Windows coverage, so no whole legacy
+job can be deleted without losing a safety net. Broader package builds,
+typecheck/lint, browser, coverage, platform, release, publish, ecosystem, and
+repository-maintenance workflows remain upstream authority. See
+[`docs/tspack-migration/m80b1-report.md`](docs/tspack-migration/m80b1-report.md)
+for the remote qualification and exact workflow inventory; this is not a claim
+of complete Vitest CI migration.
 
 ## Features
 

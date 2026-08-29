@@ -4,11 +4,26 @@ on:
   workflow_dispatch: {}
 jobs:
   tspack:
+    name: TSPack VitestCoreCI
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
       - name: Setup TSPack
-        uses: yuechen-li-dev/tspack/.github/actions/setup-tspack@v1
+        uses: yuechen-li-dev/tspack/.github/actions/setup-tspack@v0.1.9-m80b1.1
+        with:
+          version: v0.1.9-m80b1.1
+      - name: Show TSPack version
+        run: tspack version
+      - name: Verify clean dependency state
+        run: test ! -e node_modules && test ! -e .tspack
+      - name: Realize locked dependencies
+        run: tspack sync --clean
+      - name: Check TSPack project
+        run: tspack check
       - name: Run TSPack workflow
         run: tspack workflow run VitestCoreCI --ci-provider github
