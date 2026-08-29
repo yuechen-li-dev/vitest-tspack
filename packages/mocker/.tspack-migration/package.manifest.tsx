@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -36,7 +37,6 @@ const deps = defineDeps({
   pathe: tool(npm("pathe", "^2.0.3")),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/mocker"
@@ -45,6 +45,27 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.msw, deps.vite, deps.jridgewellTraceMapping, deps.vitestSpy, deps.estreeWalker, deps.magicString, deps.typesEstree, deps.vitestUtils, deps.acornWalk, deps.cjsModuleLexer, deps.esModuleLexer, deps.pathe] }}
   >
+    <Targets
+      rows={[{
+        name: "package",
+        language: "typescript",
+        compiler: "rollup",
+        compilerConfig: "rollup.config.js",
+        inputs: ["src/**/*.ts", "rollup.config.js"],
+        artifact: "javaScript",
+        export: ".",
+        entry: "src/index.ts",
+        runtime: "dist/index.js",
+        types: "dist/index.d.ts",
+        artifacts: [
+          { name: "runtime", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+          { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+        ],
+        dependsOn: ["@vitest/utils:package"],
+        deps: ["@jridgewell/trace-mapping", "@types/estree", "@vitest/spy", "@vitest/utils", "acorn-walk", "cjs-module-lexer", "es-module-lexer", "estree-walker", "magic-string", "pathe"],
+        peers: ["msw", "vite"],
+      }]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["*.d.ts", "dist"]} exclude={[]} />
   </Package>,

@@ -83,8 +83,11 @@ export default definePackage(
     <Tools
       values={[
         deps.rollupPluginCommonjs,
+        deps.rollupPluginJson,
         deps.rollupPluginNodeResolve,
         deps.rollupPluginDts,
+        deps.rollupPluginLicense,
+        deps.tinyglobby,
         deps.typescript,
         deps.unpluginIsolatedDecl,
         deps.unpluginOxc,

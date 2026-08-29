@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -22,10 +23,9 @@ const deps = defineDeps({
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   typesUngapStructuredClone: tool(npm("@types/ungap__structured-clone", "^1.2.0"), { key: "@types/ungap__structured-clone" }),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
-  ungapStructuredClone: tool(npm("@ungap/structured-clone", "^1.3.3"), { key: "@ungap/structured-clone" }),
+  ungapStructuredClone: tool(npm("@ungap/structured-clone", "1.3.3"), { key: "@ungap/structured-clone" }),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/web-worker"
@@ -34,6 +34,26 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.vitest, deps.obug, deps.typesUngapStructuredClone, deps.ungapStructuredClone] }}
   >
+    <Targets
+      rows={[{
+        name: "package",
+        language: "typescript",
+        compiler: "rollup",
+        compilerConfig: "rollup.config.js",
+        inputs: ["src/**/*.ts", "rollup.config.js"],
+        artifact: "javaScript",
+        export: ".",
+        entry: "src/index.ts",
+        runtime: "dist/index.js",
+        types: "dist/pure.d.ts",
+        artifacts: [
+          { name: "runtime", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+          { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+        ],
+        deps: ["@types/ungap__structured-clone", "@ungap/structured-clone", "obug"],
+        peers: ["vitest"],
+      }]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["*.d.ts", "dist"]} exclude={[]} />
   </Package>,

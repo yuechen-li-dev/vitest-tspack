@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -26,7 +27,6 @@ const deps = defineDeps({
   reactIs18: tool(npm("react-is", "18.3.1"), { key: "react-is-18" }),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/pretty-format"
@@ -35,6 +35,26 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.tinyrainbow, deps.typesReactIs, deps.reactIs, deps.reactIs18] }}
   >
+    <Targets
+      rows={[{
+        name: "package",
+        language: "typescript",
+        compiler: "rollup",
+        compilerConfig: "rollup.config.js",
+        inputs: ["src/**/*.ts", "rollup.config.js"],
+        artifact: "javaScript",
+        export: ".",
+        entry: "src/index.ts",
+        runtime: "dist/index.js",
+        types: "dist/index.d.ts",
+        artifacts: [
+          { name: "runtime", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+          { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+        ],
+        deps: ["@types/react-is", "react-is", "react-is-18", "tinyrainbow"],
+        peers: [],
+      }]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["*.d.ts", "dist"]} exclude={[]} />
   </Package>,

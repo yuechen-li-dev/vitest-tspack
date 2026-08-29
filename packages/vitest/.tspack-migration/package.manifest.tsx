@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -34,7 +35,7 @@ const deps = defineDeps({
   chai: dep(npm("chai", "^6.2.2")),
   esModuleLexer: dep(npm("es-module-lexer", "^2.3.2"), { key: "es-module-lexer" }),
   expectType: dep(npm("expect-type", "^1.4.0"), { key: "expect-type" }),
-  magicString: dep(npm("magic-string", "^1.2.2"), { key: "magic-string" }),
+  magicString: dep(npm("magic-string", "1.2.2"), { key: "magic-string" }),
   obug: dep(npm("obug", "^2.1.4")),
   picomatch: dep(npm("picomatch", "^4.0.7")),
   stdEnv: dep(npm("std-env", "^4.2.0"), { key: "std-env" }),
@@ -93,7 +94,6 @@ const deps = defineDeps({
   ws: tool(npm("ws", "^8.21.3")),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="vitest"
@@ -102,6 +102,38 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.edgeRuntimeVm, deps.opentelemetryApi, deps.typesNode, deps.vitestBrowserPlaywright, deps.vitestBrowserPreview, deps.vitestBrowserWebdriverio, deps.vitestCoverageIstanbul, deps.vitestCoverageV8, deps.vitestUi, deps.happyDom, deps.jsdom, deps.vite, deps.typesChai, deps.vitestMocker, deps.chai, deps.esModuleLexer, deps.expectType, deps.magicString, deps.obug, deps.picomatch, deps.stdEnv, deps.tinybench, deps.tinyexec, deps.tinyglobby, deps.whyIsNodeRunning, deps.antfuInstallPkg, deps.bombShTab, deps.jridgewellTraceMapping, deps.sinonjsFakeTimers, deps.typesJsdom, deps.typesPicomatch, deps.typesPrompts, deps.vitestExpect, deps.vitestIstanbulLibCoverage, deps.vitestIstanbulLibReport, deps.vitestPrettyFormat, deps.vitestSnapshot, deps.vitestSpy, deps.vitestUtils, deps.acorn, deps.acornWalk, deps.birpc, deps.cac, deps.flatted, deps.localPkg, deps.mime, deps.pathe, deps.prompts, deps.stripLiteral, deps.tinyhighlight, deps.tinyrainbow, deps.ws] }}
   >
+    <Targets
+      rows={[{
+        name: "package",
+        language: "typescript",
+        compiler: "rollup",
+        compilerConfig: "rollup.config.js",
+        inputs: ["src/**/*.ts", "rollup.config.js"],
+        artifact: "javaScript",
+        export: ".",
+        entry: "src/public/index.ts",
+        runtime: "dist/index.js",
+        types: "dist/index.d.ts",
+        artifacts: [
+          { name: "runtime", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+          { name: "runtime-chunks", kind: "javaScript", path: "dist/chunks/*.js", role: "runtimeChunk" },
+          { name: "runtime-workers", kind: "javaScript", path: "dist/workers/*.js", role: "runtimeEntry" },
+          { name: "commonjs", kind: "javaScript", path: "dist/*.cjs", role: "runtimeEntry" },
+          { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+          { name: "type-chunks", kind: "typeDeclarations", path: "dist/chunks/*.d.ts", role: "declarationChunk" },
+        ],
+        dependsOn: [
+          "@vitest/expect:package",
+          "@vitest/mocker:package",
+          "@vitest/pretty-format:package",
+          "@vitest/snapshot:package",
+          "@vitest/spy:package",
+          "@vitest/utils:package",
+        ],
+        deps: ["@antfu/install-pkg", "@bomb.sh/tab", "@jridgewell/trace-mapping", "@sinonjs/fake-timers", "@types/chai", "@types/jsdom", "@types/picomatch", "@types/prompts", "@vitest/expect", "@vitest/istanbul-lib-coverage", "@vitest/istanbul-lib-report", "@vitest/mocker", "@vitest/pretty-format", "@vitest/snapshot", "@vitest/spy", "@vitest/utils", "acorn", "acorn-walk", "birpc", "cac", "chai", "es-module-lexer", "expect-type", "flatted", "local-pkg", "magic-string", "mime", "obug", "pathe", "picomatch", "prompts", "std-env", "strip-literal", "tinybench", "tinyexec", "tinyglobby", "tinyhighlight", "tinyrainbow", "why-is-node-running", "ws"],
+        peers: ["@edge-runtime/vm", "@opentelemetry/api", "@types/node", "@vitest/browser-playwright", "@vitest/browser-preview", "@vitest/browser-webdriverio", "@vitest/coverage-istanbul", "@vitest/coverage-v8", "@vitest/ui", "happy-dom", "jsdom", "vite"],
+      }]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["*.cjs", "*.d.cts", "*.d.ts", "*.mjs", "bin", "browser", "dist"]} exclude={[]} />
   </Package>,

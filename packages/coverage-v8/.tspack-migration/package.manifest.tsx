@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -32,7 +33,6 @@ const deps = defineDeps({
   pathe: tool(npm("pathe", "^2.0.3")),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/coverage-v8"
@@ -41,6 +41,27 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.vitestBrowser, deps.vitest, deps.bcoeV8Coverage, deps.vitestIstanbulLibCoverage, deps.vitestIstanbulLibReport, deps.astV8ToIstanbul, deps.magicast, deps.obug, deps.stdEnv, deps.tinyrainbow, deps.vitestBrowserPlaywright, deps.pathe] }}
   >
+    <Targets
+      rows={[{
+        name: "package",
+        language: "typescript",
+        compiler: "rollup",
+        compilerConfig: "rollup.config.js",
+        inputs: ["src/**/*.ts", "rollup.config.js"],
+        artifact: "javaScript",
+        export: ".",
+        entry: "src/index.ts",
+        runtime: "dist/index.js",
+        types: "dist/index.d.ts",
+        artifacts: [
+          { name: "runtime", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+          { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+        ],
+        dependsOn: ["@vitest/browser-playwright:package"],
+        deps: ["@bcoe/v8-coverage", "@vitest/browser-playwright", "@vitest/istanbul-lib-coverage", "@vitest/istanbul-lib-report", "ast-v8-to-istanbul", "magicast", "obug", "pathe", "std-env", "tinyrainbow"],
+        peers: ["@vitest/browser", "vitest"],
+      }]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["dist"]} exclude={[]} />
   </Package>,

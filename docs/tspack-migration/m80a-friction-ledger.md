@@ -444,6 +444,178 @@ Classification: ProviderBootstrap and InstalledTSPack
 
 M80b1 status: Resolved.
 
+### F-028 — build targets could not declare compiler-only package dependencies
+
+Severity: P1
+
+Context:
+The Rollup package family needs plugins and source-imported packages while it
+builds, without making those packages runtime dependencies of the published
+library. Target `deps` rejected tool-kind declarations and therefore could not
+express this ordinary build environment.
+
+Evidence:
+The first expanded graph diagnosed target tool dependencies as invalid, while
+running Rollup without them produced unresolved imports and missing plugin
+failures.
+
+Resolution:
+TSPack target nodes now carry build-visible dependencies separately from
+runtime dependencies. The npm resolver realizes them with tool edges, target
+import validation accepts them, and runtime dependency semantics remain
+unchanged. A graph regression proves the separation.
+
+Classification: TSPackBug and BuildTarget
+
+M80c status: Resolved in `v0.1.9-m80c.2`.
+
+### F-029 — direct npm aliases lost identity and were pruned after sync
+
+Severity: P1
+
+Context:
+`@vitest/pretty-format` uses both `react-is` and the npm alias `react-is-18`.
+The resolver initially dropped the direct dependency reference. After that was
+fixed, materialization still pruned the alias because root visibility tracked
+only the canonical package name.
+
+Evidence:
+`ts-lock.toml` contained the correct `Reference = 'react-is-18'`, clean sync
+reported materializing `react-is@18.3.1`, but `node_modules/react-is-18` was
+absent and Rollup treated it as external.
+
+Resolution:
+Direct requests retain their dependency key as the lock edge reference. Root
+materialization planning, marker sanity checks, and pruning now retain the
+actual install name. Regression coverage proves a root alias survives the full
+materialize-and-prune path.
+
+Classification: TSPackBug and DependencyRealization
+
+M80c status: Resolved in `v0.1.9-m80c.2`.
+
+### F-030 — import discovery treated comments as source imports
+
+Severity: P2
+
+Context:
+JSDoc examples and explanatory comments in Vitest contain import-shaped text.
+The lightweight scanner matched those strings and reported dependencies such
+as `./example.js` and `./ns` that do not exist in the program.
+
+Evidence:
+`tspack check` failed in the mocker automocker source and Vitest public API
+sources even though neither module was executable code.
+
+Resolution:
+The scanner now removes line and block comments with a string-aware state
+machine before applying import patterns. A regression covers static, dynamic,
+and require-shaped examples in comments.
+
+Classification: TSPackBug and MigrationUX
+
+M80c status: Resolved in `v0.1.9-m80c.2`.
+
+### F-031 — successful Rollup targets could retain stale hashed chunks
+
+Severity: P1
+
+Context:
+Rollup changes content-hashed filenames between dependency environments. A
+successful target build did not remove outputs from the previous invocation,
+so complete artifact enumeration could report both old and new chunks.
+
+Evidence:
+Repeated Vitest package builds accumulated chunk names that were absent from a
+fresh upstream `premove dist && rollup -c` build.
+
+Resolution:
+The Rollup adapter resolves and removes only files matched by the target's
+declared artifact contracts before invoking Rollup. It refuses directory
+matches and emits a typed cleanup diagnostic on failure. Focused CLI coverage
+proves unrelated files are preserved.
+
+Classification: TSPackBug and ArtifactSemantics
+
+M80c status: Resolved in `v0.1.9-m80c.2`.
+
+### F-032 — parallel leaf builds exposed undeclared package ordering
+
+Severity: P2
+
+Context:
+The first package-build Flow ran all twelve Build effects independently.
+Vitest package builds consume declaration and runtime output from sibling
+packages, so parallel execution raced those outputs.
+
+Evidence:
+The first clean workflow failed while a sibling prerequisite had not yet
+created its declarations. Running the same packages serially hid the issue.
+
+Resolution:
+Qualified `dependsOn` edges now encode the package build graph. The Flow has
+five genuinely independent leaf effects; Build recursively schedules the
+twelve targets in prerequisite order. No ordering was duplicated in Flow.
+
+Classification: MigrationUX and HistoricalGlue
+
+M80c status: Resolved in the Vitest manifests.
+
+### F-033 — broad test lanes need target-scoped dependency environments
+
+Severity: P1
+
+Context:
+The next adjacent responsibility is the real threads unit partition. Its tests
+use test-only npm packages and local fixture packages that are not dependencies
+of the published Vitest library and should not become repository-global
+runtime authority.
+
+Evidence:
+An upstream threads probe discovered 2,045 tests and executed 1,949
+successfully, but 20 suites failed during collection on missing test-only
+packages or local fixture package mappings. Current TestTarget authoring has
+harness/config/source/project identity but no target-scoped dependency set or
+fixture mapping contract.
+
+Resolution:
+Not patched in M80c. Encoding these dependencies as root runtime dependencies
+or provider shell setup would blur package and test authority. This is the
+first genuinely new semantic primitive and the stop boundary for the current
+milestone.
+
+Classification: MissingPrimitive
+
+M80c status: Open; recommended scope for M80d.
+
+### F-034 — valid registry resolution can differ from the frozen pnpm oracle
+
+Severity: P2
+
+Context:
+TSPack resolves declared semver ranges independently, while the upstream pnpm
+oracle retains older valid transitive versions in its frozen lock. That can
+change bundled implementation bytes without changing source or public
+artifacts.
+
+Evidence:
+All twelve native builds produced the complete expected file sets. Nine were
+byte-identical; browser preview, browser Playwright, and web-worker became
+identical after dependency-authority fixes. The remaining utility source-map
+implementation uses `@jridgewell/sourcemap-codec@1.6.0` versus pnpm's locked
+`1.5.5`, and this plus Rollup-local symbol naming changes Vitest chunk hashes.
+
+Resolution:
+The comparison is recorded completely rather than hidden. Exact direct oracle
+versions were pinned where required by the target, but transitive lock import
+or lock-policy convergence is a separate interoperability decision. Semantic
+file-set and build parity are required for this checkpoint; no source-specific
+hack was added.
+
+Classification: InteropRequirement
+
+M80c status: Accepted and isolated; not the authority-expansion stop reason.
+
 ### F-027 — pre-build project checks required generated type outputs
 
 Severity: P1

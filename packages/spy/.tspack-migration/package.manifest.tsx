@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -16,7 +17,6 @@ import {
  * Identity and package.json dependency sections are compatibility-derived facts.
  * MIGRATION_TODO_* comments mark unresolved or manually authored semantics.
  */
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/spy"
@@ -24,6 +24,26 @@ export default definePackage(
     license="MIT"
     kind="library"
   >
+    <Targets
+      rows={[{
+        name: "package",
+        language: "typescript",
+        compiler: "rollup",
+        compilerConfig: "rollup.config.js",
+        inputs: ["src/**/*.ts", "rollup.config.js"],
+        artifact: "javaScript",
+        export: ".",
+        entry: "src/index.ts",
+        runtime: "dist/index.js",
+        types: "dist/index.d.ts",
+        artifacts: [
+          { name: "runtime", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+          { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+        ],
+        deps: [],
+        peers: [],
+      }]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["dist", "optional-types.d.ts"]} exclude={[]} />
   </Package>,

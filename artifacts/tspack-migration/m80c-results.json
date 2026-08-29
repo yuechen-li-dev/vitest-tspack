@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M80c",
+  "outcome": "B",
+  "baseline": {
+    "tspackRevision": "428a8f057ad3a1a241796a693b49740a6457bf1b",
+    "vitestRevision": "9a301f9fe",
+    "qualifiedTspackVersion": "v0.1.9-m80b1.3",
+    "nodeVersion": "v26.2.0",
+    "lockedEntries": 1116
+  },
+  "checkpoint": {
+    "name": "VitestPackageBuildCI",
+    "newBuildTargets": 10,
+    "totalBuildTargets": 12,
+    "totalTestTargets": 2,
+    "workflowLeafEffects": 5,
+    "typedBuildResults": 5,
+    "processEscapeHatches": 0,
+    "shellEscapeHatches": 0,
+    "providerBootstrapSteps": 7
+  },
+  "packages": [
+    "@vitest/browser-playwright",
+    "@vitest/browser-preview",
+    "@vitest/coverage-istanbul",
+    "@vitest/coverage-v8",
+    "@vitest/expect",
+    "@vitest/mocker",
+    "@vitest/pretty-format",
+    "@vitest/snapshot",
+    "@vitest/spy",
+    "@vitest/utils",
+    "@vitest/web-worker",
+    "vitest"
+  ],
+  "local": {
+    "updateConverged": true,
+    "cleanSyncSucceeded": true,
+    "lockedEntries": 1190,
+    "checkSucceeded": true,
+    "knownDynamicImportWarnings": 6,
+    "coreWorkflowSucceeded": true,
+    "packageWorkflowRuns": 2,
+    "packageWorkflowSucceeded": true,
+    "terminal": "Workflow VitestPackageBuildCI succeeded",
+    "artifacts": {
+      "expectedFiles": 174,
+      "actualFiles": 174,
+      "packagesCompared": 12,
+      "byteIdenticalPackages": 9,
+      "semanticallyEquivalentPackages": 3,
+      "missingFiles": 0,
+      "staleFiles": 0
+    }
+  },
+  "upstreamOracle": {
+    "packageManager": "pnpm@11.24.0",
+    "frozenInstallSucceeded": true,
+    "broadBuildSucceeded": true,
+    "usedAsOuterTspackLifecycle": false
+  },
+  "testBoundaryProbe": {
+    "discoveredTests": 2045,
+    "passedTests": 1949,
+    "failedTests": 5,
+    "pendingTests": 66,
+    "failedSuitesDuringCollection": 20,
+    "missingPrimitive": "TestTarget-scoped npm dependencies and local fixture package mappings"
+  },
+  "distribution": {
+    "version": "v0.1.9-m80c.2",
+    "tspackCommit": "6512786de9ce2e5a55f4e5facc1690298347c33f",
+    "releaseRunId": 33274099278,
+    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33274099278",
+    "releaseConclusion": "success",
+    "linuxAmd64Sha256": "0f87f6df3487d960712ae9c4dcd33e8bec2b450585c40d2a5c8990878dc983de",
+    "windowsAmd64Sha256": "9cbfc5aaf977f6f05956736bf6b4c2866627f84ec9ca504f5cc642dc94f22cd3"
+  },
+  "remote": {
+    "runId": null,
+    "url": null,
+    "commit": null,
+    "runner": "ubuntu-latest",
+    "nodeVersion": "24",
+    "tspackVersion": "v0.1.9-m80c.2",
+    "cacheUsed": false,
+    "conclusion": "pending",
+    "terminal": null
+  },
+  "validation": {
+    "tspackBroadGoTests": "passed",
+    "vitestDiffCheck": "passed",
+    "githubExportCurrent": true,
+    "legacyJobsDeleted": 0,
+    "legacyCoveragePreserved": true
+  }
+}
