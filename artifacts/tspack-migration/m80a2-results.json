@@ -1,0 +1,74 @@
+{
+  "milestone": "M80a2",
+  "outcome": "A",
+  "baseline": {
+    "vitestRevision": "0788ad833",
+    "tspackRevision": "a740151",
+    "node": "v26.2.0",
+    "pathPnpm": "7.27.1",
+    "declaredPnpm": "11.24.0"
+  },
+  "build": {
+    "package": "@vitest/expect",
+    "target": "package",
+    "compiler": "rollup",
+    "upstreamDurationMs": 3875,
+    "tspackCleanDurationMs": 1664,
+    "artifacts": [
+      { "identity": "@vitest/expect:package:javaScript", "path": "packages/expect/dist/index.js", "bytes": 72716, "sha256": "0ea093fde666e47ee71056ce39f9b6c4acd8c6e6c81e8befa1c3b9415029633a" },
+      { "identity": "@vitest/expect:package:typeDeclarations", "path": "packages/expect/dist/index.d.ts", "bytes": 31811, "sha256": "5019ec6f96dd6b601f8b3d0dbe0c393fbf94c438a05b99ffbc54e018c430ad64" }
+    ],
+    "cleanProof": true,
+    "upstreamEquivalent": true
+  },
+  "test": {
+    "package": "@vitest/test-unit",
+    "target": "basic-threads",
+    "harness": "vitest",
+    "source": "test/basic.test.ts",
+    "project": "threads",
+    "passed": 8,
+    "failed": 0,
+    "skipped": 1,
+    "durationMs": 247.7,
+    "evidenceCount": 9,
+    "upstreamEquivalent": true
+  },
+  "identity": {
+    "duplicateFixtureRoots": 3,
+    "law": "unique internal Package.name plus independently preserved, repeatable Package.publicationName",
+    "resolved": true
+  },
+  "diagnostics": {
+    "zeroBuildTargetCode": "TSPACK_BUILD_NO_TARGETS",
+    "zeroTestTargetCode": "TSPACK_TEST_NO_TARGETS",
+    "versionConflictWarnings": 8,
+    "blockedLifecycleScripts": 23
+  },
+  "manualAuthoring": {
+    "buildLines": 26,
+    "testLines": 14,
+    "publicationIdentityLines": 3
+  },
+  "deferred": [
+    "multi-entry artifact enumeration",
+    "cross-package build target prerequisites",
+    "target list/inspect UX",
+    "root-wide and browser test topology"
+  ],
+  "validation": {
+    "tspackGoBroad": "passed: go test ./cmd/... ./internal/... ./tools/...",
+    "manifestFrontend": "passed: 254 tests, 2 skipped; build passed",
+    "vscode": "passed: compile and 35 tests",
+    "compat": "passed: helper, init type-support drift, and template drift regressions",
+    "vitestTypecheck": "passed",
+    "vitestBroadBuild": "passed in 11361 ms",
+    "selectedUpstreamBuild": "passed",
+    "selectedUpstreamTest": "passed: 7 ordinary passes, 1 expected failure, 1 skipped; JSON semantic total 8 passed, 1 skipped",
+    "selectedTspackBuild": "passed",
+    "selectedTspackTest": "passed: 8 passed, 0 failed, 1 skipped",
+    "tspackCheck": "passed with 8 version-conflict and 23 blocked-lifecycle warnings",
+    "gitDiffCheck": "passed in both repositories"
+  },
+  "recommendation": "M80a3: multi-output artifacts, cross-package prerequisites, target discovery, @vitest/snapshot, and a second non-browser test target"
+}

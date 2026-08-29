@@ -2337,42 +2337,42 @@ Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/expect:dependency'
+From = '@vitest/expect:target:package'
 To = 'npm:@standard-schema/spec@1.1.0'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/expect:dependency'
+From = '@vitest/expect:target:package'
 To = 'npm:@types/chai@5.2.3'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/expect:dependency'
+From = '@vitest/expect:target:package'
 To = 'npm:chai@6.2.2'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/expect:dependency'
+From = '@vitest/expect:target:package'
 To = 'npm:tinyrainbow@3.1.1'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/expect:dependency'
+From = '@vitest/expect:target:package'
 To = 'workspace:@vitest/spy#f1b850ef2eb73f7c4f90089e702ed20e596219c55cfedcd1d19a439531a9443b'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/expect:dependency'
+From = '@vitest/expect:target:package'
 To = 'workspace:@vitest/utils#7a8fefb043f12f613bcaf941538831401313cb27cc0111f739822f9c4ff5b2ed'
 Kind = 'runtime'
 Optional = false
@@ -4077,7 +4077,7 @@ Status = 'controlling'
 SelectedVersion = '0.3.31'
 
 [[requirement]]
-ID = 'direct:@vitest/expect:dependency:@standard-schema/spec:000027'
+ID = 'direct:@vitest/expect:target:package:@standard-schema/spec:000027'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = '@standard-schema/spec'
@@ -4153,7 +4153,7 @@ Status = 'controlling'
 SelectedVersion = '14.6.6'
 
 [[requirement]]
-ID = 'direct:@vitest/expect:dependency:@types/chai:000028'
+ID = 'direct:@vitest/expect:target:package:@types/chai:000028'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = '@types/chai'
@@ -4381,7 +4381,7 @@ Status = 'controlling'
 SelectedVersion = '4.1.0'
 
 [[requirement]]
-ID = 'direct:@vitest/expect:dependency:chai:000029'
+ID = 'direct:@vitest/expect:target:package:chai:000029'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'chai'
@@ -5041,12 +5041,12 @@ OriginSource = 'manifest'
 Order = 25
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/expect:dependency:tinyrainbow:000030'
+ShadowedBy = 'direct:@vitest/expect:target:package:tinyrainbow:000030'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.1.1'
 
 [[requirement]]
-ID = 'direct:@vitest/expect:dependency:tinyrainbow:000030'
+ID = 'direct:@vitest/expect:target:package:tinyrainbow:000030'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'tinyrainbow'
@@ -5253,3 +5253,11 @@ Controlling = true
 ShadowedBy = ''
 Status = 'controlling'
 SelectedVersion = '8.21.3'
+
+[[target]]
+Package = '@vitest/expect'
+Name = 'package'
+Export = '.'
+Entry = 'src/index.ts'
+Runtime = 'dist/index.js'
+Types = 'dist/index.d.ts'

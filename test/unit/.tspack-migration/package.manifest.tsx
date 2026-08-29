@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  TestTargets,
   defineDeps,
   definePackage,
   dep,
@@ -83,12 +84,23 @@ const deps = defineDeps({
   vue: tool(npm("vue", "^3.5.41")),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/test-unit"
     version="0.0.0"
     kind="app"
     dependencies={{ values: [deps.babelCore, deps.babelPluginProposalDecorators, deps.rolldownPluginBabel, deps.standardSchemaSpec, deps.testDepEsmNonExisting, deps.testViteEnvironmentExternal, deps.testViteExternal, deps.vitestExpect, deps.vitestMocker, deps.vitestPrettyFormat, deps.vitestTestDepCjs, deps.vitestTestDepNestedCjs, deps.vitestTestDep1, deps.vitestTestDep2, deps.vitestTestFn, deps.vitestUtils, deps.vitestWebWorker, deps.vueuseIntegrations, deps.httpClient, deps.immutable, deps.loupe, deps.memfs, deps.obug, deps.react, deps.react18, deps.sinon, deps.sinonChai, deps.temporalPolyfill, deps.tinyrainbow, deps.tinyspy, deps.url, deps.vitest, deps.vitestEnvironmentCustom, deps.vitestPackageExports, deps.vue] }}
-  />,
+  >
+    <TestTargets
+      rows={[
+        {
+          name: "basic-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: ["test/basic.test.ts"],
+          project: "threads",
+        },
+      ]}
+    />
+  </Package>,
 );

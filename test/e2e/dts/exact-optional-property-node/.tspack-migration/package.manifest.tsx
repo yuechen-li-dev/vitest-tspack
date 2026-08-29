@@ -24,6 +24,7 @@ const deps = defineDeps({
 export default definePackage(
   <Package
     name="@vitest/test-integration-dts-exact-optional-property--tspack-test-e2e-dts-exact-optional-property-node"
+    publicationName="@vitest/test-integration-dts-exact-optional-property"
     version="0.0.0"
     kind="app"
     dependencies={{ values: [deps.vitest] }}

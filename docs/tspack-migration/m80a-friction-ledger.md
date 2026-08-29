@@ -235,6 +235,49 @@ Classification: TSPackBug
 
 M80a1 status: ResolvedM80a1.
 
+## M80a2 status update
+
+- **F-004 installed frontend discovery — ResolvedM80a2.** A release-equivalent
+  binary with embedded bridges loaded the Vitest workspace from outside the
+  TSPack source tree with no environment override. The installed PATH binary was
+  stale, which is distribution drift rather than current source behavior.
+- **F-007 duplicate fixture identity — ResolvedM80a2.** Unique internal project
+  identity is now independent from repeatable `publicationName`; all three DTS
+  fixtures preserve their shared package.json name without renaming upstream.
+- **F-009 silent no-target Build — ResolvedM80a2.** Build exits nonzero with
+  `TSPACK_BUILD_NO_TARGETS`, selected package identity, count, and fix guidance.
+
+## F-011 — mature TypeScript packages need a bounded external bundler adapter
+
+Classification: MissingBuildPrimitive and ExternalToolInterop
+
+M80a2 status: ResolvedM80a2. `compiler: "rollup"` invokes the project-managed
+Rollup binary with the declared config, validates declared JS/DTS artifacts, and
+records typed identity plus content hash. It cannot invoke package scripts.
+
+## F-012 — package-scoped Test needs explicit ownership
+
+Classification: MissingTestPrimitive
+
+M80a2 status: ResolvedM80a2 for one bounded topology. `TestTarget` owns harness,
+config, sources, and harness project. Directory containment is not ownership.
+
+## F-013 — Vitest result ingestion flattened evidence
+
+Classification: TSPackBug and ExternalToolInterop
+
+M80a2 status: ResolvedM80a2. The Vitest adapter requests JSON, maps counts and
+duration into typed `TestResult`, and preserves suite-qualified assertion
+identity plus failure messages.
+
+## F-014 — multi-entry package artifacts are not enumerable
+
+Classification: MissingBuildPrimitive
+
+M80a2 status: Deferred. `@vitest/snapshot` proves the compiler adapter
+generalizes but needs three JS/DTS pairs. Add first-class artifact sets before
+configuring that second package; do not flatten it to one primary output.
+
 ## F-009 — build with no authored targets is a silent no-op
 
 Severity: P2
