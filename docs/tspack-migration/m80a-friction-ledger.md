@@ -579,14 +579,44 @@ harness/config/source/project identity but no target-scoped dependency set or
 fixture mapping contract.
 
 Resolution:
-Not patched in M80c. Encoding these dependencies as root runtime dependencies
-or provider shell setup would blur package and test authority. This is the
-first genuinely new semantic primitive and the stop boundary for the current
-milestone.
+M80d added TestTarget-scoped requirements through Requirement Tape and
+target-qualified lock edges, plus deterministic local fixture bindings. Local
+fixtures distinguish immutable locked-package projection from authoritative
+source linking; both are TSPack-owned, workspace-contained, inspectable, and
+incremental. The migrated targets run 321 tests without pnpm installation or
+test-time topology setup.
 
 Classification: MissingPrimitive
 
-M80c status: Open; recommended scope for M80d.
+M80d status: Resolved for package and source fixtures.
+
+### F-036 — built workspace fixtures need BuildTarget composition
+
+Severity: P1
+
+Context:
+After M80d removed the target-package and local-fixture collection failures,
+the next three threads suites import `@vitest/web-worker`. That package's
+authoritative manifest entry is TypeScript source, while its publication
+contract and test imports require `dist/index.js` from BuildTarget `package`.
+
+Evidence:
+The clean TSPack broad probe advanced from 20 collection failures in M80c to
+three. All three remaining failures are the web-worker files, and each reports
+that `@vitest/web-worker` cannot be resolved. The package manifest identifies
+`packages/web-worker:package` as a Rollup BuildTarget with `dist/index.js` as
+its runtime output. Adding a source/package fixture cannot truthfully satisfy
+that built-output contract.
+
+Resolution:
+Do not copy generated output opportunistically or add an opaque pretest build.
+The next focused milestone should let a TestTarget require a qualified
+BuildTarget and bind its declared artifact as a built fixture, reusing existing
+build ordering and artifact identity.
+
+Classification: MissingPrimitive
+
+M80d status: Open; precise adjacent boundary after the green 321-test slice.
 
 ### F-034 — valid registry resolution can differ from the frozen pnpm oracle
 

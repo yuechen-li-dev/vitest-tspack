@@ -6,6 +6,7 @@ import {
   defineDeps,
   definePackage,
   dep,
+  localFixture,
   npm,
   path,
   peer,
@@ -54,6 +55,8 @@ const deps = defineDeps({
   httpClient: tool(path("projects/http-client"), { key: "http-client" }),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   immutable: tool(npm("immutable", "5.1.9")),
+  // Required only by the jsdom-environment fixture target family.
+  jsdom: tool(npm("jsdom", "^29.1.1")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   loupe: tool(npm("loupe", "^3.2.1")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
@@ -92,7 +95,46 @@ export default definePackage(
     name="@vitest/test-unit"
     version="0.0.0"
     kind="app"
-    dependencies={{ values: [deps.babelCore, deps.babelPluginProposalDecorators, deps.rolldownPluginBabel, deps.standardSchemaSpec, deps.testDepEsmNonExisting, deps.testViteEnvironmentExternal, deps.testViteExternal, deps.vitestExpect, deps.vitestMocker, deps.vitestPrettyFormat, deps.vitestTestDepCjs, deps.vitestTestDepNestedCjs, deps.vitestTestDep1, deps.vitestTestDep2, deps.vitestTestFn, deps.vitestUtils, deps.vitestWebWorker, deps.vueuseIntegrations, deps.httpClient, deps.immutable, deps.loupe, deps.memfs, deps.obug, deps.react, deps.react18, deps.sinon, deps.sinonChai, deps.temporalPolyfill, deps.tinyrainbow, deps.tinyspy, deps.url, deps.vitest, deps.vitestEnvironmentCustom, deps.vitestPackageExports, deps.vue] }}
+    dependencies={{
+      values: [
+        deps.babelCore,
+        deps.babelPluginProposalDecorators,
+        deps.rolldownPluginBabel,
+        deps.standardSchemaSpec,
+        deps.testDepEsmNonExisting,
+        deps.testViteEnvironmentExternal,
+        deps.testViteExternal,
+        deps.vitestExpect,
+        deps.vitestMocker,
+        deps.vitestPrettyFormat,
+        deps.vitestTestDepCjs,
+        deps.vitestTestDepNestedCjs,
+        deps.vitestTestDep1,
+        deps.vitestTestDep2,
+        deps.vitestTestFn,
+        deps.vitestUtils,
+        deps.vitestWebWorker,
+        deps.vueuseIntegrations,
+        deps.httpClient,
+        deps.immutable,
+        deps.jsdom,
+        deps.loupe,
+        deps.memfs,
+        deps.obug,
+        deps.react,
+        deps.react18,
+        deps.sinon,
+        deps.sinonChai,
+        deps.temporalPolyfill,
+        deps.tinyrainbow,
+        deps.tinyspy,
+        deps.url,
+        deps.vitest,
+        deps.vitestEnvironmentCustom,
+        deps.vitestPackageExports,
+        deps.vue,
+      ],
+    }}
   >
     <Tools
       values={[
@@ -119,6 +161,120 @@ export default definePackage(
             "test/snapshot-custom-serializer.test.ts",
           ],
           project: "threads",
+        },
+        {
+          name: "requirements-fixtures-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: [
+            "test/chai-style-assertions-sinon.test.ts",
+            "test/interop.test.ts",
+          ],
+          project: "threads",
+          requirements: [
+            deps.sinon,
+            deps.sinonChai,
+            deps.vitestTestDepCjs,
+          ],
+          fixtures: [
+            localFixture(deps.vitestTestDepCjs, {
+              name: "dep-cjs",
+              binding: "@vitest/test-dep-cjs",
+            }),
+          ],
+        },
+        {
+          name: "fixture-package-family-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: [
+            "test/chai-style-assertions-sinon.test.ts",
+            "test/dual-package-hazard.test.ts",
+            "test/expect.test.ts",
+            "test/exports.test.ts",
+            "test/immutable.test.ts",
+            "test/interop.test.ts",
+            "test/mock-fs.test.ts",
+            "test/module.test.ts",
+            "test/pretty-format.test.ts",
+            "test/snapshot-react.test.jsx",
+            "test/mocking/autospying.test.ts",
+            "test/mocking/external.test.ts",
+            "test/mocking/factory.test.ts",
+            "test/mocking/http-client-mocked.test.ts",
+            "test/mocking/http-client-not-mocked.test.ts",
+            "test/mocking/nested-default.spec.ts",
+            "test/mocking/self-importing.test.ts",
+            "test/mocking/tinyspy.test.ts",
+          ],
+          project: "threads",
+          requirements: [
+            deps.httpClient,
+            deps.immutable,
+            deps.jsdom,
+            deps.loupe,
+            deps.memfs,
+            deps.react,
+            deps.sinon,
+            deps.sinonChai,
+            deps.temporalPolyfill,
+            deps.testViteEnvironmentExternal,
+            deps.testViteExternal,
+            deps.tinyspy,
+            deps.vitestPackageExports,
+            deps.vitestTestDep1,
+            deps.vitestTestDep2,
+            deps.vitestTestDepCjs,
+            deps.vitestTestDepNestedCjs,
+            deps.vitestTestFn,
+          ],
+          fixtures: [
+            localFixture(deps.httpClient, { name: "http-client", binding: "http-client" }),
+            localFixture(deps.testViteEnvironmentExternal, {
+              name: "vite-environment-external",
+              binding: "@test/vite-environment-external",
+              mode: "source",
+            }),
+            localFixture(deps.testViteExternal, {
+              name: "vite-external",
+              binding: "@test/vite-external",
+              mode: "source",
+            }),
+            localFixture(deps.vitestTestDep1, { name: "dep1", binding: "@vitest/test-dep1" }),
+            localFixture(deps.vitestTestDep2, { name: "dep2", binding: "@vitest/test-dep2" }),
+            localFixture(deps.vitestTestDepCjs, { name: "dep-cjs", binding: "@vitest/test-dep-cjs" }),
+            localFixture(deps.vitestTestDepNestedCjs, { name: "dep-nested-cjs", binding: "@vitest/test-dep-nested-cjs" }),
+            localFixture(deps.vitestTestFn, { name: "dep-fn", binding: "@vitest/test-fn" }),
+          ],
+        },
+        {
+          name: "react18-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: ["test/snapshot-react-18.test.jsx"],
+          project: "threads",
+          requirements: [deps.react18],
+        },
+        {
+          name: "additional-package-fixtures-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: [
+            "test/imports.test.ts",
+            "test/node-protocol-jsdom.spec.ts",
+          ],
+          project: "threads",
+          requirements: [
+            deps.jsdom,
+            deps.testDepEsmNonExisting,
+            deps.url,
+          ],
+          fixtures: [
+            localFixture(deps.testDepEsmNonExisting, {
+              name: "dep-esm-non-existing",
+              binding: "@test/dep-esm-non-existing",
+            }),
+          ],
         },
       ]}
     />

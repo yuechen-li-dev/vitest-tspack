@@ -121,6 +121,35 @@ export default defineWorkspace(
             Branch("build-web-worker", Build({ packages: ["@vitest/web-worker"], targets: ["package"] })),
           ),
         }),
+        Workflow("VitestFixturePackageCI", {
+          triggers: [Manual()],
+          flow: Parallel(
+            Branch(
+              "test-fixture-package-family-threads",
+              Test({
+                name: "Test fixture-package-family-threads",
+                packages: ["@vitest/test-unit"],
+                target: "fixture-package-family-threads",
+              }),
+            ),
+            Branch(
+              "test-react18-threads",
+              Test({
+                name: "Test react18-threads",
+                packages: ["@vitest/test-unit"],
+                target: "react18-threads",
+              }),
+            ),
+            Branch(
+              "test-additional-package-fixtures-threads",
+              Test({
+                name: "Test additional-package-fixtures-threads",
+                packages: ["@vitest/test-unit"],
+                target: "additional-package-fixtures-threads",
+              }),
+            ),
+          ),
+        }),
       ]}
     />
   </Workspace>,
