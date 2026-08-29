@@ -1631,6 +1631,19 @@ Workspace = ''
 Hash = 'sha256:b9dc81cb403ea2510314dd2d1ad8d71934f325db90c1b43805e781b87e3fb009'
 
 [[package]]
+ID = 'npm:natural-compare@1.4.0'
+Name = 'natural-compare'
+Version = '1.4.0'
+Source = 'npm'
+Integrity = 'sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw=='
+Repo = ''
+Rev = ''
+TreeHash = ''
+Path = ''
+Workspace = ''
+Hash = 'sha256:5e5569ecd12064f73632a8c18a45b1d1de4a27b699a671864801f1c35ee779ee'
+
+[[package]]
 ID = 'npm:node-gyp-build@4.8.4'
 Name = 'node-gyp-build'
 Version = '4.8.4'
@@ -2093,7 +2106,7 @@ Workspace = '@vitest/utils'
 Hash = 'sha256:7a8fefb043f12f613bcaf941538831401313cb27cc0111f739822f9c4ff5b2ed'
 
 [[package]]
-ID = 'workspace:vitest#1f3ac1d71140baa9adb264be29975101476516581054144f56375fb481a4f168'
+ID = 'workspace:vitest#9333f451119ca66a3dd9315cc9974a572e153c815bb7d13d1ee19bff56c2d966'
 Name = 'vitest'
 Version = '5.0.0-rc.3'
 Source = 'workspace'
@@ -2103,7 +2116,7 @@ Rev = ''
 TreeHash = ''
 Path = 'packages/vitest'
 Workspace = 'vitest'
-Hash = 'sha256:1f3ac1d71140baa9adb264be29975101476516581054144f56375fb481a4f168'
+Hash = 'sha256:9333f451119ca66a3dd9315cc9974a572e153c815bb7d13d1ee19bff56c2d966'
 
 [[edge]]
 From = '@vitest/browser-playwright:dependency'
@@ -2414,28 +2427,35 @@ Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/snapshot:dependency'
+From = '@vitest/snapshot:target:package'
 To = 'npm:magic-string@1.2.3'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/snapshot:dependency'
+From = '@vitest/snapshot:target:package'
+To = 'npm:natural-compare@1.4.0'
+Kind = 'runtime'
+Optional = false
+Reference = ''
+
+[[edge]]
+From = '@vitest/snapshot:target:package'
 To = 'npm:pathe@2.0.3'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/snapshot:dependency'
+From = '@vitest/snapshot:target:package'
 To = 'workspace:@vitest/pretty-format#d7cd962ae563c90a017f763bb1c9fd0fd6a15e54c9812ff2c2ccec43ef3dc519'
 Kind = 'runtime'
 Optional = false
 Reference = ''
 
 [[edge]]
-From = '@vitest/snapshot:dependency'
+From = '@vitest/snapshot:target:package'
 To = 'workspace:@vitest/utils#7a8fefb043f12f613bcaf941538831401313cb27cc0111f739822f9c4ff5b2ed'
 Kind = 'runtime'
 Optional = false
@@ -2443,7 +2463,7 @@ Reference = ''
 
 [[edge]]
 From = '@vitest/test-typescript:dependency'
-To = 'workspace:vitest#1f3ac1d71140baa9adb264be29975101476516581054144f56375fb481a4f168'
+To = 'workspace:vitest#9333f451119ca66a3dd9315cc9974a572e153c815bb7d13d1ee19bff56c2d966'
 Kind = 'runtime'
 Optional = false
 Reference = ''
@@ -4115,7 +4135,7 @@ Status = 'controlling'
 SelectedVersion = '10.4.1'
 
 [[requirement]]
-ID = 'peer:npm:@testing-library/user-event@14.6.6:@testing-library/dom:000059'
+ID = 'peer:npm:@testing-library/user-event@14.6.6:@testing-library/dom:000060'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = '@testing-library/dom'
@@ -4126,7 +4146,7 @@ RequiringPackage = ''
 PackageID = 'npm:@testing-library/user-event@14.6.6'
 DependencyKey = '@testing-library/dom'
 OriginSource = 'registry-metadata'
-Order = 59
+Order = 60
 Optional = false
 Controlling = false
 ShadowedBy = 'direct:@vitest/browser-preview:dependency:@testing-library/dom:000007'
@@ -4167,12 +4187,12 @@ OriginSource = 'manifest'
 Order = 28
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:vitest:dependency:@types/chai:000047'
+ShadowedBy = 'direct:vitest:dependency:@types/chai:000048'
 Status = 'shadowed-compatible'
 SelectedVersion = '5.2.3'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:@types/chai:000047'
+ID = 'direct:vitest:dependency:@types/chai:000048'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = '@types/chai'
@@ -4183,7 +4203,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = '@types/chai'
 OriginSource = 'manifest'
-Order = 47
+Order = 48
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4305,7 +4325,7 @@ Status = 'controlling'
 SelectedVersion = '1.0.0'
 
 [[requirement]]
-ID = 'direct:docs:dependency:@vueuse/core:000045'
+ID = 'direct:docs:dependency:@vueuse/core:000046'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = '@vueuse/core'
@@ -4316,7 +4336,7 @@ RequiringPackage = 'docs'
 PackageID = ''
 DependencyKey = '@vueuse/core'
 OriginSource = 'manifest'
-Order = 45
+Order = 46
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4343,7 +4363,7 @@ Status = 'controlling'
 SelectedVersion = '1.0.5'
 
 [[requirement]]
-ID = 'peer:npm:update-browserslist-db@1.3.2:browserslist:000066'
+ID = 'peer:npm:update-browserslist-db@1.3.2:browserslist:000067'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'browserslist'
@@ -4354,7 +4374,7 @@ RequiringPackage = ''
 PackageID = 'npm:update-browserslist-db@1.3.2'
 DependencyKey = 'browserslist'
 OriginSource = 'registry-metadata'
-Order = 66
+Order = 67
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4362,7 +4382,7 @@ Status = 'controlling'
 SelectedVersion = '4.28.8'
 
 [[requirement]]
-ID = 'peer:npm:ws@8.21.3:bufferutil:000062'
+ID = 'peer:npm:ws@8.21.3:bufferutil:000063'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'bufferutil'
@@ -4373,7 +4393,7 @@ RequiringPackage = ''
 PackageID = 'npm:ws@8.21.3'
 DependencyKey = 'bufferutil'
 OriginSource = 'registry-metadata'
-Order = 62
+Order = 63
 Optional = true
 Controlling = true
 ShadowedBy = ''
@@ -4395,12 +4415,12 @@ OriginSource = 'manifest'
 Order = 29
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:vitest:dependency:chai:000048'
+ShadowedBy = 'direct:vitest:dependency:chai:000049'
 Status = 'shadowed-compatible'
 SelectedVersion = '6.2.2'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:chai:000048'
+ID = 'direct:vitest:dependency:chai:000049'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'chai'
@@ -4411,7 +4431,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'chai'
 OriginSource = 'manifest'
-Order = 48
+Order = 49
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4419,7 +4439,7 @@ Status = 'controlling'
 SelectedVersion = '6.2.2'
 
 [[requirement]]
-ID = 'direct:@vitest/utils:dependency:convert-source-map:000042'
+ID = 'direct:@vitest/utils:dependency:convert-source-map:000043'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'convert-source-map'
@@ -4430,7 +4450,7 @@ RequiringPackage = '@vitest/utils'
 PackageID = ''
 DependencyKey = 'convert-source-map'
 OriginSource = 'manifest'
-Order = 42
+Order = 43
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4438,7 +4458,7 @@ Status = 'controlling'
 SelectedVersion = '2.0.0'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:es-module-lexer:000049'
+ID = 'direct:vitest:dependency:es-module-lexer:000050'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'es-module-lexer'
@@ -4449,7 +4469,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'es-module-lexer'
 OriginSource = 'manifest'
-Order = 49
+Order = 50
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4476,7 +4496,7 @@ Status = 'controlling'
 SelectedVersion = '3.0.3'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:expect-type:000050'
+ID = 'direct:vitest:dependency:expect-type:000051'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'expect-type'
@@ -4487,7 +4507,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'expect-type'
 OriginSource = 'manifest'
-Order = 50
+Order = 51
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4495,7 +4515,7 @@ Status = 'controlling'
 SelectedVersion = '1.4.0'
 
 [[requirement]]
-ID = 'direct:@vitest/ui:dependency:fflate:000037'
+ID = 'direct:@vitest/ui:dependency:fflate:000038'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'fflate'
@@ -4506,7 +4526,7 @@ RequiringPackage = '@vitest/ui'
 PackageID = ''
 DependencyKey = 'fflate'
 OriginSource = 'manifest'
-Order = 37
+Order = 38
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4514,7 +4534,7 @@ Status = 'controlling'
 SelectedVersion = '0.8.3'
 
 [[requirement]]
-ID = 'direct:@vitest/ui:dependency:flatted:000038'
+ID = 'direct:@vitest/ui:dependency:flatted:000039'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'flatted'
@@ -4525,7 +4545,7 @@ RequiringPackage = '@vitest/ui'
 PackageID = ''
 DependencyKey = 'flatted'
 OriginSource = 'manifest'
-Order = 38
+Order = 39
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4585,12 +4605,12 @@ OriginSource = 'manifest'
 Order = 33
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/snapshot:dependency:magic-string:000035'
+ShadowedBy = 'direct:@vitest/snapshot:target:package:magic-string:000035'
 Status = 'shadowed-compatible'
 SelectedVersion = '1.2.3'
 
 [[requirement]]
-ID = 'direct:@vitest/snapshot:dependency:magic-string:000035'
+ID = 'direct:@vitest/snapshot:target:package:magic-string:000035'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'magic-string'
@@ -4604,12 +4624,12 @@ OriginSource = 'manifest'
 Order = 35
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:vitest:dependency:magic-string:000051'
+ShadowedBy = 'direct:vitest:dependency:magic-string:000052'
 Status = 'shadowed-compatible'
 SelectedVersion = '1.2.3'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:magic-string:000051'
+ID = 'direct:vitest:dependency:magic-string:000052'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'magic-string'
@@ -4620,7 +4640,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'magic-string'
 OriginSource = 'manifest'
-Order = 51
+Order = 52
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4666,6 +4686,25 @@ Status = 'controlling'
 SelectedVersion = '0.5.4'
 
 [[requirement]]
+ID = 'direct:@vitest/snapshot:target:package:natural-compare:000036'
+Scope = 'workspace'
+TargetSource = 'npm'
+TargetName = 'natural-compare'
+Reference = 'natural-compare'
+Constraint = '^1.4.0'
+Kind = 'project-explicit'
+RequiringPackage = '@vitest/snapshot'
+PackageID = ''
+DependencyKey = 'natural-compare'
+OriginSource = 'manifest'
+Order = 36
+Optional = false
+Controlling = true
+ShadowedBy = ''
+Status = 'controlling'
+SelectedVersion = '1.4.0'
+
+[[requirement]]
 ID = 'direct:@vitest/coverage-istanbul:dependency:obug:000016'
 Scope = 'workspace'
 TargetSource = 'npm'
@@ -4699,12 +4738,12 @@ OriginSource = 'manifest'
 Order = 23
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/web-worker:dependency:obug:000044'
+ShadowedBy = 'direct:@vitest/web-worker:dependency:obug:000045'
 Status = 'shadowed-compatible'
 SelectedVersion = '2.1.4'
 
 [[requirement]]
-ID = 'direct:@vitest/web-worker:dependency:obug:000044'
+ID = 'direct:@vitest/web-worker:dependency:obug:000045'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'obug'
@@ -4715,15 +4754,15 @@ RequiringPackage = '@vitest/web-worker'
 PackageID = ''
 DependencyKey = 'obug'
 OriginSource = 'manifest'
-Order = 44
+Order = 45
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:vitest:dependency:obug:000052'
+ShadowedBy = 'direct:vitest:dependency:obug:000053'
 Status = 'shadowed-compatible'
 SelectedVersion = '2.1.4'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:obug:000052'
+ID = 'direct:vitest:dependency:obug:000053'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'obug'
@@ -4734,7 +4773,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'obug'
 OriginSource = 'manifest'
-Order = 52
+Order = 53
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4742,7 +4781,7 @@ Status = 'controlling'
 SelectedVersion = '2.1.4'
 
 [[requirement]]
-ID = 'direct:@vitest/snapshot:dependency:pathe:000036'
+ID = 'direct:@vitest/snapshot:target:package:pathe:000037'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'pathe'
@@ -4753,15 +4792,15 @@ RequiringPackage = '@vitest/snapshot'
 PackageID = ''
 DependencyKey = 'pathe'
 OriginSource = 'manifest'
-Order = 36
+Order = 37
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/ui:dependency:pathe:000039'
+ShadowedBy = 'direct:@vitest/ui:dependency:pathe:000040'
 Status = 'shadowed-compatible'
 SelectedVersion = '2.0.3'
 
 [[requirement]]
-ID = 'direct:@vitest/ui:dependency:pathe:000039'
+ID = 'direct:@vitest/ui:dependency:pathe:000040'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'pathe'
@@ -4772,7 +4811,7 @@ RequiringPackage = '@vitest/ui'
 PackageID = ''
 DependencyKey = 'pathe'
 OriginSource = 'manifest'
-Order = 39
+Order = 40
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4780,7 +4819,7 @@ Status = 'controlling'
 SelectedVersion = '2.0.3'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:picomatch:000053'
+ID = 'direct:vitest:dependency:picomatch:000054'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'picomatch'
@@ -4791,7 +4830,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'picomatch'
 OriginSource = 'manifest'
-Order = 53
+Order = 54
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4799,7 +4838,7 @@ Status = 'controlling'
 SelectedVersion = '4.0.7'
 
 [[requirement]]
-ID = 'peer:npm:fdir@6.5.0:picomatch:000065'
+ID = 'peer:npm:fdir@6.5.0:picomatch:000066'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'picomatch'
@@ -4810,10 +4849,10 @@ RequiringPackage = ''
 PackageID = 'npm:fdir@6.5.0'
 DependencyKey = 'picomatch'
 OriginSource = 'registry-metadata'
-Order = 65
+Order = 66
 Optional = true
 Controlling = false
-ShadowedBy = 'direct:vitest:dependency:picomatch:000053'
+ShadowedBy = 'direct:vitest:dependency:picomatch:000054'
 Status = 'shadowed-compatible'
 SelectedVersion = '4.0.7'
 
@@ -4851,12 +4890,12 @@ OriginSource = 'manifest'
 Order = 3
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/ui:dependency:sirv:000040'
+ShadowedBy = 'direct:@vitest/ui:dependency:sirv:000041'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.0.2'
 
 [[requirement]]
-ID = 'direct:@vitest/ui:dependency:sirv:000040'
+ID = 'direct:@vitest/ui:dependency:sirv:000041'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'sirv'
@@ -4867,7 +4906,7 @@ RequiringPackage = '@vitest/ui'
 PackageID = ''
 DependencyKey = 'sirv'
 OriginSource = 'manifest'
-Order = 40
+Order = 41
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4889,12 +4928,12 @@ OriginSource = 'manifest'
 Order = 24
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:vitest:dependency:std-env:000054'
+ShadowedBy = 'direct:vitest:dependency:std-env:000055'
 Status = 'shadowed-compatible'
 SelectedVersion = '4.2.0'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:std-env:000054'
+ID = 'direct:vitest:dependency:std-env:000055'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'std-env'
@@ -4905,7 +4944,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'std-env'
 OriginSource = 'manifest'
-Order = 54
+Order = 55
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4913,7 +4952,7 @@ Status = 'controlling'
 SelectedVersion = '4.2.0'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:tinybench:000055'
+ID = 'direct:vitest:dependency:tinybench:000056'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'tinybench'
@@ -4924,7 +4963,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'tinybench'
 OriginSource = 'manifest'
-Order = 55
+Order = 56
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4932,7 +4971,7 @@ Status = 'controlling'
 SelectedVersion = '6.1.3'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:tinyexec:000056'
+ID = 'direct:vitest:dependency:tinyexec:000057'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'tinyexec'
@@ -4943,7 +4982,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'tinyexec'
 OriginSource = 'manifest'
-Order = 56
+Order = 57
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -4951,7 +4990,7 @@ Status = 'controlling'
 SelectedVersion = '1.3.0'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:tinyglobby:000057'
+ID = 'direct:vitest:dependency:tinyglobby:000058'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'tinyglobby'
@@ -4962,7 +5001,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'tinyglobby'
 OriginSource = 'manifest'
-Order = 57
+Order = 58
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -5079,12 +5118,12 @@ OriginSource = 'manifest'
 Order = 34
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/ui:dependency:tinyrainbow:000041'
+ShadowedBy = 'direct:@vitest/ui:dependency:tinyrainbow:000042'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.1.1'
 
 [[requirement]]
-ID = 'direct:@vitest/ui:dependency:tinyrainbow:000041'
+ID = 'direct:@vitest/ui:dependency:tinyrainbow:000042'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'tinyrainbow'
@@ -5095,15 +5134,15 @@ RequiringPackage = '@vitest/ui'
 PackageID = ''
 DependencyKey = 'tinyrainbow'
 OriginSource = 'manifest'
-Order = 41
+Order = 42
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:@vitest/utils:dependency:tinyrainbow:000043'
+ShadowedBy = 'direct:@vitest/utils:dependency:tinyrainbow:000044'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.1.1'
 
 [[requirement]]
-ID = 'direct:@vitest/utils:dependency:tinyrainbow:000043'
+ID = 'direct:@vitest/utils:dependency:tinyrainbow:000044'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'tinyrainbow'
@@ -5114,7 +5153,7 @@ RequiringPackage = '@vitest/utils'
 PackageID = ''
 DependencyKey = 'tinyrainbow'
 OriginSource = 'manifest'
-Order = 43
+Order = 44
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -5122,7 +5161,7 @@ Status = 'controlling'
 SelectedVersion = '3.1.1'
 
 [[requirement]]
-ID = 'peer:npm:vue@3.5.42:typescript:000061'
+ID = 'peer:npm:vue@3.5.42:typescript:000062'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'typescript'
@@ -5133,7 +5172,7 @@ RequiringPackage = ''
 PackageID = 'npm:vue@3.5.42'
 DependencyKey = 'typescript'
 OriginSource = 'registry-metadata'
-Order = 61
+Order = 62
 Optional = true
 Controlling = true
 ShadowedBy = ''
@@ -5141,7 +5180,7 @@ Status = 'controlling'
 SelectedVersion = '7.0.2'
 
 [[requirement]]
-ID = 'peer:npm:ws@8.21.3:utf-8-validate:000063'
+ID = 'peer:npm:ws@8.21.3:utf-8-validate:000064'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'utf-8-validate'
@@ -5152,7 +5191,7 @@ RequiringPackage = ''
 PackageID = 'npm:ws@8.21.3'
 DependencyKey = 'utf-8-validate'
 OriginSource = 'registry-metadata'
-Order = 63
+Order = 64
 Optional = true
 Controlling = true
 ShadowedBy = ''
@@ -5160,7 +5199,7 @@ Status = 'controlling'
 SelectedVersion = '6.0.6'
 
 [[requirement]]
-ID = 'direct:docs:dependency:vue:000046'
+ID = 'direct:docs:dependency:vue:000047'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'vue'
@@ -5171,7 +5210,7 @@ RequiringPackage = 'docs'
 PackageID = ''
 DependencyKey = 'vue'
 OriginSource = 'manifest'
-Order = 46
+Order = 47
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -5179,7 +5218,7 @@ Status = 'controlling'
 SelectedVersion = '3.5.42'
 
 [[requirement]]
-ID = 'peer:npm:@vueuse/core@14.4.0:vue:000060'
+ID = 'peer:npm:@vueuse/core@14.4.0:vue:000061'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'vue'
@@ -5190,15 +5229,15 @@ RequiringPackage = ''
 PackageID = 'npm:@vueuse/core@14.4.0'
 DependencyKey = 'vue'
 OriginSource = 'registry-metadata'
-Order = 60
+Order = 61
 Optional = false
 Controlling = false
-ShadowedBy = 'peer:npm:@vueuse/shared@14.4.0:vue:000064'
+ShadowedBy = 'peer:npm:@vueuse/shared@14.4.0:vue:000065'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.5.42'
 
 [[requirement]]
-ID = 'peer:npm:@vueuse/shared@14.4.0:vue:000064'
+ID = 'peer:npm:@vueuse/shared@14.4.0:vue:000065'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'vue'
@@ -5209,15 +5248,15 @@ RequiringPackage = ''
 PackageID = 'npm:@vueuse/shared@14.4.0'
 DependencyKey = 'vue'
 OriginSource = 'registry-metadata'
-Order = 64
+Order = 65
 Optional = false
 Controlling = false
-ShadowedBy = 'direct:docs:dependency:vue:000046'
+ShadowedBy = 'direct:docs:dependency:vue:000047'
 Status = 'shadowed-compatible'
 SelectedVersion = '3.5.42'
 
 [[requirement]]
-ID = 'direct:vitest:dependency:why-is-node-running:000058'
+ID = 'direct:vitest:dependency:why-is-node-running:000059'
 Scope = 'workspace'
 TargetSource = 'npm'
 TargetName = 'why-is-node-running'
@@ -5228,7 +5267,7 @@ RequiringPackage = 'vitest'
 PackageID = ''
 DependencyKey = 'why-is-node-running'
 OriginSource = 'manifest'
-Order = 58
+Order = 59
 Optional = false
 Controlling = true
 ShadowedBy = ''
@@ -5256,6 +5295,14 @@ SelectedVersion = '8.21.3'
 
 [[target]]
 Package = '@vitest/expect'
+Name = 'package'
+Export = '.'
+Entry = 'src/index.ts'
+Runtime = 'dist/index.js'
+Types = 'dist/index.d.ts'
+
+[[target]]
+Package = '@vitest/snapshot'
 Name = 'package'
 Export = '.'
 Entry = 'src/index.ts'

@@ -1,0 +1,110 @@
+{
+  "milestone": "M80a3",
+  "outcome": "A",
+  "baseline": {
+    "vitestRevision": "1bd46d0e2",
+    "tspackRevision": "e5baeda",
+    "branch": "main",
+    "node": "v26.2.0",
+    "pathPnpm": "7.27.1",
+    "declaredPnpm": "11.24.0"
+  },
+  "builds": [
+    {
+      "package": "@vitest/expect",
+      "target": "package",
+      "artifactCount": 2,
+      "upstreamEquivalent": true,
+      "finalUpstreamDurationMs": 3762,
+      "finalTspackDurationMs": 1609
+    },
+    {
+      "package": "@vitest/snapshot",
+      "target": "package",
+      "compiler": "rollup",
+      "artifactCount": 8,
+      "cleanProof": true,
+      "cleanDurationMs": 1369,
+      "oracleDurationMs": 3719,
+      "finalUpstreamDurationMs": 3649,
+      "finalTspackDurationMs": 1332,
+      "upstreamEquivalent": true,
+      "prerequisites": [],
+      "prerequisiteDecision": "workspace package imports are externalized; no built artifact is consumed",
+      "artifacts": [
+        { "identity": "@vitest/snapshot:package:runtime-chunk", "role": "runtimeChunk", "path": "packages/snapshot/dist/chunk-utils.js", "bytes": 8984, "sha256": "5dd1b4ddae0870d5efdf4e39a13a09c3107868b8bd8431308882469a71729e8f" },
+        { "identity": "@vitest/snapshot:package:environment-dts", "role": "typeDeclaration", "path": "packages/snapshot/dist/environment.d.ts", "bytes": 823, "sha256": "12823692023b517278e232bb98afae8939a5e0675df646e0d80f90c3b3d528b9" },
+        { "identity": "@vitest/snapshot:package:environment-js", "role": "runtimeEntry", "path": "packages/snapshot/dist/environment.js", "bytes": 1269, "sha256": "a617db831b3e202a8d5542025a9d7f84530bb7ac4a2108211c53f523b9748954" },
+        { "identity": "@vitest/snapshot:package:declaration-chunk", "role": "declarationChunk", "path": "packages/snapshot/dist/index.d-CuPTsptM.d.ts", "bytes": 6829, "sha256": "cbd78a3459c52c3378200601766459de2d764c173754d8906b8f50b4cfafdf49" },
+        { "identity": "@vitest/snapshot:package:index-dts", "role": "typeDeclaration", "path": "packages/snapshot/dist/index.d.ts", "bytes": 2797, "sha256": "f3875e1799339c704993d481c23c6a24f0e459c98386b5be44fb2637ae3bd6e6" },
+        { "identity": "@vitest/snapshot:package:index-js", "role": "runtimeEntry", "path": "packages/snapshot/dist/index.js", "bytes": 32460, "sha256": "c497349d44090171fa20c2d66950a1c339a80c802996031d498c10f5cf7e0261" },
+        { "identity": "@vitest/snapshot:package:manager-dts", "role": "typeDeclaration", "path": "packages/snapshot/dist/manager.d.ts", "bytes": 793, "sha256": "ba5a5807a057ce6c48698a92883c3b50168418d6422604e52e05cb1a4b7c4d31" },
+        { "identity": "@vitest/snapshot:package:manager-js", "role": "runtimeEntry", "path": "packages/snapshot/dist/manager.js", "bytes": 1839, "sha256": "08e0c47c9aebba5146edab60f203cfb35465b2e81b00b20d602827f5f5f824e5" }
+      ],
+      "repeat": { "durationMs": 1280, "hashSetStable": true, "compilerReran": true }
+    }
+  ],
+  "tests": [
+    { "package": "@vitest/test-unit", "target": "basic-threads", "passed": 8, "failed": 0, "skipped": 1, "upstreamEquivalent": true },
+    {
+      "package": "@vitest/test-unit",
+      "target": "snapshot-threads",
+      "harness": "vitest",
+      "sources": ["test/snapshot.test.ts", "test/snapshot-custom-serializer.test.ts"],
+      "project": "threads",
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "evidenceCount": 16,
+      "finalDurationMs": 153.3,
+      "upstreamEquivalent": true,
+      "repeat": [{ "passed": 16, "failed": 0, "skipped": 0, "durationMs": 154.3 }, { "passed": 16, "failed": 0, "skipped": 0, "durationMs": 148.3 }],
+      "failureProof": { "passed": 15, "failed": 1, "skipped": 0, "identity": "test/unit/test/snapshot-custom-serializer.test.ts::basic", "sourceRestored": true }
+    }
+  ],
+  "discovery": {
+    "command": "tspack inspect targets",
+    "targetCount": 4,
+    "human": true,
+    "json": true,
+    "deterministic": true,
+    "durationMs": 748,
+    "kinds": ["build", "test"]
+  },
+  "targetDependencies": {
+    "qualifiedReferences": true,
+    "unknownRejected": true,
+    "selfRejected": true,
+    "cycleRejected": true,
+    "orderedOnceBeforeConsumer": true,
+    "automaticPackageEdgeDerivation": false
+  },
+  "diagnostics": {
+    "versionConflictWarnings": 8,
+    "blockedLifecycleScripts": 23,
+    "newWarnings": 0,
+    "buildSuggestion": "package",
+    "testSuggestion": "snapshot-threads"
+  },
+  "authoring": {
+    "snapshotManifestAddedLines": 36,
+    "snapshotManifestRemovedLines": 2,
+    "secondTestManifestAddedLines": 10,
+    "newTestPrimitive": false,
+    "diagnosticDrivenTspackFixes": 1
+  },
+  "validation": {
+    "tspackGoBroad": "passed",
+    "manifestFrontend": "passed: 255 tests, 2 skipped; build and manifest API typecheck passed",
+    "vscode": "passed: compile and 35 tests",
+    "vitestRootTypecheck": "passed in 10636 ms",
+    "vitestBroadBuild": "passed in 11896 ms",
+    "selectedUpstreamBuilds": "passed",
+    "selectedTspackBuilds": "passed",
+    "selectedUpstreamTests": "passed",
+    "selectedTspackTests": "passed",
+    "tspackCheck": "passed with 8 version-conflict and 23 blocked-lifecycle warnings",
+    "gitDiffCheck": "passed in both repositories"
+  },
+  "recommendation": "M80b: replace one bounded selected CI orchestration slice with TSPack Workflow using the two builds and two tests"
+}

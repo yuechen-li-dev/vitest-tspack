@@ -316,3 +316,54 @@ The Vitest check config now excludes the two root manifest files and generated
 Classification: VitestSpecific and TemporaryCompatibilityBridge
 
 M80a1 status: ResolvedM80a1.
+
+## M80a3 status update
+
+- **F-003 installed frontend discovery — ResolvedM80a3 regression proof.** The
+  release-tagged binary listed targets and ran both new verticals from the
+  Vitest checkout with no frontend override or TSPack source-relative lookup.
+- **F-007 duplicate fixture identity — ResolvedM80a3 regression proof.** Target
+  discovery projects internal identity, optional publication identity, and
+  root separately. The three shared-publication DTS fixtures remain distinct.
+- **F-012 package-scoped Test ownership — ResolvedM80a3.** The same generic
+  `TestTarget` now selects two files and preserves 16 assertion identities; no
+  snapshot-specific test semantics were introduced.
+- **F-014 multi-entry package artifacts — ResolvedM80a3.** A target can declare
+  a deterministic artifact set with stable member name, kind, role, and path or
+  bounded path glob. Snapshot validates all eight JS/DTS outputs and hashes.
+
+## F-015 — build and test targets require source archaeology
+
+Classification: MigrationUX and LLMTooling
+
+M80a3 status: ResolvedM80a3. `tspack inspect targets` is the single discovery
+surface for BuildTargets and TestTargets. Human output shows owner, root, name,
+tool, artifact/scope summary, and prerequisites. `--json` emits deterministic
+typed data without prose. `--kind build|test` filters the same model.
+
+## F-016 — bundled declarations use JavaScript import specifiers
+
+Classification: TSPackBug
+
+M80a3 status: ResolvedM80a3. Rollup's `index.d.ts` legitimately imports a
+hashed declaration chunk through a `.js` specifier. Type-surface traversal now
+applies TypeScript's `.js`/`.mjs`/`.cjs` to declaration-file resolution rule.
+
+## F-017 — target prerequisites were package-local only
+
+Classification: MissingBuildPrimitive
+
+M80a3 status: ResolvedM80a3. `dependsOn` accepts local target names and explicit
+qualified `package:target` identities. Manifest validation rejects unknown,
+self, and cyclic edges; application planning executes each prerequisite once
+before its downstream target. Package dependency edges are not guessed to be
+build edges. Snapshot has no built prerequisite because its workspace imports
+are externalized.
+
+## Deferred after M80a3
+
+- Root-wide Build/Test selection and browser/service topologies remain deferred.
+- Rollup result caching remains deferred; repeat builds rerun the compiler but
+  reproduce a stable artifact set.
+- Automatic target-dependency derivation remains deferred until artifact
+  consumption makes an edge semantically certain.

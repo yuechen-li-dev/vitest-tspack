@@ -1,6 +1,7 @@
 import {
   Package,
   Publish,
+  Targets,
   defineDeps,
   definePackage,
   dep,
@@ -24,10 +25,9 @@ const deps = defineDeps({
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   typesNaturalCompare: tool(npm("@types/natural-compare", "^1.4.3"), { key: "@types/natural-compare" }),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
-  naturalCompare: tool(npm("natural-compare", "^1.4.0"), { key: "natural-compare" }),
+  naturalCompare: dep(npm("natural-compare", "^1.4.0"), { key: "natural-compare" }),
 });
 
-// MIGRATION_TODO_TARGETS: Author build, test, run, and publish intent from repository evidence.
 export default definePackage(
   <Package
     name="@vitest/snapshot"
@@ -36,6 +36,40 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.vitestPrettyFormat, deps.vitestUtils, deps.magicString, deps.pathe, deps.typesNaturalCompare, deps.naturalCompare] }}
   >
+    <Targets
+      rows={[
+        {
+          name: "package",
+          language: "typescript",
+          compiler: "rollup",
+          compilerConfig: "rollup.config.js",
+          inputs: ["src/**/*.ts", "rollup.config.js"],
+          artifact: "javaScript",
+          export: ".",
+          entry: "src/index.ts",
+          runtime: "dist/index.js",
+          types: "dist/index.d.ts",
+          artifacts: [
+            { name: "environment-js", kind: "javaScript", path: "dist/environment.js", role: "runtimeEntry" },
+            { name: "index-js", kind: "javaScript", path: "dist/index.js", role: "runtimeEntry" },
+            { name: "manager-js", kind: "javaScript", path: "dist/manager.js", role: "runtimeEntry" },
+            { name: "runtime-chunk", kind: "javaScript", path: "dist/chunk-*.js", role: "runtimeChunk" },
+            { name: "environment-dts", kind: "typeDeclarations", path: "dist/environment.d.ts", role: "typeDeclaration" },
+            { name: "index-dts", kind: "typeDeclarations", path: "dist/index.d.ts", role: "typeDeclaration" },
+            { name: "manager-dts", kind: "typeDeclarations", path: "dist/manager.d.ts", role: "typeDeclaration" },
+            { name: "declaration-chunk", kind: "typeDeclarations", path: "dist/index.d-*.d.ts", role: "declarationChunk" },
+          ],
+          deps: [
+            "@vitest/pretty-format",
+            "@vitest/utils",
+            "magic-string",
+            "pathe",
+            "natural-compare",
+          ],
+          peers: [],
+        },
+      ]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["*.d.ts", "dist"]} exclude={[]} />
   </Package>,

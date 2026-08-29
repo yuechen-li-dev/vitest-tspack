@@ -100,6 +100,16 @@ export default definePackage(
           sources: ["test/basic.test.ts"],
           project: "threads",
         },
+        {
+          name: "snapshot-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: [
+            "test/snapshot.test.ts",
+            "test/snapshot-custom-serializer.test.ts",
+          ],
+          project: "threads",
+        },
       ]}
     />
   </Package>,
