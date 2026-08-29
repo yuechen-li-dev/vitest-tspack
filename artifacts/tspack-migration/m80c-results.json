@@ -78,15 +78,17 @@
     "windowsAmd64Sha256": "c65deb9acaad0815e25f68477e5e8aa065138378ab0065ba39c5eb739b3280cf"
   },
   "remote": {
-    "runId": null,
-    "url": null,
-    "commit": null,
-    "runner": "ubuntu-latest",
-    "nodeVersion": "24",
+    "runId": 33275296498,
+    "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33275296498",
+    "commit": "2f95be1a385b77c794501c810735bbde4704bea0",
+    "runner": "ubuntu-24.04@20260823.283.1 (Ubuntu 24.04.4)",
+    "nodeVersion": "v24.19.0",
     "tspackVersion": "v0.1.9-m80c.4",
     "cacheUsed": false,
-    "conclusion": "pending",
-    "terminal": null
+    "conclusion": "success",
+    "durationSeconds": 87,
+    "materializedEntries": 1190,
+    "terminal": "Workflow VitestPackageBuildCI succeeded"
   },
   "failedRemoteAttempts": [
     {

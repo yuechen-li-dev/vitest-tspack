@@ -161,7 +161,14 @@ no-dist smoke, and publication. The Linux amd64 archive SHA-256 is
 `c01e61670050b1fcff1854ca5513da8ee8d5129fddd1b122235c1e850096a174`;
 the Windows archive was published as
 `c65deb9acaad0815e25f68477e5e8aa065138378ab0065ba39c5eb739b3280cf`.
-The final Vitest run is `PENDING_REMOTE` until checkpoint dispatch completes.
+Final Vitest run `33275296498` at commit `2f95be1a3` passed in 87 seconds on
+Ubuntu 24.04.4 (runner image `ubuntu-24.04@20260823.283.1`) with Node
+`v24.19.0` and TSPack `v0.1.9-m80c.4` at `765adb7e`. It began from the
+generated clean-state assertion, materialized all 1,190 locked entries without
+a dependency cache, passed project check, built all twelve package targets,
+and ended with `Workflow VitestPackageBuildCI succeeded`. This matches the
+local target/file identities and terminal state; platform and timing differ,
+but semantic results do not.
 
 The first remote attempt, run `33274372976` at commit `fdb49b9e8`, is retained
 as failure evidence. It passed clean setup, 1,190-entry sync, and check, then
@@ -247,6 +254,9 @@ not speed, is the checkpoint claim.
 - Upstream: frozen pnpm install and broad build passed.
 - Export: generated from manifest authority and pinned to
   `v0.1.9-m80c.4`; drift check passed.
+- Remote: clean GitHub run `33275296498` passed at `2f95be1a3` on Ubuntu
+  24.04.4 with Node `v24.19.0`; all 1,190 entries were realized and the same
+  workflow terminal was reached without a dependency cache.
 - Repository whitespace: `git diff --check` passed.
 - Failure evidence: target/package identities survive build failure; test
   probe evidence retained suite counts and the exact missing dependency/fixture
