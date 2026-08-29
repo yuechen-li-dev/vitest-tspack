@@ -6,7 +6,7 @@ M80c is **Outcome B: meaningful progression**. TSPack now owns the complete
 Rollup-only package-build family that fits the current BuildTarget model: 12 of
 14 Vitest packages, including ten newly authoritative build responsibilities.
 The checkpoint is green locally, has a generated thin GitHub runner, and uses
-the released `v0.1.9-m80c.3` distribution. The next adjacent unit-test family
+the released `v0.1.9-m80c.4` distribution. The next adjacent unit-test family
 stops at a precise missing primitive: TestTarget-scoped npm dependencies and
 local fixture package mappings.
 
@@ -155,12 +155,12 @@ grew from 1,116 to 1,190 entries because the complete build tool/dependency
 closure is now explicit.
 
 Remote evidence for the final Vitest checkpoint is recorded in
-`artifacts/tspack-migration/m80c-results.json`. TSPack release run `33274688052`
+`artifacts/tspack-migration/m80c-results.json`. TSPack release run `33275120382`
 passed all five platform builds, Linux browser qualification, the embedded
 no-dist smoke, and publication. The Linux amd64 archive SHA-256 is
-`c697f12d3ff01bc74c9edae1326d9f326e1d5b71fc4eca6fd16182cd8dd6a6e1`;
+`c01e61670050b1fcff1854ca5513da8ee8d5129fddd1b122235c1e850096a174`;
 the Windows archive was published as
-`3e115dac93a8352981ade3a57119450834922eb5f21074bd711ac9e97814f440`.
+`c65deb9acaad0815e25f68477e5e8aa065138378ab0065ba39c5eb739b3280cf`.
 The final Vitest run is `PENDING_REMOTE` until checkpoint dispatch completes.
 
 The first remote attempt, run `33274372976` at commit `fdb49b9e8`, is retained
@@ -168,7 +168,13 @@ as failure evidence. It passed clean setup, 1,190-entry sync, and check, then
 failed mocker after successfully building utils: Linux resolved the materialized
 workspace package copy, which did not yet contain the live prerequisite output.
 TSPack now projects declared successful workspace artifacts into that copy;
-the general regression and full Go suite pass in `v0.1.9-m80c.3`.
+the first repair projected generated files into the copy. Run `33274791563`
+proved that fixed mocker, then exposed Vitest's intentional
+`__vitest_source__` export condition: tooling must also see the live workspace
+path outside `node_modules`. The final fix links workspace packages to live
+roots on Unix and through Windows junctions, with projection retained for
+already materialized copies. Cross-platform regressions and the full Go suite
+pass in `v0.1.9-m80c.4`.
 
 ## Product pressure-test results
 
@@ -240,7 +246,7 @@ not speed, is the checkpoint claim.
   twice locally.
 - Upstream: frozen pnpm install and broad build passed.
 - Export: generated from manifest authority and pinned to
-  `v0.1.9-m80c.3`; drift check passed.
+  `v0.1.9-m80c.4`; drift check passed.
 - Repository whitespace: `git diff --check` passed.
 - Failure evidence: target/package identities survive build failure; test
   probe evidence retained suite counts and the exact missing dependency/fixture

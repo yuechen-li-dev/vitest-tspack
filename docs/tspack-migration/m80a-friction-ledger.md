@@ -633,16 +633,18 @@ because `node_modules/@vitest/utils/dist/helpers.js` was absent. The typed
 failure retained both target identities and the missing path.
 
 Resolution:
-After every successful workspace target, TSPack now projects only the declared
-build artifacts into an existing materialized root package copy and removes
-stale declared matches there first. Source/store inputs remain immutable, path
-escapes and directories are rejected, and a regression proves fresh output
-replaces a stale hashed chunk. This keeps downstream resolution consistent
-across copy and hardlink materialization without provider setup.
+The first repair projected only declared output, which let mocker build. Run
+`33274791563` then showed Vitest's intentional `__vitest_source__` export
+condition resolving TypeScript under the copied `node_modules` path, outside
+the compiler plugin's source boundary. TSPack now links workspace packages to
+their live roots on Unix and via Windows junctions; output projection remains a
+safe fallback for existing materialized copies. Source/store inputs remain
+immutable, path escapes are rejected, and regressions cover both live output
+visibility and stale projection cleanup.
 
 Classification: TSPackBug and DependencyRealization
 
-M80c status: Resolved in `v0.1.9-m80c.3`.
+M80c status: Resolved in `v0.1.9-m80c.4`.
 
 ### F-027 — pre-build project checks required generated type outputs
 
