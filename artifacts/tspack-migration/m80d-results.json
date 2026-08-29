@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M80d",
+  "outcome": "B",
+  "baseline": {
+    "tspackRevision": "765adb7ebb68b8262b9aa9b239c83a0b6b718307",
+    "vitestRevision": "23a8cfa",
+    "qualifiedTspackVersion": "v0.1.9-m80c.4",
+    "nodeVersion": "v26.2.0",
+    "m80cBuildTargets": 12,
+    "m80cTestTargets": 2,
+    "blockedFamily": "Vitest threads unit partition",
+    "probeDiscoveredTests": 2045,
+    "probeCollectionFailures": 20
+  },
+  "model": {
+    "testTargetRequirements": true,
+    "requirementTapeKind": "target-explicit",
+    "targetQualifiedLockEdges": true,
+    "publicationDependenciesChanged": false,
+    "fixtureModes": [
+      "package",
+      "source"
+    ],
+    "builtFixtureImplemented": false,
+    "mutableFixtureImplemented": false,
+    "fixtureMarker": ".tspack/test-fixtures/materialization.json",
+    "fixturePlanSorted": true,
+    "fixturePlanHasSha256Digest": true,
+    "workspaceContainment": true,
+    "unmanagedDestinationRejected": true,
+    "incrementalNoOp": true,
+    "parallelImmutableConsumers": true
+  },
+  "firstProof": {
+    "target": "@vitest/test-unit:test:requirements-fixtures-threads",
+    "files": 2,
+    "oraclePassed": 21,
+    "tspackPassed": 21,
+    "controlledFailure": {
+      "passed": 20,
+      "failed": 1,
+      "exitCode": 1,
+      "diagnostic": "TSPACK_TEST_ASSERTION_FAILED",
+      "qualifiedTargetPreserved": true,
+      "testIdentityPreserved": true,
+      "restored": true
+    }
+  },
+  "upstreamOracle": {
+    "packageManager": "pnpm@11.24.0",
+    "representativePassed": 21,
+    "characterizedFiles": 19,
+    "characterizedPassed": 300,
+    "usedForFinalFixtureTopology": false,
+    "usedAsOuterTspackLifecycle": false
+  },
+  "workflow": {
+    "name": "VitestFixturePackageCI",
+    "branches": 3,
+    "testEffects": 3,
+    "processEffects": 0,
+    "shellScriptEffects": 0,
+    "pnpmLifecycleInvocations": 0,
+    "targets": [
+      {
+        "identity": "@vitest/test-unit:test:fixture-package-family-threads",
+        "files": 16,
+        "local": {
+          "passed": 65,
+          "failed": 0,
+          "skipped": 0
+        },
+        "remote": {
+          "passed": 65,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "identity": "@vitest/test-unit:test:react18-threads",
+        "files": 1,
+        "local": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "remote": {
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "identity": "@vitest/test-unit:test:additional-package-fixtures-threads",
+        "files": 2,
+        "local": {
+          "passed": 21,
+          "failed": 0,
+          "skipped": 0
+        },
+        "remote": {
+          "passed": 19,
+          "failed": 0,
+          "skipped": 2
+        }
+      }
+    ],
+    "totalFiles": 19,
+    "totalSemanticResults": 87,
+    "representativeTargetIsSubset": true
+  },
+  "local": {
+    "cleanSyncSucceeded": true,
+    "lockedEntries": 1594,
+    "warmSyncMilliseconds": 876.5,
+    "checkSucceeded": true,
+    "knownDynamicImportWarnings": 6,
+    "versionConflictPackages": 77,
+    "workflowSucceeded": true,
+    "passed": 87,
+    "failed": 0,
+    "skipped": 0,
+    "slowestBranchMilliseconds": 2185,
+    "inspectRepeatedEqual": true,
+    "inspectSha256": "9dd07cb56dcf5d98f586508f01963c74e6cc7d93bbac0f15bb24aa51b7962338",
+    "coreWorkflow": {
+      "succeeded": true,
+      "basicPassed": 8,
+      "basicSkipped": 1,
+      "snapshotPassed": 16
+    },
+    "packageBuildWorkflow": {
+      "succeeded": true,
+      "buildTargets": 12
+    }
+  },
+  "distribution": {
+    "version": "v0.1.10-m80d.3",
+    "tspackCommit": "60bb5d68d2ed9c302e304befc22ce9cf4b96e6a1",
+    "releaseRunId": 33279009319,
+    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33279009319",
+    "releaseConclusion": "success",
+    "linuxAmd64Sha256": "8dc7bb623d09330d0caa65f1f941f346ca0836c410fb828b447232c30aab1c5a",
+    "windowsAmd64Sha256": "dda4ea6ee07a9d0239c3ff3d35d9e6279da77679ee8024b217db7a8d2733dd1d"
+  },
+  "remote": {
+    "runId": 33279242166,
+    "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33279242166",
+    "commit": "67fa04076edf589b78247e1b90ee1ca5710bca7f",
+    "conclusion": "success",
+    "durationSeconds": 95,
+    "runner": "ubuntu-24.04@20260823.283.1 (Ubuntu 24.04.4)",
+    "runnerVersion": "2.336.0",
+    "nodeVersion": "v24.19.0",
+    "tspackVersion": "v0.1.10-m80d.3",
+    "cleanDependencyState": true,
+    "pnpmInstallUsed": false,
+    "materializedEntries": 1594,
+    "passed": 85,
+    "failed": 0,
+    "skipped": 2,
+    "terminal": "Workflow VitestFixturePackageCI succeeded"
+  },
+  "failedRemoteAttempts": [
+    {
+      "runId": 33278851725,
+      "commit": "af27d1190",
+      "failure": "Vitest collection failure was not yet represented as a structured suite diagnostic"
+    },
+    {
+      "runId": 33279104517,
+      "commit": "e578080fa",
+      "failure": "clean runner identified missing declared utils and pretty-format build artifacts"
+    }
+  ],
+  "boundary": {
+    "classification": "MissingPrimitive",
+    "name": "BuildTarget requirement and declared-artifact fixture composition",
+    "affectedTests": 5,
+    "webWorkerTests": 3,
+    "otherTests": [
+      "expect.test.ts",
+      "pretty-format.test.ts"
+    ],
+    "recommendedNextStep": "Let a TestTarget require a qualified BuildTarget and bind its declared artifact after successful build, reusing existing target ordering and artifact identity."
+  },
+  "authority": {
+    "legacyJobsRemoved": 0,
+    "legacyJobsShrunk": 0,
+    "legacyCoveragePreserved": true,
+    "newTspackOwnedFiles": 19,
+    "newTspackOwnedSemanticResults": 87
+  },
+  "validation": {
+    "tspackBroadGoTests": "passed",
+    "manifestFrontendBuild": "passed",
+    "manifestFrontendTypecheck": "passed",
+    "manifestFrontendTests": {
+      "passed": 256,
+      "skipped": 2
+    },
+    "vscodeCompile": "passed",
+    "vscodeTestsPassed": 35,
+    "generatedTypeDrift": "passed",
+    "workflowTests": "passed",
+    "setupActionTests": "passed",
+    "githubExportTests": "passed",
+    "vitestBroadBuild": "passed",
+    "vitestDirectCleanTypecheck": "failed: TS2688 missing Node type definitions; broad typecheck environment is not target-owned",
+    "tspackDiffCheck": "passed",
+    "vitestDiffCheck": "passed"
+  },
+  "friction": {
+    "sourceDives": 5,
+    "resolved": [
+      "F-033 package/source target-scoped test requirements and fixtures"
+    ],
+    "open": [
+      "F-036 built workspace fixtures need BuildTarget composition"
+    ]
+  }
+}

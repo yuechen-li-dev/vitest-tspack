@@ -583,8 +583,9 @@ M80d added TestTarget-scoped requirements through Requirement Tape and
 target-qualified lock edges, plus deterministic local fixture bindings. Local
 fixtures distinguish immutable locked-package projection from authoritative
 source linking; both are TSPack-owned, workspace-contained, inspectable, and
-incremental. The migrated targets run 321 tests without pnpm installation or
-test-time topology setup.
+incremental. The final clean scope produces 87 semantic test results without
+pnpm installation or test-time topology setup: 87 pass locally, while the
+clean Ubuntu qualification reports 85 passed and two platform skips.
 
 Classification: MissingPrimitive
 
@@ -603,10 +604,12 @@ contract and test imports require `dist/index.js` from BuildTarget `package`.
 Evidence:
 The clean TSPack broad probe advanced from 20 collection failures in M80c to
 three. All three remaining failures are the web-worker files, and each reports
-that `@vitest/web-worker` cannot be resolved. The package manifest identifies
-`packages/web-worker:package` as a Rollup BuildTarget with `dist/index.js` as
-its runtime output. Adding a source/package fixture cannot truthfully satisfy
-that built-output contract.
+that `@vitest/web-worker` cannot be resolved. Clean Ubuntu qualification also
+showed that `expect.test.ts` and `pretty-format.test.ts` require declared
+workspace outputs (`@vitest/utils/dist/error.js` and
+`@vitest/pretty-format/dist/index.js`). The package manifests identify those
+outputs as BuildTarget artifacts. Adding a source/package fixture cannot
+truthfully satisfy a built-output contract.
 
 Resolution:
 Do not copy generated output opportunistically or add an opaque pretest build.
@@ -616,7 +619,7 @@ build ordering and artifact identity.
 
 Classification: MissingPrimitive
 
-M80d status: Open; precise adjacent boundary after the green 321-test slice.
+M80d status: Open; precise adjacent boundary after the green 87-result slice.
 
 ### F-034 — valid registry resolution can differ from the frozen pnpm oracle
 
