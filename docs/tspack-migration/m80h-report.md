@@ -143,10 +143,10 @@ boundary is stronger evidence than one byte comparison.
 ## 52–75. Qualification, authority, UX, and validation
 
 The first remote run (`33295618815`) proved clean realization and project check,
-then exposed two hidden local-state assumptions: pretty-format output was not an
-explicit built fixture, and concurrent Vitest processes contended for API port
-3023. The repaired targets declare the existing pretty-format BuildTarget and
-fixture; the Flow sequences the three tests. The successful remote proof is
+then exposed hidden local-state assumptions: pretty-format and spy outputs were
+not explicit built fixtures, and concurrent Vitest processes contended for API
+port 3023. The repaired targets declare the existing pretty-format and spy
+BuildTargets and fixtures; the Flow sequences the three tests. The successful remote proof is
 recorded in the results artifact and final qualification commit.
 It runs `ubuntu-latest`, Node 24, and qualified TSPack `v0.1.13-m80g.1`; the
 TSPack changes discovered during the non-authoritative build checkpoint are not
@@ -174,13 +174,14 @@ kind, ownership, prerequisite, fixtures, and workflow effects. The only notable
 source dive was recovering environment-package needs from Vitest configs; normal
 TypeScript helpers kept the 170-file runtime declaration reviewable.
 
-Coarse local target times before remote serialization were approximately 2.3 seconds for
-type/in-source, 6.3 seconds for ordinary core, and 7.4 seconds for remaining
+Coarse local target times before remote serialization were approximately 2.3
+seconds for type/in-source, 6.3 seconds for ordinary core, and 7.4 seconds for remaining
 runtime. The final Flow trades that overlap for correct ownership of the shared
-fixed port. Clean correctness was proved twice; no cache
-authority claim or optimization was made. Friction entries F-042 through F-044
+fixed port. Clean correctness was additionally proved with all 14 workspace
+package `dist` trees absent; no cache authority claim or optimization was made.
+Friction entries F-042 through F-045
 record the exact-patch selection bug, template-literal import false positive,
-and peer-context materialization gap.
+peer-context materialization gap, and clean runtime-fixture/port discovery.
 
 Validation evidence:
 

@@ -573,6 +573,7 @@ export default definePackage(
           dependsOn: [
             "@vitest/expect:package",
             "@vitest/pretty-format:package",
+            "@vitest/spy:package",
             "@vitest/utils:package",
           ],
           builtFixtures: [
@@ -585,6 +586,11 @@ export default definePackage(
               name: "pretty-format-runtime",
               artifact: "runtime",
               binding: "@vitest/pretty-format",
+            }),
+            builtArtifactFixture("@vitest/spy:package", {
+              name: "spy-runtime",
+              artifact: "runtime",
+              binding: "@vitest/spy",
             }),
             builtArtifactFixture("@vitest/utils:package", {
               name: "utils-runtime",
@@ -711,6 +717,7 @@ export default definePackage(
           dependsOn: [
             "@vitest/mocker:package",
             "@vitest/pretty-format:package",
+            "@vitest/spy:package",
           ],
           builtFixtures: [
             builtArtifactFixture("@vitest/mocker:package", {
@@ -722,6 +729,11 @@ export default definePackage(
               name: "pretty-format-runtime",
               artifact: "runtime",
               binding: "@vitest/pretty-format",
+            }),
+            builtArtifactFixture("@vitest/spy:package", {
+              name: "spy-runtime",
+              artifact: "runtime",
+              binding: "@vitest/spy",
             }),
             builtArtifactFixture("@vitest/utils:package", {
               name: "utils-runtime",
