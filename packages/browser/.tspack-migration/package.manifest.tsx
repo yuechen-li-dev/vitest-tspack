@@ -1,6 +1,8 @@
 import {
   Package,
   Publish,
+  Targets,
+  Tools,
   defineDeps,
   definePackage,
   dep,
@@ -61,6 +63,90 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.vitest, deps.blazediffCore, deps.vitestMocker, deps.vitestUi, deps.vitestUtils, deps.magicString, deps.pngjs, deps.sirv, deps.tinyrainbow, deps.ws, deps.opentelemetryApi, deps.testingLibraryUserEvent, deps.typesNode, deps.typesPngjs, deps.typesWs, deps.vitestSnapshot, deps.birpc, deps.flatted, deps.ivya, deps.mime, deps.pathe, deps.rrwebSnapshot] }}
   >
+    <Tools
+      values={[
+        deps.opentelemetryApi,
+        deps.testingLibraryUserEvent,
+        deps.typesNode,
+        deps.typesPngjs,
+        deps.typesWs,
+        deps.vitestSnapshot,
+        deps.birpc,
+        deps.flatted,
+        deps.ivya,
+        deps.mime,
+        deps.pathe,
+        deps.rrwebSnapshot,
+      ]}
+    />
+    <Targets
+      rows={[
+        {
+          name: "node",
+          language: "typescript",
+          compiler: "rollup",
+          compilerConfig: "rollup.config.js",
+          inputs: ["src/**/*.ts", "rollup.config.js"],
+          artifact: "javaScript",
+          export: ".",
+          entry: "src/node/index.ts",
+          runtime: "dist/index.js",
+          types: "dist/index.d.ts",
+          artifacts: [
+            { name: "browser-javascript", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+            { name: "browser-declarations", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+          ],
+          dependsOn: [
+            "@vitest/mocker:package",
+            "@vitest/snapshot:package",
+            "@vitest/ui:node",
+            "@vitest/utils:package",
+          ],
+          deps: [
+            "@blazediff/core",
+            "@opentelemetry/api",
+            "@testing-library/user-event",
+            "@types/node",
+            "@types/pngjs",
+            "@types/ws",
+            "@vitest/mocker",
+            "@vitest/snapshot",
+            "@vitest/ui",
+            "@vitest/utils",
+            "birpc",
+            "flatted",
+            "ivya",
+            "magic-string",
+            "mime",
+            "pathe",
+            "pngjs",
+            "rrweb-snapshot",
+            "sirv",
+            "tinyrainbow",
+            "ws",
+          ],
+          peers: ["vitest"],
+        },
+        {
+          name: "package",
+          language: "typescript",
+          compiler: "vite",
+          compilerConfig: "src/client/vite.config.ts",
+          artifact: "staticAsset",
+          export: "./client",
+          entry: "src/client/orchestrator.html",
+          runtime: "dist/client/orchestrator.html",
+          types: "",
+          artifacts: [
+            { name: "browser-client-manifest", kind: "staticAsset", path: "dist/client/.vite/manifest.json", role: "runtimeEntry" },
+            { name: "browser-client-assets", kind: "staticAsset", path: "dist/client/__vitest_browser__/*", role: "staticAsset" },
+          ],
+          dependsOn: ["node"],
+          deps: ["pathe"],
+          peers: ["vitest"],
+        },
+      ]}
+    />
     {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
     <Publish include={["*.d.ts", "context.js", "dist", "dummy.js", "providers"]} exclude={[]} />
   </Package>,

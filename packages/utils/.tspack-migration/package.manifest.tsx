@@ -55,6 +55,7 @@ export default definePackage(
           { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
           { name: "types-source-map", kind: "typeDeclarations", path: "dist/source-map/*.d.ts", role: "typeDeclaration" },
         ],
+        dependsOn: ["@vitest/pretty-format:package"],
         deps: ["@jridgewell/trace-mapping", "@types/convert-source-map", "@vitest/pretty-format", "convert-source-map", "diff-sequences", "tinyrainbow"],
         peers: [],
       }]}

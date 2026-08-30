@@ -10,6 +10,7 @@ import {
   localFixture,
   npm,
   path,
+  packageFixture,
   peer,
   tool,
   workspace,
@@ -253,6 +254,10 @@ export default definePackage(
             localFixture(deps.vitestTestDepCjs, { name: "dep-cjs", binding: "@vitest/test-dep-cjs" }),
             localFixture(deps.vitestTestDepNestedCjs, { name: "dep-nested-cjs", binding: "@vitest/test-dep-nested-cjs" }),
             localFixture(deps.vitestTestFn, { name: "dep-fn", binding: "@vitest/test-fn" }),
+            packageFixture(deps.vitestPackageExports, {
+              name: "vitest-package-exports",
+              binding: "vitest-package-exports",
+            }),
           ],
         },
         {
@@ -413,6 +418,7 @@ export default definePackage(
               name: "vitest-runtime",
               artifacts: [
                 "commonjs",
+                "launcher",
                 "runtime",
                 "runtime-chunks",
                 "runtime-workers",
@@ -472,6 +478,7 @@ export default definePackage(
               name: "vitest-runtime",
               artifacts: [
                 "commonjs",
+                "launcher",
                 "runtime",
                 "runtime-chunks",
                 "runtime-workers",
@@ -702,11 +709,13 @@ export default definePackage(
             deps.happyDom,
             deps.jsdom,
             deps.magicString,
+            deps.obug,
             deps.pathe,
             deps.temporalPolyfill,
             deps.url,
             deps.vite,
             deps.vitestEnvironmentCustom,
+            deps.vue,
           ],
           fixtures: [
             localFixture(deps.vitestEnvironmentCustom, {
@@ -718,6 +727,7 @@ export default definePackage(
             "@vitest/mocker:package",
             "@vitest/pretty-format:package",
             "@vitest/spy:package",
+            "vitest:package",
           ],
           builtFixtures: [
             builtArtifactFixture("@vitest/mocker:package", {
@@ -739,6 +749,18 @@ export default definePackage(
               name: "utils-runtime",
               artifacts: ["runtime", "runtime-source-map"],
               binding: "@vitest/utils",
+            }),
+            builtArtifactFixture("vitest:package", {
+              name: "vitest-runtime",
+              artifacts: [
+                "commonjs",
+                "launcher",
+                "runtime",
+                "runtime-chunks",
+                "runtime-workers",
+                "suppress-warnings",
+              ],
+              binding: "vitest",
             }),
           ],
         },

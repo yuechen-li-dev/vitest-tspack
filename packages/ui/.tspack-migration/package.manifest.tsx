@@ -1,6 +1,8 @@
 import {
   Package,
   Publish,
+  Targets,
+  Tools,
   defineDeps,
   definePackage,
   dep,
@@ -66,7 +68,7 @@ const deps = defineDeps({
   typescript: tool(npm("typescript", "^5.9.3")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   unocss: tool(npm("unocss", "^66.8.1")),
-  vite: tool(npm("vite", "latest")),
+  vite: tool(npm("vite", "8.0.11")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   vitestBrowserVue: tool(npm("vitest-browser-vue", "2.1.0"), { key: "vitest-browser-vue" }),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
@@ -88,7 +90,115 @@ export default definePackage(
     kind="library"
     dependencies={{ values: [deps.vitest, deps.vitestUtils, deps.fflate, deps.flatted, deps.pathe, deps.sirv, deps.tinyrainbow, deps.fakerJsFaker, deps.iconifyJsonCarbon, deps.iconifyJsonLogos, deps.typesCodemirror, deps.typesD3Selection, deps.unocssReset, deps.vitejsPluginVue, deps.vitestBrowserPlaywright, deps.vitestBrowserPreview, deps.vueuseCore, deps.ansiToHtml, deps.birpc, deps.codemirror, deps.codemirrorThemeVars, deps.cookie, deps.d3GraphController, deps.floatingVue, deps.mime, deps.rollup, deps.rrwebSnapshot, deps.splitpanes, deps.typescript, deps.unocss, deps.vite, deps.vitestBrowserVue, deps.vue, deps.vueRouter, deps.vueTsc, deps.vueVirtualScroller] }}
   >
-    {/* MIGRATION_TODO_PUBLISH: compatibility-derived include; verify with tspack pack --dry-run. */}
+    <Tools
+      values={[
+        deps.fakerJsFaker,
+        deps.iconifyJsonCarbon,
+        deps.iconifyJsonLogos,
+        deps.typesCodemirror,
+        deps.typesD3Selection,
+        deps.unocssReset,
+        deps.vitejsPluginVue,
+        deps.vitestBrowserPlaywright,
+        deps.vitestBrowserPreview,
+        deps.vueuseCore,
+        deps.ansiToHtml,
+        deps.birpc,
+        deps.codemirror,
+        deps.codemirrorThemeVars,
+        deps.cookie,
+        deps.d3GraphController,
+        deps.floatingVue,
+        deps.mime,
+        deps.rrwebSnapshot,
+        deps.splitpanes,
+        deps.typescript,
+        deps.unocss,
+        deps.vitestBrowserVue,
+        deps.vue,
+        deps.vueRouter,
+        deps.vueTsc,
+        deps.vueVirtualScroller,
+      ]}
+    />
+    <Targets
+      rows={[
+        {
+          name: "node",
+          language: "typescript",
+          compiler: "rollup",
+          compilerConfig: "rollup.config.js",
+          inputs: ["node/**/*.ts", "rollup.config.js"],
+          artifact: "javaScript",
+          export: ".",
+          entry: "node/index.ts",
+          runtime: "dist/index.js",
+          types: "dist/index.d.ts",
+          artifacts: [
+            { name: "node-javascript", kind: "javaScript", path: "dist/*.js", role: "runtimeEntry" },
+            { name: "node-declarations", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
+          ],
+          dependsOn: ["@vitest/utils:package"],
+          deps: ["@vitest/utils", "cookie", "fflate", "flatted", "pathe", "sirv", "tinyrainbow", "mime"],
+          peers: ["vitest"],
+        },
+        {
+          name: "package",
+          language: "typescript",
+          compiler: "vite",
+          compilerConfig: "vite.config.ts",
+          artifact: "staticAsset",
+          export: "./client",
+          entry: "index.html",
+          runtime: "dist/client/index.html",
+          types: "",
+          artifacts: [
+            { name: "client-entry", kind: "staticAsset", path: "dist/client/index.html", role: "runtimeEntry" },
+            { name: "client-assets", kind: "staticAsset", path: "dist/client/assets/*", role: "staticAsset" },
+          ],
+          dependsOn: [
+            "node",
+            "@vitest/browser-playwright:package",
+            "@vitest/browser-preview:package",
+            "@vitest/utils:package",
+          ],
+          deps: [
+            "@faker-js/faker",
+            "@iconify-json/carbon",
+            "@iconify-json/logos",
+            "@types/codemirror",
+            "@types/d3-selection",
+            "@unocss/reset",
+            "@vitejs/plugin-vue",
+            "@vitest/browser-playwright",
+            "@vitest/browser-preview",
+            "@vitest/utils",
+            "@vueuse/core",
+            "ansi-to-html",
+            "birpc",
+            "codemirror",
+            "codemirror-theme-vars",
+            "cookie",
+            "d3-graph-controller",
+            "fflate",
+            "flatted",
+            "floating-vue",
+            "mime",
+            "pathe",
+            "rrweb-snapshot",
+            "sirv",
+            "splitpanes",
+            "tinyrainbow",
+            "unocss",
+            "vitest-browser-vue",
+            "vue",
+            "vue-router",
+            "vue-virtual-scroller",
+          ],
+          peers: ["vitest"],
+        },
+      ]}
+    />
     <Publish include={["*.d.ts", "dist"]} exclude={[]} />
   </Package>,
 );

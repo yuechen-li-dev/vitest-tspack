@@ -113,12 +113,20 @@ export default defineWorkspace(
         }),
         Workflow("VitestPackageBuildCI", {
           triggers: [Manual()],
-          flow: Parallel(
-            Branch("build-browser-preview", Build({ packages: ["@vitest/browser-preview"], targets: ["package"] })),
-            Branch("build-coverage-v8", Build({ packages: ["@vitest/coverage-v8"], targets: ["package"] })),
-            Branch("build-vitest", Build({ packages: ["vitest"], targets: ["package"] })),
-            Branch("build-coverage-istanbul", Build({ packages: ["@vitest/coverage-istanbul"], targets: ["package"] })),
-            Branch("build-web-worker", Build({ packages: ["@vitest/web-worker"], targets: ["package"] })),
+          flow: Branch(
+            "build-packages",
+            Build({
+              packages: [
+                "@vitest/browser",
+                "@vitest/browser-preview",
+                "@vitest/coverage-istanbul",
+                "@vitest/coverage-v8",
+                "@vitest/ui",
+                "@vitest/web-worker",
+                "vitest",
+              ],
+              targets: ["package"],
+            }),
           ),
         }),
         Workflow("VitestFixturePackageCI", {

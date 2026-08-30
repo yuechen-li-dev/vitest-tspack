@@ -444,6 +444,160 @@ Classification: ProviderBootstrap and InstalledTSPack
 
 M80b1 status: Resolved.
 
+## M80i — peer-context module-instance identity
+
+### F-049 — one global package environment erased consumer peer context
+
+Severity: P0
+
+Context:
+The lock and materializer identified installed packages by source realization.
+Workspace consumers with equivalent peer bindings could receive incidental
+duplicate paths, while consumers with React 18 and React 19 could share a
+coarse projection. Vite exposed the same defect as a 628-versus-411 UI module
+graph.
+
+Resolution:
+TSPack now derives canonical module instances from realization plus effective
+declared-peer bindings for each workspace consumer context. The lock records
+exact instance dependency and peer edges. Immutable bytes remain realization
+keyed, while deterministic `.tspack-instances/<instance-digest>` projections
+carry the exact resolution environment.
+
+Classification: TSPackBug
+
+M80i status: Resolved locally; release qualification is recorded in the M80i
+report.
+
+### F-050 — later optional requirements could override required peers
+
+Severity: P1
+
+Context:
+A later optional peer constraint could replace an already selected required
+constraint, making peer presence and instance identity order-dependent.
+
+Resolution:
+Required constraints now remain controlling. Deterministic tests cover
+declaration ordering, optional present/absent contexts, aliases, patches, and
+multiple peer versions.
+
+Classification: TSPackBug
+
+M80i status: Resolved.
+
+### F-051 — package fixtures lost their topology after ordinary rematerialization
+
+Severity: P1
+
+Context:
+The fixture marker checked only that its destination existed. A later module
+rematerialization could replace a copied package fixture with an ordinary
+instance junction and the marker would incorrectly reuse it. This removed
+fixture-local dependencies such as `@vitest/test-dep1` and `vitest`.
+
+Resolution:
+Fixture validation now checks physical projection semantics: source fixtures
+must remain the same directory as their producer, while package fixtures must
+remain independent copies. Package copies reconstruct their exact locked
+dependency and peer links without copying injected `node_modules` topology.
+
+Classification: TSPackBug and DependencyRealization
+
+M80i status: Resolved.
+
+### F-052 — registry packages needed a general package-mode fixture primitive
+
+Severity: P1
+
+Context:
+The existing local fixture helper could express source and package fixtures
+for workspace paths, but `vitest-package-exports` needed an npm package copy
+with its consumer-provided development peer.
+
+Resolution:
+The generic `packageFixture` helper accepts npm, JSR, git, path, and workspace
+sources in package mode. Source mode remains restricted to local sources. The
+frontend type surface, generated declarations, and drift checks cover it.
+
+Classification: MissingPrimitive
+
+M80i status: Resolved.
+
+### F-053 — built fixtures needed runtime peers and exact instance links
+
+Severity: P1
+
+Context:
+Copied built packages retained runtime imports of declared dependencies and
+present peers, but the fixture initially copied only artifact files. Clean
+tests then failed on `vite`, `jsdom`, and related optional environments.
+
+Resolution:
+Built fixtures project declared runtime dependencies and present peers into
+their local `node_modules`, backed by exact locked instances. Optional absent
+peers remain absent, and fixture ownership may replace only the authoritative
+module-instance projection.
+
+Classification: TSPackBug
+
+M80i status: Resolved.
+
+### F-054 — cross-package source imports need explicit root integration providers
+
+Severity: P1
+
+Context:
+Vitest unit tests deliberately import `packages/mocker/src` and
+`packages/vitest/src` by absolute source path. Vite therefore resolves their
+optional peers from the workspace source ancestry rather than the test
+package projection. pnpm root hoisting had supplied `vite`, `jsdom`, `pathe`,
+`tinyexec`, and `obug` implicitly.
+
+Resolution:
+The migration declares the cross-package integration providers at the
+workspace or target scope where resolution actually begins. No implicit
+hoisting or Vite dedupe override was introduced.
+
+Classification: InteropRequirement and HistoricalGlue
+
+M80i status: Resolved for the bounded workflows.
+
+### F-055 — exact release-like versions are required in native manifests
+
+Severity: P2
+
+Context:
+`latest` is not a semantic-version constraint in native dependency intent,
+and an unfrozen TSPack update selected small direct/transitive version deltas
+from the frozen pnpm oracle.
+
+Resolution:
+The Vite harness is explicitly `8.0.11`. Remaining UI byte deltas are
+attributed to exact oracle drift in Iconify, CodeMirror, Rollup, Vue, and Vue
+Router rather than hidden by package-manager lock import.
+
+Classification: MigrationUX and InteropRequirement
+
+M80i status: Accepted and attributed.
+
+### F-056 — warm sync fixture validation is intentionally thorough
+
+Severity: P2
+
+Context:
+The module-instance projection contains 956 instances and 305 consumer-root
+bindings. Validating fixture ownership and exact topology makes a warm sync
+roughly as expensive as the current clean validation path on Windows.
+
+Resolution:
+Correctness is retained for M80i. A future performance milestone may add a
+content/ownership index without weakening physical projection checks.
+
+Classification: MigrationUX
+
+M80i status: Open optimization; not a correctness blocker.
+
 ### F-039 — one fixture binding could not compose several declared artifact sets
 
 Severity: P1
