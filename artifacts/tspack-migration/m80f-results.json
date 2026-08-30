@@ -11,7 +11,7 @@
     "testTargets": 9,
     "workflows": 4
   },
-  "final": {
+  "qualification": {
     "tspackRevision": "53960191afce9e00851131fb69148192871dbd86",
     "vitestRevision": "f0f9ef23d7e97554b5cb3d3d0722eb3e7bc3b785",
     "qualifiedTspackVersion": "v0.1.12-m80f.2",

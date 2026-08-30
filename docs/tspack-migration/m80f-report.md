@@ -16,7 +16,7 @@ delegating patch application to pnpm.
 
 ## 1–3. Baseline revisions, qualified release, and initial authority
 
-| Item | Baseline | Final |
+| Item | Baseline | Qualified code revision |
 | --- | --- | --- |
 | TSPack | `c2a57e177e8c38b295be05e0e9e41e983083a8df` | `53960191afce9e00851131fb69148192871dbd86` |
 | Vitest fork | `0b98115eef00b79d993769b9eb61be923f4db835` | `f0f9ef23d7e97554b5cb3d3d0722eb3e7bc3b785` |
