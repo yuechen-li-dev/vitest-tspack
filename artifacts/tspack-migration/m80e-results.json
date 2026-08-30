@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M80e",
+  "outcome": "A",
+  "baseline": {
+    "tspackRevision": "60bb5d68d2ed9c302e304befc22ce9cf4b96e6a1",
+    "vitestRevision": "66c0be57a6da5b1e5de96dca0f66f2287a02aa5f",
+    "qualifiedTspackVersion": "v0.1.10-m80d.3",
+    "nodeVersion": "v26.2.0",
+    "blockedFiles": 5
+  },
+  "model": {
+    "testTargetBuildPrerequisites": true,
+    "builtArtifactFixtures": true,
+    "requirementBindingSeparated": true,
+    "targetGraphAuthoritative": true,
+    "buildResultAuthoritative": true,
+    "publicationDependenciesChanged": false,
+    "artifactIdentityStable": true,
+    "singleFileSupported": true,
+    "namedFileSetSupported": true,
+    "directoryArtifactSupported": false,
+    "contentHashVerified": true,
+    "staleDeclaredOutputsCleanedBeforeBuild": true,
+    "workspaceContainment": true,
+    "atomicProjection": true,
+    "unmanagedDestinationRejected": true,
+    "sharedImmutableProjection": true,
+    "sharedProducerCoalesced": true
+  },
+  "workflow": {
+    "name": "VitestBuiltFixtureCI",
+    "testEffects": 3,
+    "explicitBuildEffects": 0,
+    "processEffects": 0,
+    "shellScriptEffects": 0,
+    "pnpmLifecycleInvocations": 0,
+    "pretestBuilds": 0,
+    "incidentalDistCopies": 0,
+    "targets": [
+      {
+        "identity": "@vitest/test-unit:test:web-worker-built-threads",
+        "files": 3,
+        "prerequisites": ["@vitest/web-worker:package"],
+        "fixtures": ["@vitest/web-worker:package:runtime -> @vitest/web-worker"],
+        "passed": 24,
+        "failed": 0,
+        "skipped": 1
+      },
+      {
+        "identity": "@vitest/test-unit:test:expect-built-threads",
+        "files": 1,
+        "prerequisites": ["@vitest/pretty-format:package", "@vitest/utils:package"],
+        "fixtures": [
+          "@vitest/pretty-format:package:runtime -> @vitest/pretty-format",
+          "@vitest/utils:package:runtime -> @vitest/utils"
+        ],
+        "passed": 59,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "identity": "@vitest/test-unit:test:pretty-format-built-threads",
+        "files": 1,
+        "prerequisites": ["@vitest/pretty-format:package", "@vitest/utils:package"],
+        "fixtures": [
+          "@vitest/pretty-format:package:runtime -> @vitest/pretty-format",
+          "@vitest/utils:package:runtime -> @vitest/utils"
+        ],
+        "passed": 175,
+        "failed": 0,
+        "skipped": 0
+      }
+    ],
+    "totalFiles": 5,
+    "passed": 258,
+    "failed": 0,
+    "skipped": 1
+  },
+  "oracle": {
+    "filesPassed": 5,
+    "passed": 257,
+    "expectedFail": 1,
+    "skipped": 1,
+    "semanticParity": true
+  },
+  "failureProofs": {
+    "producerFailureBlocksConsumer": true,
+    "producerFailureDiagnostic": "TSPACK_COMPILER_BUILD_FAILED",
+    "missingArtifactBlocksConsumer": true,
+    "missingArtifactDiagnostic": "TSPACK_TEST_BUILT_FIXTURE_ARTIFACT_MISSING",
+    "staleHashBlocksConsumer": true,
+    "staleHashDiagnostic": "TSPACK_TEST_BUILT_FIXTURE_VERIFICATION_FAILED"
+  },
+  "local": {
+    "cleanSyncSucceeded": true,
+    "materializedEntries": 1597,
+    "producerOutputsAbsentBeforeWorkflow": true,
+    "cleanWorkflowSucceeded": true,
+    "cleanWorkflowWallMilliseconds": 4808,
+    "warmWorkflowSucceeded": true,
+    "warmWorkflowWallMilliseconds": 4235.6,
+    "inspectRepeatedEqual": true,
+    "inspectSha256": "315f84b1aa5f6371f56d92a142df9b05aef5d8293ee6f4a2ec7423329358beff",
+    "coreWorkflowSucceeded": true,
+    "packageBuildWorkflowSucceeded": true,
+    "packageBuildTargets": 12,
+    "m80dWorkflowSucceeded": true,
+    "m80dPassed": 87
+  },
+  "distribution": {
+    "version": "v0.1.11-m80e.3",
+    "tspackCommit": "c2a57e177e8c38b295be05e0e9e41e983083a8df",
+    "releaseRunId": 33283801083,
+    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33283801083",
+    "releaseConclusion": "success",
+    "linuxAmd64Sha256": "accc2a108b8c46ab3569bfc6cc30e5edfc5e46d0d7be43b8631e5582f1290c44"
+  },
+  "remote": {
+    "runId": 33283861040,
+    "jobId": 99183514519,
+    "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33283861040",
+    "commit": "dcae1716c24a3b0ac95fe288ad8bbf6164f0b382",
+    "conclusion": "success",
+    "durationSeconds": 98,
+    "runner": "ubuntu-24.04@20260823.283.1 (Ubuntu 24.04.4)",
+    "runnerVersion": "2.336.0",
+    "nodeVersion": "v24.19.0",
+    "tspackVersion": "v0.1.11-m80e.3",
+    "cleanDependencyState": true,
+    "pnpmInstallUsed": false,
+    "fetchedStoreArtifacts": 785,
+    "materializedEntries": 1597,
+    "passed": 258,
+    "failed": 0,
+    "skipped": 1,
+    "terminal": "Workflow VitestBuiltFixtureCI succeeded",
+    "provenanceSample": {
+      "consumer": "@vitest/test-unit:test:web-worker-built-threads",
+      "producer": "@vitest/web-worker:package",
+      "artifactIdentity": "@vitest/web-worker:package:runtime",
+      "binding": "@vitest/web-worker",
+      "contentHashes": [
+        "f1ecf9ccec9ef5a86ea49eb0e42a5e3c77e9b8d80ff63f897cdae7165fd04f7f",
+        "bde4e88221eac624f8d1074e8d55b4910fd02b2d84bff1ef2985a0bd2adec6a4"
+      ]
+    }
+  },
+  "providerBootstrapAttempt": {
+    "runId": 33283565533,
+    "failedAttempt": 1,
+    "failure": "registry metadata body timeout for locked vite@8.2.2 after 784/785 artifact fetches",
+    "unchangedRetrySucceeded": true
+  },
+  "authority": {
+    "legacyJobsRemoved": 0,
+    "legacyJobsShrunk": 0,
+    "legacyCoveragePreserved": true,
+    "newTspackOwnedFiles": 5,
+    "newTspackOwnedSemanticResults": 259
+  },
+  "validation": {
+    "tspackBroadGoTests": "passed",
+    "manifestFrontendBuild": "passed",
+    "manifestFrontendTypecheck": "passed",
+    "manifestFrontendTests": {"passed": 257, "skipped": 2},
+    "vscodeCompile": "passed",
+    "vscodeTestsPassed": 35,
+    "generatedTypeDrift": "passed",
+    "workflowTests": "passed",
+    "setupActionTests": "passed",
+    "githubExportCheck": "passed",
+    "releaseQualification": "passed",
+    "tspackDiffCheck": "passed",
+    "vitestDiffCheck": "passed"
+  },
+  "boundary": {
+    "implemented": "immutable regular-file artifact and named regular-file artifact-set fixtures",
+    "intentionalNonGoal": "directory artifacts",
+    "recommendedNextStep": "Characterize the next bounded Vitest unit family and add another primitive only if its evidence requires one."
+  }
+}
