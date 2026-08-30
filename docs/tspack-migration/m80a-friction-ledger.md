@@ -513,14 +513,15 @@ path normalization changes. The adjacent module-diagnostic family also invokes
 the built CLI and stops at the same package-content boundary.
 
 Resolution:
-Open. Patch source and content hashes must become part of the resolved package
-identity, lock evidence, verified materialization, and drift diagnostics.
-Applying patches by delegating to pnpm would recreate an outer lifecycle
-authority and is not acceptable.
+Resolved. TSPack now retains verified source identity/hash separately from a
+content- and algorithm-derived patched realization identity/hash. Update locks
+the transformation; sync applies it exactly into an independently verified
+`patched-tree` store entry; inspect exposes both identities. No pnpm or
+lifecycle delegation is involved. Vitest's 21 correlated CLI failures are gone.
 
 Classification: MissingPrimitive
 
-M80f status: Open; recommended M80g boundary.
+M80g status: Resolved in `v0.1.13-m80g.1`.
 
 ### F-028 — build targets could not declare compiler-only package dependencies
 

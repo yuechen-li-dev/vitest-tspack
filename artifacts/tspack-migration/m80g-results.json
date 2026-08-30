@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M80g",
+  "outcome": "A",
+  "baseline": {
+    "tspackRevision": "53960191afce9e00851131fb69148192871dbd86",
+    "vitestRevision": "cff9cfd0c019ce7bf150daad821202b875b4b148",
+    "qualifiedTspackVersion": "v0.1.12-m80f.2",
+    "nodeVersion": "v26.2.0",
+    "lockFormat": 1,
+    "rawCli": {"passed": 9, "failed": 21, "skipped": 0}
+  },
+  "qualification": {
+    "tspackRevision": "7ae098728dfc69a43c222a50a3b4b994d0a8af51",
+    "vitestRevision": "a6d6e8c35545a70823fcaccd0f43c6fd8594cdf4",
+    "qualifiedTspackVersion": "v0.1.13-m80g.1",
+    "nodeVersionLocal": "v26.2.0",
+    "nodeVersionRemote": "v24",
+    "lockFormat": 1
+  },
+  "patch": {
+    "mechanism": "pnpm-workspace.yaml patchedDependencies",
+    "sourceIdentity": "npm:cac@6.7.14",
+    "sourceHash": "sha256:d6dba561aa03eb1ee42e174eebdf1692d74e7af289b9b381400226813b4952be",
+    "path": "patches/cac@6.7.14.patch",
+    "sha256": "sha256:a8f0f3517a47ce716ed90c0cfe6ae382ab763b021a664ada2a608477d0621588",
+    "algorithm": "unified-text-v1-exact",
+    "realizationIdentity": "npm:cac@6.7.14#patch=unified-text-v1-exact.a8f0f3517a47ce716ed90c0cfe6ae382ab763b021a664ada2a608477d0621588",
+    "realizationHash": "sha256:8481cddfe768ee778ee1ee6c2f12edc1b9a4b37c94dd7b2d5e0aeed498990f4a",
+    "multiplePatchScope": "one exact ordered patch per source package"
+  },
+  "proof": {
+    "upstreamOracle": {"passed": 35, "failed": 0, "skipped": 0},
+    "patchedCli": {"passed": 30, "failed": 0, "skipped": 0},
+    "moduleDiagnostic": {"passed": 5, "failed": 0, "skipped": 0},
+    "patchCorrelatedFailuresEliminated": 21,
+    "cleanSyncSucceeded": true,
+    "materializedEntries": 1597,
+    "processEffects": 0,
+    "shellScriptEffects": 0,
+    "pnpmLifecycleInvocations": 0,
+    "pretestBuilds": 0
+  },
+  "localWorkflows": {
+    "VitestCoreCI": {"passed": 24, "failed": 0, "skipped": 1},
+    "VitestPackageBuildCI": {"targetsSucceeded": 12},
+    "VitestFixturePackageCI": {"passed": 87, "failed": 0, "skipped": 0},
+    "VitestBuiltFixtureCI": {"passed": 258, "failed": 0, "skipped": 1},
+    "VitestNodeUnitCI": {"passed": 109, "failed": 0, "skipped": 3},
+    "VitestCLIUnitCI": {"passed": 35, "failed": 0, "skipped": 0}
+  },
+  "remote": {
+    "releaseRunId": 33292764030,
+    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33292764030",
+    "releaseUrl": "https://github.com/yuechen-li-dev/tspack/releases/tag/v0.1.13-m80g.1",
+    "windowsArchiveSha256": "f4ca801b15730baa357e2f8d94e9f5faa918d440ad765a82d72ebab0c43b6397",
+    "releaseConclusion": "success",
+    "cliRunId": 33292858113,
+    "cliRunUrl": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33292858113",
+    "cliConclusion": "success",
+    "cleanSyncWallMillisecondsApprox": 93000,
+    "workflowWallMilliseconds": 12356,
+    "runnerOS": "ubuntu-latest"
+  },
+  "validation": {
+    "goFull": "passed",
+    "frontendBuild": "passed",
+    "frontendTypecheck": "passed",
+    "frontendTests": "258 passed and 2 skipped",
+    "vscodeCompileTests": "35 passed",
+    "generatedTypeDrift": "passed",
+    "setupAction": "passed",
+    "gitDiffCheck": "passed"
+  }
+}
