@@ -47,6 +47,13 @@ port. `VitestCoreCI` builds the native `@vitest/expect:package` and
 `@vitest/test-unit:basic-threads` and
 `@vitest/test-unit:snapshot-threads` TestTargets.
 
+`VitestBuiltFixtureCI` is the built-output composition proof. Its Flow contains
+only three native Test effects. Those TestTargets declare graph prerequisites
+on the existing `@vitest/web-worker:package`, `@vitest/utils:package`, and
+`@vitest/pretty-format:package` BuildTargets and bind their declared `runtime`
+artifacts as package-shaped fixtures. The five selected test files therefore
+need no pretest script, pnpm lifecycle, or incidental checked-out `dist` tree.
+
 ```powershell
 tspack inspect targets
 tspack workflow list
@@ -54,6 +61,7 @@ tspack workflow inspect VitestCoreCI
 tspack sync --clean
 tspack check
 tspack workflow run VitestCoreCI --jobs 4
+tspack workflow run VitestBuiltFixtureCI --jobs 4
 ```
 
 GitHub runs the same Flow through the generated
@@ -69,7 +77,9 @@ job can be deleted without losing a safety net. Broader package builds,
 typecheck/lint, browser, coverage, platform, release, publish, ecosystem, and
 repository-maintenance workflows remain upstream authority. See
 [`docs/tspack-migration/m80b1-report.md`](docs/tspack-migration/m80b1-report.md)
-for the remote qualification and exact workflow inventory; this is not a claim
+for the earlier remote qualification and exact workflow inventory. See
+[`docs/tspack-migration/m80e-report.md`](docs/tspack-migration/m80e-report.md)
+for built-fixture provenance and the current authority map; this is not a claim
 of complete Vitest CI migration.
 
 ## Features

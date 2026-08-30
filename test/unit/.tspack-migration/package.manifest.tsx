@@ -3,6 +3,7 @@ import {
   Publish,
   TestTargets,
   Tools,
+  builtArtifactFixture,
   defineDeps,
   definePackage,
   dep,
@@ -269,6 +270,76 @@ export default definePackage(
             localFixture(deps.testDepEsmNonExisting, {
               name: "dep-esm-non-existing",
               binding: "@test/dep-esm-non-existing",
+            }),
+          ],
+        },
+        {
+          name: "web-worker-built-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: [
+            "test/web-worker-jsdom.test.ts",
+            "test/web-worker-mock.test.ts",
+            "test/web-worker-node.test.ts",
+          ],
+          project: "threads",
+          dependsOn: ["@vitest/web-worker:package"],
+          builtFixtures: [
+            builtArtifactFixture("@vitest/web-worker:package", {
+              name: "web-worker-runtime",
+              artifact: "runtime",
+              binding: "@vitest/web-worker",
+            }),
+          ],
+        },
+        {
+          name: "expect-built-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: ["test/expect.test.ts"],
+          project: "threads",
+          requirements: [
+            deps.standardSchemaSpec,
+            deps.temporalPolyfill,
+          ],
+          dependsOn: [
+            "@vitest/pretty-format:package",
+            "@vitest/utils:package",
+          ],
+          builtFixtures: [
+            builtArtifactFixture("@vitest/pretty-format:package", {
+              name: "pretty-format-runtime",
+              artifact: "runtime",
+              binding: "@vitest/pretty-format",
+            }),
+            builtArtifactFixture("@vitest/utils:package", {
+              name: "utils-runtime",
+              artifact: "runtime",
+              binding: "@vitest/utils",
+            }),
+          ],
+        },
+        {
+          name: "pretty-format-built-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: ["test/pretty-format.test.ts"],
+          project: "threads",
+          requirements: [deps.loupe],
+          dependsOn: [
+            "@vitest/pretty-format:package",
+            "@vitest/utils:package",
+          ],
+          builtFixtures: [
+            builtArtifactFixture("@vitest/pretty-format:package", {
+              name: "pretty-format-runtime",
+              artifact: "runtime",
+              binding: "@vitest/pretty-format",
+            }),
+            builtArtifactFixture("@vitest/utils:package", {
+              name: "utils-runtime",
+              artifact: "runtime",
+              binding: "@vitest/utils",
             }),
           ],
         },

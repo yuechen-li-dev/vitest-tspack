@@ -150,6 +150,35 @@ export default defineWorkspace(
             ),
           ),
         }),
+        Workflow("VitestBuiltFixtureCI", {
+          triggers: [Manual()],
+          flow: Parallel(
+            Branch(
+              "test-web-worker-built-threads",
+              Test({
+                name: "Test web-worker-built-threads",
+                packages: ["@vitest/test-unit"],
+                target: "web-worker-built-threads",
+              }),
+            ),
+            Branch(
+              "test-expect-built-threads",
+              Test({
+                name: "Test expect-built-threads",
+                packages: ["@vitest/test-unit"],
+                target: "expect-built-threads",
+              }),
+            ),
+            Branch(
+              "test-pretty-format-built-threads",
+              Test({
+                name: "Test pretty-format-built-threads",
+                packages: ["@vitest/test-unit"],
+                target: "pretty-format-built-threads",
+              }),
+            ),
+          ),
+        }),
       ]}
     />
   </Workspace>,

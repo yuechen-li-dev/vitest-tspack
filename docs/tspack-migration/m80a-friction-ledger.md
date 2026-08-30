@@ -612,14 +612,68 @@ outputs as BuildTarget artifacts. Adding a source/package fixture cannot
 truthfully satisfy a built-output contract.
 
 Resolution:
-Do not copy generated output opportunistically or add an opaque pretest build.
-The next focused milestone should let a TestTarget require a qualified
-BuildTarget and bind its declared artifact as a built fixture, reusing existing
-build ordering and artifact identity.
+M80e added explicit TestTarget `dependsOn` edges plus independent
+`builtArtifactFixture` bindings. The native test operation executes qualified
+BuildTargets through existing build ordering, coalesces shared producers,
+selects only declared BuildResult artifact identities, verifies content hashes,
+and atomically projects a package envelope into the consumer. A clean run began
+with all three producer `dist` trees absent and completed all five blocked files
+with 258 passed and one platform skip. The Flow has only Test effects.
 
 Classification: MissingPrimitive
 
-M80d status: Open; precise adjacent boundary after the green 87-result slice.
+M80e status: Resolved for immutable regular-file artifacts and named artifact
+sets. Directory artifacts remain an intentional non-goal until evidence needs
+them.
+
+### F-037 — shared package bindings need consumer-independent reuse
+
+Severity: P1
+
+Context:
+Two parallel TestTargets can consume the same immutable producer artifact at
+the same package binding inside one consumer package.
+
+Evidence:
+The expect and pretty-format branches both bind `@vitest/utils` and
+`@vitest/pretty-format`. Treating consumer target identity as projection
+content would make the branches replace the same destination concurrently.
+
+Resolution:
+Destination-scoped locks serialize materialization. Marker equivalence is
+based on producer target, artifact identity, binding, package metadata hash,
+and ordered file hashes; consumer identity remains result provenance but does
+not prevent safe immutable sharing. Focused concurrency tests and the flagship
+parallel workflow prove one producer execution and verified projection reuse.
+
+Classification: TSPackBug and FilesystemBehavior
+
+M80e status: Resolved.
+
+### F-038 — target plan visibility lives in target inspection
+
+Severity: P3
+
+Context:
+A Flow intentionally contains only Test effects when its TestTargets own build
+prerequisites. Workflow source therefore does not repeat producer Build effects.
+
+Evidence:
+`tspack workflow inspect` shows the provider-neutral Flow effects, while
+`tspack inspect targets` shows each TestTarget prerequisite and built fixture.
+Together they make the plan reconstructable, but there is not yet one combined
+workflow-plus-expanded-target-plan document.
+
+Resolution:
+M80e extends human and JSON target discovery with qualified prerequisites,
+producer target, artifact selector/identity, binding, and realized path. This
+is sufficient for deterministic agent inspection without source archaeology.
+A combined expanded workflow plan is deferred until more than one consumer
+demonstrates that another projection is useful.
+
+Classification: MigrationUX
+
+M80e status: Accepted P3 follow-up; not a correctness blocker.
 
 ### F-034 — valid registry resolution can differ from the frozen pnpm oracle
 
