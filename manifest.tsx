@@ -203,7 +203,7 @@ export default defineWorkspace(
         }),
         Workflow("VitestUnitExpansionCI", {
           triggers: [Manual()],
-          flow: Parallel(
+          flow: Sequence(
             Branch(
               "test-ordinary-core-built-threads",
               Test({

@@ -572,6 +572,7 @@ export default definePackage(
           ],
           dependsOn: [
             "@vitest/expect:package",
+            "@vitest/pretty-format:package",
             "@vitest/utils:package",
           ],
           builtFixtures: [
@@ -579,6 +580,11 @@ export default definePackage(
               name: "expect-runtime",
               artifact: "javaScript",
               binding: "@vitest/expect",
+            }),
+            builtArtifactFixture("@vitest/pretty-format:package", {
+              name: "pretty-format-runtime",
+              artifact: "runtime",
+              binding: "@vitest/pretty-format",
             }),
             builtArtifactFixture("@vitest/utils:package", {
               name: "utils-runtime",
@@ -702,12 +708,20 @@ export default definePackage(
               binding: "vitest-environment-custom",
             }),
           ],
-          dependsOn: ["@vitest/mocker:package"],
+          dependsOn: [
+            "@vitest/mocker:package",
+            "@vitest/pretty-format:package",
+          ],
           builtFixtures: [
             builtArtifactFixture("@vitest/mocker:package", {
               name: "mocker-runtime",
               artifact: "runtime",
               binding: "@vitest/mocker",
+            }),
+            builtArtifactFixture("@vitest/pretty-format:package", {
+              name: "pretty-format-runtime",
+              artifact: "runtime",
+              binding: "@vitest/pretty-format",
             }),
             builtArtifactFixture("@vitest/utils:package", {
               name: "utils-runtime",

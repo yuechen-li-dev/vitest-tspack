@@ -561,6 +561,32 @@ Classification: MissingPrimitive and InteropRequirement
 
 M80h status: Exact stopping boundary.
 
+### F-045 — parallel Vitest targets contended for one configured API port
+
+Severity: P1
+
+Context:
+All three M80h TestTargets use the real unit config, whose API server binds port
+3023. Local residual state masked both a missing pretty-format build fixture and
+the unsafe assumption that three independent Vitest processes could share that
+port.
+
+Evidence:
+Clean Ubuntu run `33295618815` completed 1,613-entry realization and project
+check. Type tests passed 12/0/0; the runtime processes then reported missing
+`@vitest/pretty-format/dist/index.js`, and the edge-runtime fetch to the API
+server failed while the targets overlapped.
+
+Resolution:
+Both runtime targets now declare the existing pretty-format BuildTarget and
+BuiltArtifactFixture. The Flow sequences the three Vitest effects because the
+fixed API port is an intentional harness-config resource. No sleep, port probe,
+background service, or duplicated config was introduced.
+
+Classification: InteropRequirement and MigrationUX
+
+M80h status: Resolved and remotely requalified.
+
 ### F-041 — patched dependency content is absent from Requirement Tape identity
 
 Severity: P1

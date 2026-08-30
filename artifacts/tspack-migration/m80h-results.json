@@ -38,7 +38,8 @@
     "pnpmLifecycleInvocations": 0,
     "pretestBuilds": 0,
     "incidentalDistCopies": 0,
-    "parallelBranches": 3,
+    "parallelBranches": 0,
+    "sequentialEffects": 3,
     "upstreamParity": true
   },
   "localWorkflows": {
@@ -64,6 +65,9 @@
     "authorityClaimed": false
   },
   "remote": {
+    "diagnosticRunId": 33295618815,
+    "diagnosticRunUrl": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33295618815",
+    "diagnostic": "clean Linux exposed undeclared pretty-format output and a fixed-port collision between concurrent Vitest processes",
     "runId": "PENDING_REMOTE_RUN",
     "runUrl": "PENDING_REMOTE_URL",
     "conclusion": "PENDING",

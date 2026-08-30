@@ -72,9 +72,10 @@ they still own coverage and qualification dimensions.
 
 M80h adds no BuildTarget and adds three TestTargets:
 `ordinary-core-built-threads`, `remaining-runtime-built-threads`, and
-`unit-typecheck-in-source-threads`. `VitestUnitExpansionCI` fans them out in
-parallel and joins their typed Test results. Inspection reports 12 BuildTargets,
-14 TestTargets, one current-host region, three Test effects, and no duplicated
+`unit-typecheck-in-source-threads`. `VitestUnitExpansionCI` sequences them
+because all three real Vitest processes bind the configured API port 3023.
+Inspection reports 12 BuildTargets, 14 TestTargets, one current-host region,
+three Test effects, and no duplicated
 build-before-test Flow choreography.
 
 The targets reuse Requirement Tape, TestTarget, qualified target prerequisites,
@@ -107,8 +108,9 @@ fidelity is achieved.
 
 The authoritative workflow has 0 Process effects, 0 ShellScript effects, 0 pnpm
 lifecycle invocations, 0 pretest builds, and 0 incidental `dist` copies. The
-three Flow branches execute concurrently; target prerequisites remain in the
-target graph. Provider YAML contains checkout, Node setup, released TSPack
+three Flow effects execute sequentially because the harness config owns one
+fixed API port; target prerequisites remain in the target graph. Provider YAML
+contains checkout, Node setup, released TSPack
 setup, clean-state verification, sync/check, and one workflow invocation only.
 
 A repository with pnpm-created `node_modules` and `.tspack` quarantined outside
@@ -140,8 +142,12 @@ boundary is stronger evidence than one byte comparison.
 
 ## 52–75. Qualification, authority, UX, and validation
 
-The local workflow uses three bounded parallel branches. The remote proof is
-recorded after dispatch in the results artifact and final qualification commit.
+The first remote run (`33295618815`) proved clean realization and project check,
+then exposed two hidden local-state assumptions: pretty-format output was not an
+explicit built fixture, and concurrent Vitest processes contended for API port
+3023. The repaired targets declare the existing pretty-format BuildTarget and
+fixture; the Flow sequences the three tests. The successful remote proof is
+recorded in the results artifact and final qualification commit.
 It runs `ubuntu-latest`, Node 24, and qualified TSPack `v0.1.13-m80g.1`; the
 TSPack changes discovered during the non-authoritative build checkpoint are not
 required by the three new TestTargets. Windows evidence is the clean local
@@ -168,9 +174,10 @@ kind, ownership, prerequisite, fixtures, and workflow effects. The only notable
 source dive was recovering environment-package needs from Vitest configs; normal
 TypeScript helpers kept the 170-file runtime declaration reviewable.
 
-Coarse local target times on the final replay were approximately 2.3 seconds for
+Coarse local target times before remote serialization were approximately 2.3 seconds for
 type/in-source, 6.3 seconds for ordinary core, and 7.4 seconds for remaining
-runtime, overlapped by Flow fan-out. Clean correctness was proved twice; no cache
+runtime. The final Flow trades that overlap for correct ownership of the shared
+fixed port. Clean correctness was proved twice; no cache
 authority claim or optimization was made. Friction entries F-042 through F-044
 record the exact-patch selection bug, template-literal import false positive,
 and peer-context materialization gap.
