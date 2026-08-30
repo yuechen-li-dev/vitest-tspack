@@ -147,11 +147,19 @@ then exposed hidden local-state assumptions: pretty-format and spy outputs were
 not explicit built fixtures, and concurrent Vitest processes contended for API
 port 3023. The repaired targets declare the existing pretty-format and spy
 BuildTargets and fixtures; the Flow sequences the three tests. The successful remote proof is
-recorded in the results artifact and final qualification commit.
-It runs `ubuntu-latest`, Node 24, and qualified TSPack `v0.1.13-m80g.1`; the
+recorded in the results artifact and final qualification commit. Run
+[`33295985885`](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33295985885)
+succeeded from authority revision `54abdc766c68cc590864b030cb78ec63c9e8671e`.
+It ran Ubuntu 24.04.4, Node `v24.19.0`, and qualified TSPack
+`v0.1.13-m80g.1`; the
 TSPack changes discovered during the non-authoritative build checkpoint are not
 required by the three new TestTargets. Windows evidence is the clean local
-realization plus all seven workflows. No macOS authority is claimed.
+realization plus all seven workflows. Remote clean sync took approximately 94
+seconds and the workflow 28 seconds. Its results were 846/0/31, 717/0/37, and
+12/0/0 (1,575/0/68 total). The difference from local non-CI 2,075/0/67 is
+Vitest's intentional CI repeat reduction plus one platform-conditioned skip;
+test identities, zero-failure state, prerequisites, and fixture provenance were
+preserved. No macOS authority is claimed.
 
 Final authority is:
 

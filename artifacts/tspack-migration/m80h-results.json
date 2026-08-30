@@ -12,10 +12,10 @@
   },
   "qualification": {
     "tspackRevision": "616095c7ce89925e37406027706b6326f06ccd88",
-    "vitestRevision": "PENDING_VITEST_COMMIT",
+    "vitestRevision": "54abdc766c68cc590864b030cb78ec63c9e8671e",
     "qualifiedTspackVersion": "v0.1.13-m80g.1",
     "nodeVersionLocal": "v26.2.0",
-    "nodeVersionRemote": "v24"
+    "nodeVersionRemote": "v24.19.0"
   },
   "authority": {
     "buildTargets": {"authoritative": 12, "totalPackages": 14},
@@ -71,10 +71,21 @@
     "secondDiagnosticRunId": 33295812287,
     "secondDiagnosticRunUrl": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33295812287",
     "secondDiagnostic": "serialization and pretty-format repair held; clean Linux isolated undeclared @vitest/spy output",
-    "runId": "PENDING_REMOTE_RUN",
-    "runUrl": "PENDING_REMOTE_URL",
-    "conclusion": "PENDING",
-    "runnerOS": "ubuntu-latest"
+    "runId": 33295985885,
+    "runUrl": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33295985885",
+    "headRevision": "54abdc766c68cc590864b030cb78ec63c9e8671e",
+    "conclusion": "success",
+    "runnerOS": "Ubuntu 24.04.4",
+    "nodeVersion": "v24.19.0",
+    "tspackVersion": "v0.1.13-m80g.1",
+    "tspackReleaseRevision": "7ae098728dfc69a43c222a50a3b4b994d0a8af51",
+    "cleanSyncWallSecondsApprox": 94,
+    "workflowWallSecondsApprox": 28,
+    "jobWallSecondsApprox": 131,
+    "ordinaryCore": {"passed": 846, "failed": 0, "skipped": 31},
+    "remainingRuntime": {"passed": 717, "failed": 0, "skipped": 37},
+    "typecheckInSource": {"passed": 12, "failed": 0, "skipped": 0},
+    "total": {"passed": 1575, "failed": 0, "skipped": 68}
   },
   "validation": {
     "goFull": "passed",
