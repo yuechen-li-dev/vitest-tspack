@@ -190,6 +190,17 @@ export default defineWorkspace(
             }),
           ),
         }),
+        Workflow("VitestCLIUnitCI", {
+          triggers: [Manual()],
+          flow: Branch(
+            "test-cli-module-diagnostic-built-threads",
+            Test({
+              name: "Test built Vitest CLI and module diagnostics",
+              packages: ["@vitest/test-unit"],
+              target: "cli-module-diagnostic-built-threads",
+            }),
+          ),
+        }),
       ]}
     />
   </Workspace>,

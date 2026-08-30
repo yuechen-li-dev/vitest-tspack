@@ -4842,7 +4842,7 @@ Workspace = ''
 Hash = 'sha256:555b6f49224afcf6b2c5a9aea7cd34a7f443f395b10532bc5580022d57aa51f5'
 
 [[package]]
-ID = 'npm:cac@6.7.14'
+ID = 'npm:cac@6.7.14#patch=unified-text-v1-exact.a8f0f3517a47ce716ed90c0cfe6ae382ab763b021a664ada2a608477d0621588'
 Name = 'cac'
 Version = '6.7.14'
 Source = 'npm'
@@ -4852,12 +4852,20 @@ Rev = ''
 TreeHash = ''
 Path = ''
 Workspace = ''
-Hash = 'sha256:d6dba561aa03eb1ee42e174eebdf1692d74e7af289b9b381400226813b4952be'
+Hash = 'sha256:8481cddfe768ee778ee1ee6c2f12edc1b9a4b37c94dd7b2d5e0aeed498990f4a'
+SourceID = 'npm:cac@6.7.14'
+SourceHash = 'sha256:d6dba561aa03eb1ee42e174eebdf1692d74e7af289b9b381400226813b4952be'
+RealizationID = 'npm:cac@6.7.14#patch=unified-text-v1-exact.a8f0f3517a47ce716ed90c0cfe6ae382ab763b021a664ada2a608477d0621588'
 
 [[package.capability]]
 kind = 'lifecycleScript'
 script = 'prepublishOnly'
 command = 'npm run build && cp mod.js mod.mjs'
+
+[package.patch]
+path = 'patches/cac@6.7.14.patch'
+sha256 = 'sha256:a8f0f3517a47ce716ed90c0cfe6ae382ab763b021a664ada2a608477d0621588'
+algorithm = 'unified-text-v1-exact'
 
 [[package]]
 ID = 'npm:call-bind-apply-helpers@1.0.2'
@@ -11354,7 +11362,7 @@ Workspace = '@vitest/utils'
 Hash = 'sha256:9399f0762aa39bd4d49d60614e2879da646a2dea9e9d194193bf17e56e3e83c1'
 
 [[package]]
-ID = 'workspace:vitest#ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+ID = 'workspace:vitest#abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 Name = 'vitest'
 Version = '5.0.0-rc.3'
 Source = 'workspace'
@@ -11364,7 +11372,7 @@ Rev = ''
 TreeHash = ''
 Path = 'packages/vitest'
 Workspace = 'vitest'
-Hash = 'sha256:ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+Hash = 'sha256:abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 
 [[edge]]
 From = '@vitest/browser-playwright:target:package'
@@ -11410,7 +11418,7 @@ Reference = '@vitest/mocker'
 
 [[edge]]
 From = '@vitest/browser-playwright:target:package'
-To = 'workspace:vitest#ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+To = 'workspace:vitest#abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 Kind = 'peer'
 Optional = false
 Reference = 'vitest'
@@ -11452,7 +11460,7 @@ Reference = '@vitest/browser'
 
 [[edge]]
 From = '@vitest/browser-preview:target:package'
-To = 'workspace:vitest#ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+To = 'workspace:vitest#abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 Kind = 'peer'
 Optional = false
 Reference = 'vitest'
@@ -11599,7 +11607,7 @@ Reference = 'tinyrainbow'
 
 [[edge]]
 From = '@vitest/coverage-istanbul:target:package'
-To = 'workspace:vitest#ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+To = 'workspace:vitest#abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 Kind = 'peer'
 Optional = false
 Reference = 'vitest'
@@ -11690,7 +11698,7 @@ Reference = '@vitest/browser-playwright'
 
 [[edge]]
 From = '@vitest/coverage-v8:target:package'
-To = 'workspace:vitest#ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+To = 'workspace:vitest#abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 Kind = 'peer'
 Optional = false
 Reference = 'vitest'
@@ -12046,6 +12054,20 @@ Optional = false
 Reference = 'vitest'
 
 [[edge]]
+From = '@vitest/test-unit:test:cli-module-diagnostic-built-threads'
+To = 'npm:vite@8.0.11'
+Kind = 'tool'
+Optional = false
+Reference = 'vite'
+
+[[edge]]
+From = '@vitest/test-unit:test:cli-module-diagnostic-built-threads'
+To = 'npm:vitest@5.0.0-rc.3'
+Kind = 'tool'
+Optional = false
+Reference = 'vitest'
+
+[[edge]]
 From = '@vitest/test-unit:test:expect-built-threads'
 To = 'npm:@standard-schema/spec@1.1.0'
 Kind = 'test'
@@ -12198,6 +12220,20 @@ To = 'path:test/unit/projects/vite-external#4f78e77d59ccfb6a1fa5538eac5e9940bcfe
 Kind = 'test'
 Optional = false
 Reference = '@test/vite-external'
+
+[[edge]]
+From = '@vitest/test-unit:test:node-runtime-built-threads'
+To = 'npm:vite@8.0.11'
+Kind = 'tool'
+Optional = false
+Reference = 'vite'
+
+[[edge]]
+From = '@vitest/test-unit:test:node-runtime-built-threads'
+To = 'npm:vitest@5.0.0-rc.3'
+Kind = 'tool'
+Optional = false
+Reference = 'vitest'
 
 [[edge]]
 From = '@vitest/test-unit:test:pretty-format-built-threads'
@@ -12446,7 +12482,7 @@ Reference = 'rollup'
 
 [[edge]]
 From = '@vitest/web-worker:target:package'
-To = 'workspace:vitest#ef36847612a1355b2d72d640f3961f1b309b4b30584f5b648cabbae255b7e605'
+To = 'workspace:vitest#abe90177bd0275f21e8d5d697503fcc52216c18be211387e9f963de1b8626b4e'
 Kind = 'peer'
 Optional = false
 Reference = 'vitest'
@@ -20104,7 +20140,7 @@ Reference = 'birpc'
 
 [[edge]]
 From = 'vitest:target:package'
-To = 'npm:cac@6.7.14'
+To = 'npm:cac@6.7.14#patch=unified-text-v1-exact.a8f0f3517a47ce716ed90c0cfe6ae382ab763b021a664ada2a608477d0621588'
 Kind = 'tool'
 Optional = false
 Reference = 'cac'

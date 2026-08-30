@@ -73,7 +73,12 @@ const deps = defineDeps({
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   birpc: tool(npm("birpc", "^4.2.0")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
-  cac: tool(npm("cac", "^6.7.14")),
+  cac: tool(npm("cac", "^6.7.14"), {
+    patch: {
+      path: "patches/cac@6.7.14.patch",
+      version: "6.7.14",
+    },
+  }),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
   flatted: tool(npm("flatted", "^3.4.4")),
   // MIGRATION_TODO_DEP_CLASSIFICATION: mechanically classified from devDependencies.
@@ -108,7 +113,7 @@ export default definePackage(
         language: "typescript",
         compiler: "rollup",
         compilerConfig: "rollup.config.js",
-        inputs: ["src/**/*.ts", "rollup.config.js"],
+        inputs: ["src/**/*.ts", "rollup.config.js", "suppress-warnings.cjs"],
         artifact: "javaScript",
         export: ".",
         entry: "src/public/index.ts",
@@ -119,6 +124,7 @@ export default definePackage(
           { name: "runtime-chunks", kind: "javaScript", path: "dist/chunks/*.js", role: "runtimeChunk" },
           { name: "runtime-workers", kind: "javaScript", path: "dist/workers/*.js", role: "runtimeEntry" },
           { name: "commonjs", kind: "javaScript", path: "dist/*.cjs", role: "runtimeEntry" },
+          { name: "suppress-warnings", kind: "javaScript", path: "suppress-warnings.cjs", role: "runtimeChunk" },
           { name: "types", kind: "typeDeclarations", path: "dist/*.d.ts", role: "typeDeclaration" },
           { name: "type-chunks", kind: "typeDeclarations", path: "dist/chunks/*.d.ts", role: "declarationChunk" },
         ],

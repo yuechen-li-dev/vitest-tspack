@@ -405,6 +405,66 @@ export default definePackage(
                 "runtime",
                 "runtime-chunks",
                 "runtime-workers",
+                "suppress-warnings",
+              ],
+              binding: "vitest",
+            }),
+          ],
+        },
+        {
+          name: "cli-module-diagnostic-built-threads",
+          harness: "vitest",
+          config: "vite.config.ts",
+          sources: [
+            "test/cli-test.test.ts",
+            "test/module-diagnostic.test.ts",
+          ],
+          project: "threads",
+          dependsOn: ["vitest:package"],
+          builtFixtures: [
+            builtArtifactFixture("@vitest/expect:package", {
+              name: "expect-runtime",
+              artifact: "javaScript",
+              binding: "@vitest/expect",
+            }),
+            builtArtifactFixture("@vitest/mocker:package", {
+              name: "mocker-runtime",
+              artifact: "runtime",
+              binding: "@vitest/mocker",
+            }),
+            builtArtifactFixture("@vitest/pretty-format:package", {
+              name: "pretty-format-runtime",
+              artifact: "runtime",
+              binding: "@vitest/pretty-format",
+            }),
+            builtArtifactFixture("@vitest/snapshot:package", {
+              name: "snapshot-runtime",
+              artifacts: [
+                "environment-js",
+                "index-js",
+                "manager-js",
+                "runtime-chunk",
+              ],
+              binding: "@vitest/snapshot",
+            }),
+            builtArtifactFixture("@vitest/spy:package", {
+              name: "spy-runtime",
+              artifact: "runtime",
+              binding: "@vitest/spy",
+            }),
+            builtArtifactFixture("@vitest/utils:package", {
+              name: "utils-runtime",
+              artifacts: ["runtime", "runtime-source-map"],
+              binding: "@vitest/utils",
+            }),
+            builtArtifactFixture("vitest:package", {
+              name: "vitest-runtime",
+              artifacts: [
+                "commonjs",
+                "runtime",
+                "runtime-chunks",
+                "runtime-workers",
+                "suppress-warnings",
               ],
               binding: "vitest",
             }),
