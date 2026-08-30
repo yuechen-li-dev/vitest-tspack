@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M80f",
+  "outcome": "B",
+  "baseline": {
+    "tspackRevision": "c2a57e177e8c38b295be05e0e9e41e983083a8df",
+    "vitestRevision": "0b98115eef00b79d993769b9eb61be923f4db835",
+    "qualifiedTspackVersion": "v0.1.11-m80e.3",
+    "nodeVersion": "v26.2.0",
+    "buildTargets": 12,
+    "testTargets": 9,
+    "workflows": 4
+  },
+  "final": {
+    "tspackRevision": "53960191afce9e00851131fb69148192871dbd86",
+    "vitestRevision": "f0f9ef23d7e97554b5cb3d3d0722eb3e7bc3b785",
+    "qualifiedTspackVersion": "v0.1.12-m80f.2",
+    "buildTargets": 12,
+    "testTargets": 10,
+    "workflows": 5
+  },
+  "checkpoints": [
+    {
+      "number": 1,
+      "scope": "built Vitest node/runtime unit family",
+      "files": 11,
+      "passed": 109,
+      "failed": 0,
+      "skipped": 3,
+      "decision": "stop at patched dependency identity after adjacent green family"
+    },
+    {
+      "number": 2,
+      "scope": "absolute clean fixture materialization qualification",
+      "materializedEntries": 1597,
+      "decision": "small general fix, release, and continue qualification"
+    }
+  ],
+  "targets": {
+    "newBuildTargets": [],
+    "newTestTargets": ["@vitest/test-unit:test:node-runtime-built-threads"],
+    "newWorkflows": ["VitestNodeUnitCI"],
+    "explicitBuildEffects": 0,
+    "testEffects": 1
+  },
+  "composition": {
+    "artifactOrArtifactsExclusive": true,
+    "transitivePrerequisiteClosure": true,
+    "artifactSets": 7,
+    "contentHashVerified": true,
+    "atomicProjection": true,
+    "collisionRejected": true,
+    "directoryArtifactRequired": false,
+    "serviceRequired": false
+  },
+  "escapeHatches": {
+    "processEffects": 0,
+    "shellScriptEffects": 0,
+    "pnpmLifecycleInvocations": 0,
+    "pretestBuilds": 0,
+    "incidentalDistCopies": 0,
+    "providerBootstrap": ["checkout", "Node 24 selection", "released TSPack setup"]
+  },
+  "local": {
+    "cleanSyncSucceeded": true,
+    "materializedEntries": 1597,
+    "cleanSyncWallMilliseconds": 23354,
+    "checkSucceeded": true,
+    "core": {"passed": 24, "failed": 0, "skipped": 1},
+    "packageBuildTargets": 12,
+    "m80d": {"passed": 87, "failed": 0, "skipped": 0},
+    "m80e": {"passed": 258, "failed": 0, "skipped": 1},
+    "m80f": {"passed": 109, "failed": 0, "skipped": 3, "wallMilliseconds": 9540},
+    "inspectRepeatedEqual": true,
+    "inspectSha256": "693bd058777b69cce9e0a9810256f437e5b66079eda0e6005c47b156b404753a"
+  },
+  "upstreamOracle": {
+    "runId": 33285821990,
+    "unitLinuxNode24": "success",
+    "unitLinuxNode26": "success",
+    "unitWindowsNode24": "success",
+    "linuxNode24Broad": {"passed": 6159, "expectedFail": 63, "skipped": 261, "todo": 75}
+  },
+  "distribution": {
+    "version": "v0.1.12-m80f.2",
+    "tspackCommit": "53960191afce9e00851131fb69148192871dbd86",
+    "releaseRunId": 33286114221,
+    "releaseRunUrl": "https://github.com/yuechen-li-dev/tspack/actions/runs/33286114221",
+    "releaseConclusion": "success",
+    "linuxAmd64Sha256": "ec16275548e5959cb3270ba716971fc6cf3561f0831bcad89c884251f5d527aa"
+  },
+  "remote": {
+    "runId": 33286308315,
+    "jobId": 99189993070,
+    "url": "https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33286308315",
+    "commit": "f0f9ef23d7e97554b5cb3d3d0722eb3e7bc3b785",
+    "conclusion": "success",
+    "durationSeconds": 108,
+    "syncSeconds": 89,
+    "workflowSeconds": 12,
+    "runner": "ubuntu-24.04@20260823.283.1 (Ubuntu 24.04.4)",
+    "runnerVersion": "2.336.0",
+    "nodeVersion": "v24.19.0",
+    "tspackVersion": "v0.1.12-m80f.2",
+    "cleanDependencyState": true,
+    "pnpmInstallUsed": false,
+    "materializedEntries": 1597,
+    "passed": 109,
+    "failed": 0,
+    "skipped": 3,
+    "terminal": "Workflow VitestNodeUnitCI succeeded"
+  },
+  "validation": {
+    "tspackBroadGoTests": "passed",
+    "manifestFrontendBuild": "passed",
+    "manifestFrontendTests": {"passed": 257, "skipped": 2},
+    "vscodeCompile": "passed",
+    "vscodeTestsPassed": 35,
+    "generatedTypeDrift": "passed",
+    "workflowTests": "passed",
+    "setupActionTests": "passed",
+    "githubExportCheck": "passed",
+    "releaseQualification": "passed",
+    "tspackDiffCheck": "passed",
+    "vitestDiffCheck": "passed"
+  },
+  "friction": {
+    "resolved": ["F-039", "F-040"],
+    "open": ["F-041"]
+  },
+  "boundary": {
+    "missingPrimitive": "patched dependency content identity and deterministic materialization",
+    "evidence": {"file": "test/cli-test.test.ts", "passed": 9, "failed": 21, "patch": "patches/cac@6.7.14.patch"},
+    "recommendedNextStep": "M80g: implement patch-aware Requirement Tape identity, lock evidence, verification, and materialization; then resume CLI and module-diagnostic families"
+  }
+}

@@ -444,6 +444,84 @@ Classification: ProviderBootstrap and InstalledTSPack
 
 M80b1 status: Resolved.
 
+### F-039 — one fixture binding could not compose several declared artifact sets
+
+Severity: P1
+
+Context:
+The next ordinary Vitest node/runtime family imports the built `vitest`,
+snapshot, and utils packages. Each consumer package needs several independently
+named regular-file artifacts at one Node binding; none needs directory identity.
+
+Evidence:
+The initial M80f target could select only one artifact name per
+`BuiltArtifactFixture`. The required Vitest binding is the union of four
+`vitest:package` artifact sets, while snapshot and utils require four and two
+sets respectively.
+
+Resolution:
+`BuiltArtifactFixture` now accepts an exclusive `artifact` or `artifacts`
+shape. TSPack sorts identities, verifies every file hash, rejects duplicate
+paths, and projects the union atomically with one provenance marker. Singular
+JSON remains backward compatible. The 11-file workflow passed 109 tests with
+three expected Windows skips locally and remotely.
+
+Classification: MigrationUX
+
+M80f status: Resolved in `v0.1.12-m80f.1`.
+
+### F-040 — absolute clean Windows sync collided with source-fixture bindings
+
+Severity: P1
+
+Context:
+Dependency realization creates path-package bindings before source fixtures
+claim the same target-scoped destinations. `sync --clean` authorized replacing
+those bindings, but fixture materialization attempted to create over the
+existing Windows junctions.
+
+Evidence:
+An absolute no-`node_modules`, no-`.tspack` replay failed at
+`@test/vite-environment-external` and `@test/vite-external` with
+`TSPACK_TEST_FIXTURE_MATERIALIZATION_FAILED`. Both paths were junctions to the
+declared producers. A focused regression reproduced the same displaced
+dependency binding.
+
+Resolution:
+Clean or forced fixture materialization now removes the exact contained
+destination before projection. Ordinary sync still rejects an unmanaged
+destination. The fixed binary materialized all 1,597 entries on Windows in
+23.5 seconds, and the full Go suite plus five-lane release qualification passed.
+
+Classification: TSPackBug
+
+M80f status: Resolved in `v0.1.12-m80f.2`.
+
+### F-041 — patched dependency content is absent from Requirement Tape identity
+
+Severity: P1
+
+Context:
+Vitest patches `cac@6.7.14` through `pnpm-workspace.yaml`. TSPack locks and
+materializes the raw npm tarball, so CLI behavior differs even though package
+name and version match.
+
+Evidence:
+The `cli-test.test.ts` checkpoint passed 9 tests and failed 21. The failures
+matched the repository patch's boolean nesting, repeated-option arrays, and
+path normalization changes. The adjacent module-diagnostic family also invokes
+the built CLI and stops at the same package-content boundary.
+
+Resolution:
+Open. Patch source and content hashes must become part of the resolved package
+identity, lock evidence, verified materialization, and drift diagnostics.
+Applying patches by delegating to pnpm would recreate an outer lifecycle
+authority and is not acceptable.
+
+Classification: MissingPrimitive
+
+M80f status: Open; recommended M80g boundary.
+
 ### F-028 — build targets could not declare compiler-only package dependencies
 
 Severity: P1
