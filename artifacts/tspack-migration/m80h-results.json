@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M80h",
+  "outcome": "B",
+  "baseline": {
+    "tspackRevision": "7ae098728dfc69a43c222a50a3b4b994d0a8af51",
+    "vitestRevision": "983dcbf3c419668ca2cf982ae0a769292166b6ec",
+    "qualifiedTspackVersion": "v0.1.13-m80g.1",
+    "nodeVersion": "v26.2.0",
+    "initialBuildTargets": 12,
+    "initialTestTargets": 11
+  },
+  "qualification": {
+    "tspackRevision": "616095c7ce89925e37406027706b6326f06ccd88",
+    "vitestRevision": "PENDING_VITEST_COMMIT",
+    "qualifiedTspackVersion": "v0.1.13-m80g.1",
+    "nodeVersionLocal": "v26.2.0",
+    "nodeVersionRemote": "v24"
+  },
+  "authority": {
+    "buildTargets": {"authoritative": 12, "totalPackages": 14},
+    "testTargets": 14,
+    "unitRuntimeFiles": {"authoritative": 210, "total": 210},
+    "newFileResponsibilities": 175,
+    "newWorkflow": "VitestUnitExpansionCI"
+  },
+  "newTargets": {
+    "ordinary-core-built-threads": {"files": 78, "passed": 1345, "failed": 0, "skipped": 31},
+    "remaining-runtime-built-threads": {"files": 92, "passed": 718, "failed": 0, "skipped": 36},
+    "unit-typecheck-in-source-threads": {"files": 5, "passed": 12, "failed": 0, "skipped": 0},
+    "total": {"files": 175, "passed": 2075, "failed": 0, "skipped": 67}
+  },
+  "proof": {
+    "cleanSyncSucceeded": true,
+    "materializedEntries": 1613,
+    "processEffects": 0,
+    "shellScriptEffects": 0,
+    "pnpmLifecycleInvocations": 0,
+    "pretestBuilds": 0,
+    "incidentalDistCopies": 0,
+    "parallelBranches": 3,
+    "upstreamParity": true
+  },
+  "localWorkflows": {
+    "VitestCoreCI": {"passed": 24, "failed": 0, "skipped": 1},
+    "VitestPackageBuildCI": {"targetsSucceeded": 12},
+    "VitestFixturePackageCI": {"passed": 87, "failed": 0, "skipped": 0},
+    "VitestBuiltFixtureCI": {"passed": 258, "failed": 0, "skipped": 1},
+    "VitestNodeUnitCI": {"passed": 109, "failed": 0, "skipped": 3},
+    "VitestCLIUnitCI": {"passed": 35, "failed": 0, "skipped": 0},
+    "VitestUnitExpansionCI": {"passed": 2075, "failed": 0, "skipped": 67}
+  },
+  "controlledFailures": {
+    "runtimeAssertion": {"identity": "math.test.ts::sum", "passed": 1344, "failed": 1, "skipped": 31, "diagnostic": "TSPACK_TEST_ASSERTION_FAILED"},
+    "typeAssertion": {"passed": 11, "failed": 1, "skipped": 0, "diagnostic": "Type error retained with source identity"}
+  },
+  "buildBoundary": {
+    "remainingPackages": ["@vitest/browser", "@vitest/ui"],
+    "upstreamUiModules": 411,
+    "tspackUiModules": 628,
+    "cause": "peer-context module-instance identity is not preserved by clean materialization",
+    "viteAdapterImplemented": true,
+    "staticAssetArtifactKindImplemented": true,
+    "authorityClaimed": false
+  },
+  "remote": {
+    "runId": "PENDING_REMOTE_RUN",
+    "runUrl": "PENDING_REMOTE_URL",
+    "conclusion": "PENDING",
+    "runnerOS": "ubuntu-latest"
+  },
+  "validation": {
+    "goFull": "passed",
+    "frontendBuild": "passed",
+    "frontendTests": "258 passed and 2 skipped",
+    "vscodeCompileTests": "35 passed",
+    "upstreamTypecheck": "passed",
+    "upstreamBuild": "14 packages passed",
+    "gitDiffCheck": "passed"
+  }
+}

@@ -201,6 +201,35 @@ export default defineWorkspace(
             }),
           ),
         }),
+        Workflow("VitestUnitExpansionCI", {
+          triggers: [Manual()],
+          flow: Parallel(
+            Branch(
+              "test-ordinary-core-built-threads",
+              Test({
+                name: "Test ordinary Vitest core unit responsibilities",
+                packages: ["@vitest/test-unit"],
+                target: "ordinary-core-built-threads",
+              }),
+            ),
+            Branch(
+              "test-remaining-runtime-built-threads",
+              Test({
+                name: "Test remaining Vitest unit runtime responsibilities",
+                packages: ["@vitest/test-unit"],
+                target: "remaining-runtime-built-threads",
+              }),
+            ),
+            Branch(
+              "test-unit-typecheck-in-source-threads",
+              Test({
+                name: "Test Vitest unit typecheck and in-source responsibilities",
+                packages: ["@vitest/test-unit"],
+                target: "unit-typecheck-in-source-threads",
+              }),
+            ),
+          ),
+        }),
       ]}
     />
   </Workspace>,

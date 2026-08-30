@@ -497,6 +497,70 @@ Classification: TSPackBug
 
 M80f status: Resolved in `v0.1.12-m80f.2`.
 
+### F-042 — exact patch selection stopped at an unrelated locked version
+
+Severity: P1
+
+Context:
+The Vite dependency graph selected both `cac@6.7.14` and `cac@7.0.0`. The
+declared patch targets the exact 6.7.14 source, but patch realization returned a
+version mismatch when iteration encountered 7.0.0 first.
+
+Resolution:
+Patch realization now searches all packages with the same source/name for the
+declared exact version. It reports mismatch only when no exact package exists,
+while retaining the mismatching resolved version in the diagnostic. A focused
+multi-version regression and the full project suite pass.
+
+Classification: TSPackBug
+
+M80h status: Resolved locally; release qualification is not required by the
+M80h TestTarget authority expansion.
+
+### F-043 — import discovery scanned template-literal prose as code
+
+Severity: P2
+
+Context:
+A Vitest source file contains command examples in a template literal. The
+import scanner blanked comments and ordinary strings but left template raw text,
+so an `import` example became a false unresolved dependency.
+
+Resolution:
+Template-literal raw characters are blanked while line endings remain stable.
+Escapes and the closing delimiter are handled explicitly. A regression proves
+that import-shaped template prose is ignored, and the full importscan suite
+passes.
+
+Classification: TSPackBug and MigrationUX
+
+M80h status: Resolved.
+
+### F-044 — clean materialization does not preserve peer-context module instances
+
+Severity: P1
+
+Context:
+The two remaining package builds are Vite applications. TSPack's general Vite
+adapter can execute their real configs and enumerate declared regular-file
+outputs, but clean materialization presents equivalent Vue peer-context packages
+at multiple nested physical paths. Vite treats those paths as separate modules.
+
+Evidence:
+The upstream UI build transformed 411 modules. The clean TSPack graph transformed
+628. CSS matched exactly, but JavaScript did not; inspection found repeated
+physical `@vue/runtime-core`, `@vue/shared`, and related instances. Pinning direct
+versions did not change the module count.
+
+Resolution:
+Open. No Vite `dedupe`, alias, pnpm topology, or Vitest-specific workaround was
+retained. M80i should preserve peer-context module-instance identity in clean
+dependency materialization, then requalify browser/UI complete artifact sets.
+
+Classification: MissingPrimitive and InteropRequirement
+
+M80h status: Exact stopping boundary.
+
 ### F-041 — patched dependency content is absent from Requirement Tape identity
 
 Severity: P1
