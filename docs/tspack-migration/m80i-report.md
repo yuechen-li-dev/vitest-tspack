@@ -58,22 +58,22 @@ delegated a TSPack build or test effect to pnpm.
 52. **Projection count.** 305 qualified consumer-root bindings, plus 956 deterministic instance package projections.
 53. **Clean local workflow results.** Core 24 passed/1 skipped; fixture package 87/0; built fixture 258/1; node unit 109/3; CLI unit 35/0; expansion 2,075/67; all zero failures.
 54. **Prior workflow regressions.** All seven declared workflows pass consecutively after the final clean sync.
-55. **GitHub run ID/URL.** Filled by the release/consumer qualification below once dispatched.
+55. **GitHub run ID/URL.** Release 33301858385; package 33301964005; core 33301965164; fixture 33301966184; built fixture 33301967152; node 33301968136; CLI 33301969545; expansion 33301970720. Every linked run below succeeded.
 56. **Runner OS.** Local flagship proof: Windows; remote consumer qualification: Ubuntu.
 57. **Node version.** Local `v26.2.0`; release/consumer workflows use their declared hosted Node setup.
-58. **TSPack release provenance.** `v0.1.14-m80i.2`, built by release run 33301686020 from `c830bd678f3e74700f89851af4f394d5a4054012` with embedded manifest bridges, executable-artifact preservation, and checksums.
+58. **TSPack release provenance.** `v0.1.14-m80i.2`, built by release run 33301858385 from `c830bd678f3e74700f89851af4f394d5a4054012` with embedded manifest bridges, executable-artifact preservation, and checksums.
 59. **Windows qualification evidence.** The 20.273-second clean projection, 14/14 build workflow, all test workflows, internal junction tests, and full Go suite pass on Windows.
 60. **macOS evidence if applicable.** The release matrix supplies packaging proof; no extra Vitest macOS claim was added because this milestone's runtime authority is Windows plus clean Ubuntu.
 61. **Performance observations.** Clean sync is 20.273 seconds; warm validation is currently similar because it verifies 956 instances and fixture ownership. UI transforms 411 modules in about one second; Browser transforms 46.
 62. **Legacy choreography removed.** No recursive pnpm build, package-script delegation, manual per-package ordering, prebuild script, or Vite dedupe hack exists in the native workflow. Parallel duplicate prerequisite builds were replaced by one semantic multi-package Build effect.
 63. **Legacy CI changed.** Only the seven TSPack workflow setup references are advanced to the qualified release. Unrelated upstream CI, coverage, browser, runtime, and release jobs remain untouched.
 64. **Final authority map.** Build: 14/14 native. Test: the seven bounded workflows native. Runtime/platform: bounded Node/Windows plus clean Ubuntu qualification. Coverage/browser/release: unchanged upstream authority except package-build artifacts.
-65. **TSPack bugs discovered.** Coarse global realization identity, required/optional precedence, package-local projection/bins, clean fixture source lookup, built-fixture projection ownership/runtime peer links, and fixture-marker semantic reuse.
+65. **TSPack bugs discovered.** Coarse global realization identity, required/optional precedence, package-local projection/bins, clean fixture source lookup, built-fixture projection ownership/runtime peer links, fixture-marker semantic reuse, and cross-platform executable-artifact preservation.
 66. **Missing primitives discovered.** One small generic primitive: `packageFixture` for registry or local package-mode copies with exact locked topology.
 67. **Migration UX issues.** `latest` is not a native semver constraint; clean diagnostics exposed undeclared cross-package source providers; warm sync remains validation-heavy.
 68. **Vitest-specific issues.** Unit tests intentionally import Mocker/Vitest source across package boundaries and `vitest-package-exports` imports a consumer-provided `vitest` that its registry metadata does not declare.
 69. **Historical glue identified.** pnpm root hoisting had supplied `pathe`, `tinyexec`, `vite`, `jsdom`, `obug`, and the package-export fixture's `vitest` context.
-70. **Friction ledger updates.** F-049 through F-056 classify the P0 identity bug, fixture/runtime bugs, generic fixture primitive, interop glue, version drift, and warm-sync cost.
+70. **Friction ledger updates.** F-049 through F-057 classify the P0 identity bug, fixture/runtime bugs, generic fixture primitive, interop glue, version drift, warm-sync cost, and executable-mode loss.
 71. **Internal peer-context tests.** `internal/packageidentity` and `internal/lockfile` cover canonical context IDs, consumer convergence/separation, optional peers, patches, aliases, alternate sources, versions, and deterministic rebuilds.
 72. **Frontend tests.** The new `packageFixture` helper has runtime and type-surface coverage; the complete frontend suite passes 258 tests with two intentional skips.
 73. **Lock/store tests.** Lock normalization/diff/validation and materialization tests prove exact instance edges, realization reuse, separation, package-local contexts, and raw/peer non-collision.
@@ -98,6 +98,7 @@ delegated a TSPack build or test effect to pnpm.
 
 ## Qualification links
 
-- TSPack release: pending dispatch.
-- Clean Ubuntu package workflow: pending release installation.
-- Clean Ubuntu test workflows: pending release installation.
+- TSPack release: [v0.1.14-m80i.2](https://github.com/yuechen-li-dev/tspack/releases/tag/v0.1.14-m80i.2), [release run 33301858385](https://github.com/yuechen-li-dev/tspack/actions/runs/33301858385).
+- Clean Ubuntu package workflow: [VitestPackageBuildCI 33301964005](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301964005).
+- Clean Ubuntu core and fixture workflows: [Core 33301965164](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301965164), [FixturePackage 33301966184](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301966184), [BuiltFixture 33301967152](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301967152).
+- Clean Ubuntu unit workflows: [Node 33301968136](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301968136), [CLI 33301969545](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301969545), [Expansion 33301970720](https://github.com/yuechen-li-dev/vitest-tspack/actions/runs/33301970720).

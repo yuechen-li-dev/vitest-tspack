@@ -598,6 +598,27 @@ Classification: MigrationUX
 
 M80i status: Open optimization; not a correctness blocker.
 
+### F-057 — built artifact copies must preserve executable semantics
+
+Severity: P0
+
+Context:
+The first Ubuntu qualification reached the built Vitest package but could not
+launch `test/unit/node_modules/.bin/vitest`. The copied `vitest.mjs` bytes
+matched the producer artifact, while its executable permission had been
+normalized to `0644`; Windows junction execution did not expose the loss.
+
+Resolution:
+Built-fixture artifact copying now preserves executable versus non-executable
+semantics as normalized `0755` or `0644` modes. The fixture marker records the
+executable state, and warm reuse rejects a projection whose bytes match but
+whose mode has drifted. Release `v0.1.14-m80i.2` and all seven clean Ubuntu
+consumer workflows prove the repair through the installed path.
+
+Classification: TSPackBug and PlatformInterop
+
+M80i status: Resolved.
+
 ### F-039 — one fixture binding could not compose several declared artifact sets
 
 Severity: P1
