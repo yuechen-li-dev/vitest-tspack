@@ -179,6 +179,17 @@ export default defineWorkspace(
             ),
           ),
         }),
+        Workflow("VitestNodeUnitCI", {
+          triggers: [Manual()],
+          flow: Branch(
+            "test-node-runtime-built-threads",
+            Test({
+              name: "Test built Vitest node runtime",
+              packages: ["@vitest/test-unit"],
+              target: "node-runtime-built-threads",
+            }),
+          ),
+        }),
       ]}
     />
   </Workspace>,
