@@ -6,7 +6,7 @@ delegated a TSPack build or test effect to pnpm.
 
 1. **Baseline TSPack revision.** `616095c7ce89925e37406027706b6326f06ccd88` (`main`, `Add general Vite build adapter`).
 2. **Baseline Vitest revision.** `3f304979d3c7b69ea346be7e9112f3110f380160` (`main`, `Record M80h remote qualification`).
-3. **Qualified TSPack version.** `v0.1.14-m80i.1`; the starting installed release was `v0.1.13-m80g.1`.
+3. **Qualified TSPack version.** `v0.1.14-m80i.2`; the starting installed release was `v0.1.13-m80g.1`.
 4. **Initial package build authority count.** 12/14.
 5. **Initial UI transformed-module count.** 628 under the coarse TSPack projection.
 6. **Upstream transformed-module count.** 411 from a frozen `pnpm@11.24.0` install and the unmodified upstream root build.
@@ -61,7 +61,7 @@ delegated a TSPack build or test effect to pnpm.
 55. **GitHub run ID/URL.** Filled by the release/consumer qualification below once dispatched.
 56. **Runner OS.** Local flagship proof: Windows; remote consumer qualification: Ubuntu.
 57. **Node version.** Local `v26.2.0`; release/consumer workflows use their declared hosted Node setup.
-58. **TSPack release provenance.** `v0.1.14-m80i.1`, built by the TSPack release workflow from the M80i commit with embedded manifest bridges and checksums.
+58. **TSPack release provenance.** `v0.1.14-m80i.2`, built by release run 33301686020 from `c830bd678f3e74700f89851af4f394d5a4054012` with embedded manifest bridges, executable-artifact preservation, and checksums.
 59. **Windows qualification evidence.** The 20.273-second clean projection, 14/14 build workflow, all test workflows, internal junction tests, and full Go suite pass on Windows.
 60. **macOS evidence if applicable.** The release matrix supplies packaging proof; no extra Vitest macOS claim was added because this milestone's runtime authority is Windows plus clean Ubuntu.
 61. **Performance observations.** Clean sync is 20.273 seconds; warm validation is currently similar because it verifies 956 instances and fixture ownership. UI transforms 411 modules in about one second; Browser transforms 46.
